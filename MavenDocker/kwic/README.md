@@ -97,3 +97,5 @@ Tendremos las siguientes clases:
     * Un Map<TituloKWIC,Set<String> glosario
     * Set<TituloKWIC> noClaves
     es una estructura para guardar las no claves.
+![Representación Kwic] (https://github.com/redeskako/EjemplosJ2SE/blob/master/MavenDocker/kwic/kwic.png)
+
