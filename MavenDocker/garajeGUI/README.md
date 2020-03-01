@@ -73,3 +73,4 @@ Las clases principales de la aplicación se distribuyen, siguiendo un patrón MV
 
 	![Imagen Clases Diseño](diagrama_clases.png?raw=True)
 
+[![Video del funcionamiento](https://img.youtube.com/vi/pItPfo5XpUE/0.jpg)](https://www.youtube.com/watch?v=pItPfo5XpUE)

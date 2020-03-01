@@ -35,8 +35,7 @@ public class Driver {
 
 		// Crea la conexión y abre la BD garaje.
 		cnx = new ConexionBD();
-		cnx.abre("garaje");
-
+		cnx.abre(ConexionBD.BBDD);
 		try{
 			// Si la tabla tiene registros.
 			sql = "SELECT COUNT(*) FROM registro";

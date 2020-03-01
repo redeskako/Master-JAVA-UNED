@@ -32,7 +32,7 @@ public class ConexionBD{
 	public void abre(String sBD){
 		try{
 			// Como usuario anónimo.
-			conexion = DriverManager.getConnection("jdbc:sqlite:" + sBD + ".db");
+			this.conexion = DriverManager.getConnection("jdbc:sqlite:" + sBD + ".db");
 			//conexion = DriverManager.getConnection("jdbc:sqlite:test.db", "usuario", "clave");
 		}catch (Exception e){
 			e.printStackTrace();
@@ -43,7 +43,7 @@ public class ConexionBD{
 	 */
 	public void cierra(){
 		try{
-			conexion.close();
+			this.conexion.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
