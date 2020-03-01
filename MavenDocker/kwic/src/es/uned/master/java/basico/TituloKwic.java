@@ -27,8 +27,8 @@ public class TituloKwic implements Comparable<TituloKwic>{
 	//Este metodo introduce una frase y un patrón y cambia el patron por los caracteres '...'
 
 	public String reemplaza(String frase){
-		StringTokenizer strk= new StringTokenizer(frase," ,");
-		String resultado="";
+		StringTokenizer strk = new StringTokenizer(frase," ,");
+		String resultado = "";
 		while (strk.hasMoreTokens()){
 			String palabraAComparar= strk.nextToken();
 			TituloKwic tk= new TituloKwic(palabraAComparar);
@@ -40,7 +40,6 @@ public class TituloKwic implements Comparable<TituloKwic>{
 		}
 		return resultado;
 	}
-
 
 /*
 	public static String reemplaza (TituloKwic patron, String frase){

@@ -35,7 +35,7 @@ public class Kwic {
 		// Si no está -> Además de la frase el índice
 		Set<String> frases= new TreeSet();
 		if (this.kwic.containsKey(palabra)){
-			// Que lo contiene
+			 // Que lo contiene
 			 //Cariño dame ese valor de la palabra
 			frases= this.kwic.get(palabra);
 		}
@@ -48,7 +48,7 @@ public class Kwic {
 	}
 
 	// Este es yupi.
-	//Mëtodod que recibe una frase y se computa al kwic
+	// Mëtodo que recibe una frase y se computa al kwic
 	// Con mucha gracia y dos pares
 
 	public void computaIndice(String frase){
