@@ -84,7 +84,7 @@ public class Jugador implements Comparable<Jugador>{
 			this.aliasJugador = s;
 		}
 	}
-	
+
 	/**
 	 * Obtiene el valor entero de la variable castigo.
 	 * @param null
@@ -94,7 +94,7 @@ public class Jugador implements Comparable<Jugador>{
 	public int getCastigo() {
 		return castigo;
 	}
-	
+
 	/**
 	 * Establece un nuevo valor entero para la variable castigo.
 	 * @param valor entero i que se asignará a la variable castigo

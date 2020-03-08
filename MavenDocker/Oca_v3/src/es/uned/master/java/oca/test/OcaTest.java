@@ -49,7 +49,7 @@ public class OcaTest {
  @Test(expected=ClaseError.class)
  public void testAnalizarTurno(){
  	int entero = 28;
-  DriverServidor ds = new DriverServidor();
+ 	DriverServidor ds = new DriverServidor();
  	Servidor miServidor = new Servidor(ds, 2);
  	Oca miOca = new Oca(2,miServidor);
  	miOca.analizarTurno(entero);
