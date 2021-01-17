@@ -1,0 +1,23 @@
+/* CSS Document */
+/***Reset general***/
+*{
+	margin: 0px;
+	padding: 0px;
+	color: #FFF;
+	border: none;
+	font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
+}
+body{
+  background-color:#F30;
+}
+#cabecera{
+	height: 150px;
+	text-align:center;
+}
+#contenedor{
+	width: 1024px;
+	margin: 0 auto;
+}
+#grupo{
+	font-size: 5em;
+}

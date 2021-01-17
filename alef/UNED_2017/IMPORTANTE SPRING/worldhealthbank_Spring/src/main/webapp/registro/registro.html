@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registro de usuario</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>  
+<script src="js/main.js"></script>
+
+
+<link href="../theme/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+ <body >
+
+    <div ng-app="myApp" ng-controller="java2blogContoller">  
+  </div>
+
+<div>
+
+<div class="container" style="width:330px;">
+<h2>Registro de usuario</h2>
+
+<h1> {{user}}</h1>
+	<form >
+  	<div class="form-group">
+	    <label for="Email">Email</label>
+	    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@email.com" ng-model="user.email">
+	    <small id="emailHelp" class="form-text text-muted">Campo obligatorio.</small>
+    </div>
+    
+    <div class="form-group">
+	    <label for="login">Usuario</label>
+	    <input type="text" class="form-control" id="login" aria-describedby="emailHelp" placeholder="login" ng-model="user.login">
+	    <small id="emailHelp" class="form-text text-muted">Campo obligatorio.</small>
+    </div>
+    
+    <div class="form-group">
+	    <label for="pass">Contraseña</label>
+	    <input type="text" class="form-control" id="pass" aria-describedby="emailHelp" ng-model="user.pass">
+	    <small id="pass" class="form-text text-muted">Campo obligatorio.</small>
+    </div>
+   
+    <a href="../"><button type="button" class="btn btn-danger" >Cancelar</button></a>
+    <button class="btn btn-primary" type="submit">Enviar</button>
+  </form>
+  
+</div>
+</div>
+
+</body>
+</html>

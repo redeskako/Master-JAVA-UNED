@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jdbc/libreria"
+			  auth="Container"
+			  type="javax.sql.DataSource"
+			  username="autor"
+			  password="autor"
+			  driverClassName="com.mysql.jdbc.Driver"
+			  url="jdbc:mysql://pi-/autores"
+			  validation="select 1"
+			  maxActive="10"
+			  MaxIdle="4"
+	/>
+</Context>

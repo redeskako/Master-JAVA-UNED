@@ -1,0 +1,1019 @@
+2016-01-19 23:42:17 DEBUG :27 - Application start
+2016-01-19 23:42:17 DEBUG :28 - Biblioteca v1.0.0
+2016-01-19 23:42:17 DEBUG :29 - {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.7.0_79\jre\bin, java.vm.version=24.79-b02, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=ES, user.script=, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\carlosl.sanchez\Downloads\bibliotecaMockito\Biblioteca, java.runtime.version=1.7.0_79-b15, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.7.0_79\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\CARLOS~1.SAN\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.7.0_79\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Java\jdk1.7.0_79;C:\Applications\apache-ant-1.9.6\bin;C:\Program Files (x86)\Java\jdk1.7.0_79\bin;C:\eclipse\;C:\Program Files (x86)\Notepad++\;., java.specification.name=Java Platform API Specification, java.class.version=51.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, user.home=C:\Users\carlosl.sanchez, user.timezone=Europe/Paris, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, java.specification.version=1.7, java.class.path=C:\Program Files\NetBeans 8.1\ide\modules\ext\mysql-connector-java-5.1.23-bin.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\AbsoluteLayout.jar;C:\Applications\jasperreports-6.2.0\dist\jasperreports-6.2.0.jar;C:\Applications\jasperreports-6.2.0\dist\jasperreports-fonts-6.2.0.jar;C:\Applications\jasperreports-6.2.0\dist\jasperreports-javaflow-6.2.0.jar;C:\Applications\jasperreports-6.2.0\lib\ant-1.7.1.jar;C:\Applications\jasperreports-6.2.0\lib\antlr-2.7.5.jar;C:\Applications\jasperreports-6.2.0\lib\barbecue-1.5-beta1.jar;C:\Applications\jasperreports-6.2.0\lib\barcode4j-2.1.jar;C:\Applications\jasperreports-6.2.0\lib\batik-anim.jar;C:\Applications\jasperreports-6.2.0\lib\batik-awt-util.jar;C:\Applications\jasperreports-6.2.0\lib\batik-bridge.jar;C:\Applications\jasperreports-6.2.0\lib\batik-css.jar;C:\Applications\jasperreports-6.2.0\lib\batik-dom.jar;C:\Applications\jasperreports-6.2.0\lib\batik-ext.jar;C:\Applications\jasperreports-6.2.0\lib\batik-gvt.jar;C:\Applications\jasperreports-6.2.0\lib\batik-parser.jar;C:\Applications\jasperreports-6.2.0\lib\batik-script.jar;C:\Applications\jasperreports-6.2.0\lib\batik-svg-dom.jar;C:\Applications\jasperreports-6.2.0\lib\batik-svggen.jar;C:\Applications\jasperreports-6.2.0\lib\batik-util.jar;C:\Applications\jasperreports-6.2.0\lib\batik-xml.jar;C:\Applications\jasperreports-6.2.0\lib\bcel-5.2.jar;C:\Applications\jasperreports-6.2.0\lib\bsh-2.0b4.jar;C:\Applications\jasperreports-6.2.0\lib\castor-core-1.3.3.jar;C:\Applications\jasperreports-6.2.0\lib\castor-xml-1.3.3.jar;C:\Applications\jasperreports-6.2.0\lib\commons-beanutils-1.9.0.jar;C:\Applications\jasperreports-6.2.0\lib\commons-codec-1.5.jar;C:\Applications\jasperreports-6.2.0\lib\commons-collections-3.2.1.jar;C:\Applications\jasperreports-6.2.0\lib\commons-digester-2.1.jar;C:\Applications\jasperreports-6.2.0\lib\commons-javaflow-20060411.jar;C:\Applications\jasperreports-6.2.0\lib\commons-logging-1.1.1.jar;C:\Applications\jasperreports-6.2.0\lib\core-2.3.0.jar;C:\Applications\jasperreports-6.2.0\lib\dom4j-1.6.1.jar;C:\Applications\jasperreports-6.2.0\lib\ecj-4.3.1.jar;C:\Applications\jasperreports-6.2.0\lib\groovy-all-2.4.3.jar;C:\Applications\jasperreports-6.2.0\lib\hibernate-core-3.3.2.GA.jar;C:\Applications\jasperreports-6.2.0\lib\hsqldb-1.8.0-10.jar;C:\Applications\jasperreports-6.2.0\lib\httpclient-4.3.4.jar;C:\Applications\jasperreports-6.2.0\lib\httpcore-4.3.2.jar;C:\Applications\jasperreports-6.2.0\lib\itext-2.1.7.js4.jar;C:\Applications\jasperreports-6.2.0\lib\jackson-annotations-2.1.4.jar;C:\Applications\jasperreports-6.2.0\lib\jackson-core-2.1.4.jar;C:\Applications\jasperreports-6.2.0\lib\jackson-databind-2.1.4.jar;C:\Applications\jasperreports-6.2.0\lib\jaxen-1.1.1.jar;C:\Applications\jasperreports-6.2.0\lib\jcommon-1.0.23.jar;C:\Applications\jasperreports-6.2.0\lib\jfreechart-1.0.19.jar;C:\Applications\jasperreports-6.2.0\lib\jpa.jar;C:\Applications\jasperreports-6.2.0\lib\jxl-2.6.10.jar;C:\Applications\jasperreports-6.2.0\lib\log4j-1.2.15.jar;C:\Applications\jasperreports-6.2.0\lib\lucene-analyzers-common-4.5.1.jar;C:\Applications\jasperreports-6.2.0\lib\lucene-core-4.5.1.jar;C:\Applications\jasperreports-6.2.0\lib\lucene-queryparser-4.5.1.jar;C:\Applications\jasperreports-6.2.0\lib\mondrian-3.1.1.12687.jar;C:\Applications\jasperreports-6.2.0\lib\olap4j-0.9.7.309-JS-3.jar;C:\Applications\jasperreports-6.2.0\lib\png-encoder-1.5.jar;C:\Applications\jasperreports-6.2.0\lib\poi-3.10.1.jar;C:\Applications\jasperreports-6.2.0\lib\poi-ooxml-3.10.1.jar;C:\Applications\jasperreports-6.2.0\lib\poi-ooxml-schemas-3.10.1.jar;C:\Applications\jasperreports-6.2.0\lib\rhino-1.7.6.jar;C:\Applications\jasperreports-6.2.0\lib\saaj-api-1.3.jar;C:\Applications\jasperreports-6.2.0\lib\serializer.jar;C:\Applications\jasperreports-6.2.0\lib\servlet-api-2.4.jar;C:\Applications\jasperreports-6.2.0\lib\spring-beans-2.5.5.jar;C:\Applications\jasperreports-6.2.0\lib\spring-core-2.5.5.jar;C:\Applications\jasperreports-6.2.0\lib\velocity-1.7-dep.jar;C:\Applications\jasperreports-6.2.0\lib\xalan-2.7.1.jar;C:\Applications\jasperreports-6.2.0\lib\xercesImpl-2.10.0.jar;C:\Applications\jasperreports-6.2.0\lib\xml-apis-ext.jar;C:\Applications\jasperreports-6.2.0\lib\xml-apis.jar;C:\Applications\jasperreports-6.2.0\lib\xmlbeans-2.5.0.jar;C:\Applications\jasperreports-6.2.0\lib\xmpcore-5.1.1.jar;C:\Applications\jcalendar-1.4\lib\jcalendar-1.4.jar;C:\Applications\jcalendar-1.4\lib\jgoodies-common-1.2.0.jar;C:\Applications\jcalendar-1.4\lib\jgoodies-looks-2.4.1.jar;C:\Applications\jcalendar-1.4\lib\junit-4.6.jar;C:\Applications\mockito\mockito-all-1.10.19-javadoc.jar;C:\Applications\mockito\mockito-all-1.10.19.jar;C:\Users\carlosl.sanchez\Downloads\bibliotecaMockito\Biblioteca\build\classes, user.name=carlosl.sanchez, java.vm.specification.version=1.7, sun.java.command=Driver, java.home=C:\Program Files\Java\jdk1.7.0_79\jre, sun.arch.data.model=64, user.language=es, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.7.0_79, java.ext.dirs=C:\Program Files\Java\jdk1.7.0_79\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.7.0_79\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_79\jre\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}
+2016-01-19 23:43:46 DEBUG :27 - Application start
+2016-01-19 23:43:46 DEBUG :28 - Biblioteca v1.0.0
+2016-01-19 23:43:46 DEBUG :29 - {java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.7.0_79\jre\bin, java.vm.version=24.79-b02, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.country=ES, user.script=, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\carlosl.sanchez\Downloads\bibliotecaMockito\Biblioteca, java.runtime.version=1.7.0_79-b15, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jdk1.7.0_79\jre\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\CARLOS~1.SAN\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 8.1, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.7.0_79\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Java\jdk1.7.0_79;C:\Applications\apache-ant-1.9.6\bin;C:\Program Files (x86)\Java\jdk1.7.0_79\bin;C:\eclipse\;C:\Program Files (x86)\Notepad++\;., java.specification.name=Java Platform API Specification, java.class.version=51.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.3, user.home=C:\Users\carlosl.sanchez, user.timezone=Europe/Paris, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=UTF-8, java.specification.version=1.7, java.class.path=C:\Program Files\NetBeans 8.1\ide\modules\ext\mysql-connector-java-5.1.23-bin.jar;C:\Program Files\NetBeans 8.1\java\modules\ext\AbsoluteLayout.jar;C:\Applications\jasperreports-6.2.0\dist\jasperreports-6.2.0.jar;C:\Applications\jasperreports-6.2.0\dist\jasperreports-fonts-6.2.0.jar;C:\Applications\jasperreports-6.2.0\dist\jasperreports-javaflow-6.2.0.jar;C:\Applications\jasperreports-6.2.0\lib\ant-1.7.1.jar;C:\Applications\jasperreports-6.2.0\lib\antlr-2.7.5.jar;C:\Applications\jasperreports-6.2.0\lib\barbecue-1.5-beta1.jar;C:\Applications\jasperreports-6.2.0\lib\barcode4j-2.1.jar;C:\Applications\jasperreports-6.2.0\lib\batik-anim.jar;C:\Applications\jasperreports-6.2.0\lib\batik-awt-util.jar;C:\Applications\jasperreports-6.2.0\lib\batik-bridge.jar;C:\Applications\jasperreports-6.2.0\lib\batik-css.jar;C:\Applications\jasperreports-6.2.0\lib\batik-dom.jar;C:\Applications\jasperreports-6.2.0\lib\batik-ext.jar;C:\Applications\jasperreports-6.2.0\lib\batik-gvt.jar;C:\Applications\jasperreports-6.2.0\lib\batik-parser.jar;C:\Applications\jasperreports-6.2.0\lib\batik-script.jar;C:\Applications\jasperreports-6.2.0\lib\batik-svg-dom.jar;C:\Applications\jasperreports-6.2.0\lib\batik-svggen.jar;C:\Applications\jasperreports-6.2.0\lib\batik-util.jar;C:\Applications\jasperreports-6.2.0\lib\batik-xml.jar;C:\Applications\jasperreports-6.2.0\lib\bcel-5.2.jar;C:\Applications\jasperreports-6.2.0\lib\bsh-2.0b4.jar;C:\Applications\jasperreports-6.2.0\lib\castor-core-1.3.3.jar;C:\Applications\jasperreports-6.2.0\lib\castor-xml-1.3.3.jar;C:\Applications\jasperreports-6.2.0\lib\commons-beanutils-1.9.0.jar;C:\Applications\jasperreports-6.2.0\lib\commons-codec-1.5.jar;C:\Applications\jasperreports-6.2.0\lib\commons-collections-3.2.1.jar;C:\Applications\jasperreports-6.2.0\lib\commons-digester-2.1.jar;C:\Applications\jasperreports-6.2.0\lib\commons-javaflow-20060411.jar;C:\Applications\jasperreports-6.2.0\lib\commons-logging-1.1.1.jar;C:\Applications\jasperreports-6.2.0\lib\core-2.3.0.jar;C:\Applications\jasperreports-6.2.0\lib\dom4j-1.6.1.jar;C:\Applications\jasperreports-6.2.0\lib\ecj-4.3.1.jar;C:\Applications\jasperreports-6.2.0\lib\groovy-all-2.4.3.jar;C:\Applications\jasperreports-6.2.0\lib\hibernate-core-3.3.2.GA.jar;C:\Applications\jasperreports-6.2.0\lib\hsqldb-1.8.0-10.jar;C:\Applications\jasperreports-6.2.0\lib\httpclient-4.3.4.jar;C:\Applications\jasperreports-6.2.0\lib\httpcore-4.3.2.jar;C:\Applications\jasperreports-6.2.0\lib\itext-2.1.7.js4.jar;C:\Applications\jasperreports-6.2.0\lib\jackson-annotations-2.1.4.jar;C:\Applications\jasperreports-6.2.0\lib\jackson-core-2.1.4.jar;C:\Applications\jasperreports-6.2.0\lib\jackson-databind-2.1.4.jar;C:\Applications\jasperreports-6.2.0\lib\jaxen-1.1.1.jar;C:\Applications\jasperreports-6.2.0\lib\jcommon-1.0.23.jar;C:\Applications\jasperreports-6.2.0\lib\jfreechart-1.0.19.jar;C:\Applications\jasperreports-6.2.0\lib\jpa.jar;C:\Applications\jasperreports-6.2.0\lib\jxl-2.6.10.jar;C:\Applications\jasperreports-6.2.0\lib\log4j-1.2.15.jar;C:\Applications\jasperreports-6.2.0\lib\lucene-analyzers-common-4.5.1.jar;C:\Applications\jasperreports-6.2.0\lib\lucene-core-4.5.1.jar;C:\Applications\jasperreports-6.2.0\lib\lucene-queryparser-4.5.1.jar;C:\Applications\jasperreports-6.2.0\lib\mondrian-3.1.1.12687.jar;C:\Applications\jasperreports-6.2.0\lib\olap4j-0.9.7.309-JS-3.jar;C:\Applications\jasperreports-6.2.0\lib\png-encoder-1.5.jar;C:\Applications\jasperreports-6.2.0\lib\poi-3.10.1.jar;C:\Applications\jasperreports-6.2.0\lib\poi-ooxml-3.10.1.jar;C:\Applications\jasperreports-6.2.0\lib\poi-ooxml-schemas-3.10.1.jar;C:\Applications\jasperreports-6.2.0\lib\rhino-1.7.6.jar;C:\Applications\jasperreports-6.2.0\lib\saaj-api-1.3.jar;C:\Applications\jasperreports-6.2.0\lib\serializer.jar;C:\Applications\jasperreports-6.2.0\lib\servlet-api-2.4.jar;C:\Applications\jasperreports-6.2.0\lib\spring-beans-2.5.5.jar;C:\Applications\jasperreports-6.2.0\lib\spring-core-2.5.5.jar;C:\Applications\jasperreports-6.2.0\lib\velocity-1.7-dep.jar;C:\Applications\jasperreports-6.2.0\lib\xalan-2.7.1.jar;C:\Applications\jasperreports-6.2.0\lib\xercesImpl-2.10.0.jar;C:\Applications\jasperreports-6.2.0\lib\xml-apis-ext.jar;C:\Applications\jasperreports-6.2.0\lib\xml-apis.jar;C:\Applications\jasperreports-6.2.0\lib\xmlbeans-2.5.0.jar;C:\Applications\jasperreports-6.2.0\lib\xmpcore-5.1.1.jar;C:\Applications\jcalendar-1.4\lib\jcalendar-1.4.jar;C:\Applications\jcalendar-1.4\lib\jgoodies-common-1.2.0.jar;C:\Applications\jcalendar-1.4\lib\jgoodies-looks-2.4.1.jar;C:\Applications\jcalendar-1.4\lib\junit-4.6.jar;C:\Applications\mockito\mockito-all-1.10.19-javadoc.jar;C:\Applications\mockito\mockito-all-1.10.19.jar;C:\Users\carlosl.sanchez\Downloads\bibliotecaMockito\Biblioteca\build\classes, user.name=carlosl.sanchez, java.vm.specification.version=1.7, sun.java.command=Driver, java.home=C:\Program Files\Java\jdk1.7.0_79\jre, sun.arch.data.model=64, user.language=es, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.7.0_79, java.ext.dirs=C:\Program Files\Java\jdk1.7.0_79\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.7.0_79\jre\lib\resources.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\rt.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jce.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.7.0_79\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.7.0_79\jre\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}
+2016-01-19 23:44:01 DEBUG BaseReportFiller:147 - Fill 1: created for socios-report
+2016-01-19 23:44:01 DEBUG BaseReportFiller:186 - created delayed actions 1 for filler 1
+2016-01-19 23:44:01 DEBUG ExtensionsEnvironment:78 - Instantiating extensions registry class net.sf.jasperreports.extensions.DefaultExtensionsRegistry
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:129 - Loading registries for cache key sun.misc.Launcher$AppClassLoader@60b99e4c
+2016-01-19 23:44:01 DEBUG JRLoader:791 - Found resource jasperreports_extension.properties at jar:file:/C:/Applications/jasperreports-6.2.0/dist/jasperreports-6.2.0.jar!/jasperreports_extension.properties in classloader sun.misc.Launcher$AppClassLoader@60b99e4c
+2016-01-19 23:44:01 DEBUG JRLoader:791 - Found resource jasperreports_extension.properties at jar:file:/C:/Applications/jasperreports-6.2.0/dist/jasperreports-fonts-6.2.0.jar!/jasperreports_extension.properties in classloader sun.misc.Launcher$AppClassLoader@60b99e4c
+2016-01-19 23:44:01 DEBUG JRLoader:791 - Found resource jasperreports_extension.properties at jar:file:/C:/Applications/jasperreports-6.2.0/dist/jasperreports-javaflow-6.2.0.jar!/jasperreports_extension.properties in classloader sun.misc.Launcher$AppClassLoader@60b99e4c
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:157 - Loading JasperReports extension properties resource jar:file:/C:/Applications/jasperreports-6.2.0/dist/jasperreports-6.2.0.jar!/jasperreports_extension.properties
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.components.headertoolbar.HeaderToolbarParameterContributorExtensionFactory for property net.sf.jasperreports.extension.registry.factory.header.toolbar.parameter.contributor
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for header.toolbar.parameter.contributor using factory class net.sf.jasperreports.components.headertoolbar.HeaderToolbarParameterContributorExtensionFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.types.date.DateRangeQueryClauseExtensions for property net.sf.jasperreports.extension.registry.factory.date.range.clause.functions
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for date.range.clause.functions using factory class net.sf.jasperreports.types.date.DateRangeQueryClauseExtensions
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.repo.DefaultRepositoryExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.repository
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for repository using factory class net.sf.jasperreports.repo.DefaultRepositoryExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.parts.PartComponentsExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.parts
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for parts using factory class net.sf.jasperreports.parts.PartComponentsExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.web.util.ContentTypeMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.content.type.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for content.type.mapping using factory class net.sf.jasperreports.web.util.ContentTypeMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.simple.font.families
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for simple.font.families using factory class net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.data.DefaultDataAdapterServiceExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.data.adapter.services
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for data.adapter.services using factory class net.sf.jasperreports.data.DefaultDataAdapterServiceExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.web.util.WebResourceHandlersExtensionRegistryFactory for property net.sf.jasperreports.extension.registry.factory.jive.web.resource.handlers
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for jive.web.resource.handlers using factory class net.sf.jasperreports.web.util.WebResourceHandlersExtensionRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.util.CastorMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.castor.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for castor.mapping using factory class net.sf.jasperreports.util.CastorMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.engine.export.MatcherExportFilterMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.matcher.exporter.filter.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for matcher.exporter.filter.mapping using factory class net.sf.jasperreports.engine.export.MatcherExportFilterMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.governors.GovernorExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.governor
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for governor using factory class net.sf.jasperreports.governors.GovernorExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.web.util.RequirejsModuleMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.requirejs.module.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for requirejs.module.mapping using factory class net.sf.jasperreports.web.util.RequirejsModuleMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.engine.query.SQLQueryClauseFunctionsExtensions for property net.sf.jasperreports.extension.registry.factory.sql.clause.functions
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for sql.clause.functions using factory class net.sf.jasperreports.engine.query.SQLQueryClauseFunctionsExtensions
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.engine.style.PropertyStyleProviderExtensionFactory for property net.sf.jasperreports.extension.registry.factory.property.style.provider
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for property.style.provider using factory class net.sf.jasperreports.engine.style.PropertyStyleProviderExtensionFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.web.util.JacksonMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.jackson.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for jackson.mapping using factory class net.sf.jasperreports.web.util.JacksonMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.extensions.DefaultExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.default
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for default using factory class net.sf.jasperreports.extensions.DefaultExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.components.ComponentsExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.components
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for components using factory class net.sf.jasperreports.components.ComponentsExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.components.headertoolbar.HeaderToolbarConditionalStyleProviderExtensionFactory for property net.sf.jasperreports.extension.registry.factory.header.toolbar.style.provider
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for header.toolbar.style.provider using factory class net.sf.jasperreports.components.headertoolbar.HeaderToolbarConditionalStyleProviderExtensionFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:157 - Loading JasperReports extension properties resource jar:file:/C:/Applications/jasperreports-6.2.0/dist/jasperreports-fonts-6.2.0.jar!/jasperreports_extension.properties
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.simple.font.families
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for simple.font.families using factory class net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:157 - Loading JasperReports extension properties resource jar:file:/C:/Applications/jasperreports-6.2.0/dist/jasperreports-javaflow-6.2.0.jar!/jasperreports_extension.properties
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.components.headertoolbar.HeaderToolbarParameterContributorExtensionFactory for property net.sf.jasperreports.extension.registry.factory.header.toolbar.parameter.contributor
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for header.toolbar.parameter.contributor using factory class net.sf.jasperreports.components.headertoolbar.HeaderToolbarParameterContributorExtensionFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.types.date.DateRangeQueryClauseExtensions for property net.sf.jasperreports.extension.registry.factory.date.range.clause.functions
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for date.range.clause.functions using factory class net.sf.jasperreports.types.date.DateRangeQueryClauseExtensions
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.repo.DefaultRepositoryExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.repository
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for repository using factory class net.sf.jasperreports.repo.DefaultRepositoryExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.parts.PartComponentsExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.parts
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for parts using factory class net.sf.jasperreports.parts.PartComponentsExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.web.util.ContentTypeMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.content.type.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for content.type.mapping using factory class net.sf.jasperreports.web.util.ContentTypeMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.simple.font.families
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for simple.font.families using factory class net.sf.jasperreports.engine.fonts.SimpleFontExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.data.DefaultDataAdapterServiceExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.data.adapter.services
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for data.adapter.services using factory class net.sf.jasperreports.data.DefaultDataAdapterServiceExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.web.util.WebResourceHandlersExtensionRegistryFactory for property net.sf.jasperreports.extension.registry.factory.jive.web.resource.handlers
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for jive.web.resource.handlers using factory class net.sf.jasperreports.web.util.WebResourceHandlersExtensionRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.util.CastorMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.castor.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for castor.mapping using factory class net.sf.jasperreports.util.CastorMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.engine.export.MatcherExportFilterMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.matcher.exporter.filter.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for matcher.exporter.filter.mapping using factory class net.sf.jasperreports.engine.export.MatcherExportFilterMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.governors.GovernorExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.governor
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for governor using factory class net.sf.jasperreports.governors.GovernorExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.web.util.RequirejsModuleMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.requirejs.module.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for requirejs.module.mapping using factory class net.sf.jasperreports.web.util.RequirejsModuleMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.engine.query.SQLQueryClauseFunctionsExtensions for property net.sf.jasperreports.extension.registry.factory.sql.clause.functions
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for sql.clause.functions using factory class net.sf.jasperreports.engine.query.SQLQueryClauseFunctionsExtensions
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.engine.style.PropertyStyleProviderExtensionFactory for property net.sf.jasperreports.extension.registry.factory.property.style.provider
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for property.style.provider using factory class net.sf.jasperreports.engine.style.PropertyStyleProviderExtensionFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.web.util.JacksonMappingExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.jackson.mapping
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for jackson.mapping using factory class net.sf.jasperreports.web.util.JacksonMappingExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.extensions.DefaultExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.default
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for default using factory class net.sf.jasperreports.extensions.DefaultExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.components.ComponentsExtensionsRegistryFactory for property net.sf.jasperreports.extension.registry.factory.components
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for components using factory class net.sf.jasperreports.components.ComponentsExtensionsRegistryFactory
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:207 - Instantiating registry of type net.sf.jasperreports.components.headertoolbar.HeaderToolbarConditionalStyleProviderExtensionFactory for property net.sf.jasperreports.extension.registry.factory.header.toolbar.style.provider
+2016-01-19 23:44:01 DEBUG DefaultExtensionsRegistry:232 - Instantiating extensions registry for header.toolbar.style.provider using factory class net.sf.jasperreports.components.headertoolbar.HeaderToolbarConditionalStyleProviderExtensionFactory
+2016-01-19 23:44:02 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: BACKGROUND} for band 158925023
+2016-01-19 23:44:02 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: TITLE} for band 1116770232
+2016-01-19 23:44:02 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: PAGE_HEADER} for band 701770383
+2016-01-19 23:44:02 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: COLUMN_HEADER} for band 994691633
+2016-01-19 23:44:02 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: DETAIL} for band 620563088
+2016-01-19 23:44:02 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: COLUMN_FOOTER} for band 72423586
+2016-01-19 23:44:02 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: PAGE_FOOTER} for band 439113909
+2016-01-19 23:44:02 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: SUMMARY} for band 444934282
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:103 - Filler 1 - pageHeight: 842, columnFooterOffsetY: 805, lastPageColumnFooterOffsetY: 822
+2016-01-19 23:44:02 DEBUG JRBaseFiller:506 - Fill 1: filling report
+2016-01-19 23:44:02 DEBUG BooleanConverter:353 - Setting default value: false
+2016-01-19 23:44:02 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+2016-01-19 23:44:02 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+2016-01-19 23:44:02 DEBUG ByteConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+2016-01-19 23:44:02 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+2016-01-19 23:44:02 DEBUG CharacterConverter:353 - Setting default value:  
+2016-01-19 23:44:02 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+2016-01-19 23:44:02 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+2016-01-19 23:44:02 DEBUG DoubleConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+2016-01-19 23:44:02 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+2016-01-19 23:44:02 DEBUG FloatConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+2016-01-19 23:44:02 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+2016-01-19 23:44:02 DEBUG IntegerConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+2016-01-19 23:44:02 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+2016-01-19 23:44:02 DEBUG LongConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+2016-01-19 23:44:02 DEBUG LongConverter:171 -     Converted to Long value '0'
+2016-01-19 23:44:02 DEBUG ShortConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+2016-01-19 23:44:02 DEBUG ShortConverter:171 -     Converted to Short value '0'
+2016-01-19 23:44:02 DEBUG BigDecimalConverter:353 - Setting default value: 0.0
+2016-01-19 23:44:02 DEBUG BigDecimalConverter:140 - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+2016-01-19 23:44:02 DEBUG BigDecimalConverter:162 -     No conversion required, value is already a BigDecimal
+2016-01-19 23:44:02 DEBUG BigIntegerConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG BigIntegerConverter:140 - Converting 'BigInteger' value '0' to type 'BigInteger'
+2016-01-19 23:44:02 DEBUG BigIntegerConverter:162 -     No conversion required, value is already a BigInteger
+2016-01-19 23:44:02 DEBUG BooleanConverter:353 - Setting default value: false
+2016-01-19 23:44:02 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+2016-01-19 23:44:02 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+2016-01-19 23:44:02 DEBUG ByteConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+2016-01-19 23:44:02 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+2016-01-19 23:44:02 DEBUG CharacterConverter:353 - Setting default value:  
+2016-01-19 23:44:02 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+2016-01-19 23:44:02 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+2016-01-19 23:44:02 DEBUG DoubleConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+2016-01-19 23:44:02 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+2016-01-19 23:44:02 DEBUG FloatConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+2016-01-19 23:44:02 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+2016-01-19 23:44:02 DEBUG IntegerConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+2016-01-19 23:44:02 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+2016-01-19 23:44:02 DEBUG LongConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+2016-01-19 23:44:02 DEBUG LongConverter:171 -     Converted to Long value '0'
+2016-01-19 23:44:02 DEBUG ShortConverter:353 - Setting default value: 0
+2016-01-19 23:44:02 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+2016-01-19 23:44:02 DEBUG ShortConverter:171 -     Converted to Short value '0'
+2016-01-19 23:44:02 DEBUG StringConverter:353 - Setting default value: 
+2016-01-19 23:44:02 DEBUG StringConverter:140 - Converting 'String' value '' to type 'String'
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Z@427b08ba
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'boolean[]' value '[Z@427b08ba' to type 'boolean[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a boolean[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [B@1a97eec4
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'byte[]' value '[B@1a97eec4' to type 'byte[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a byte[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [C@40e4d1b7
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'char[]' value '[C@40e4d1b7' to type 'char[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a char[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [D@398574c8
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'double[]' value '[D@398574c8' to type 'double[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a double[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [F@2d285de9
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'float[]' value '[F@2d285de9' to type 'float[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a float[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [I@11797e27
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'int[]' value '[I@11797e27' to type 'int[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a int[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [J@1f6f4b05
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'long[]' value '[J@1f6f4b05' to type 'long[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a long[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [S@1aba6f2d
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'short[]' value '[S@1aba6f2d' to type 'short[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a short[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigDecimal;@78dfa1ed
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@78dfa1ed' to type 'BigDecimal[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigDecimal[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigInteger;@71136646
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@71136646' to type 'BigInteger[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigInteger[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Boolean;@319a336b
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@319a336b' to type 'Boolean[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Boolean[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Byte;@48f7c8cb
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Byte[]' value '[Ljava.lang.Byte;@48f7c8cb' to type 'Byte[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Byte[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Character;@2d0ef19b
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Character[]' value '[Ljava.lang.Character;@2d0ef19b' to type 'Character[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Character[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Double;@12f8ee62
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Double[]' value '[Ljava.lang.Double;@12f8ee62' to type 'Double[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Double[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Float;@47aeb8e6
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Float[]' value '[Ljava.lang.Float;@47aeb8e6' to type 'Float[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Float[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Integer;@6f1cf8ad
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Integer[]' value '[Ljava.lang.Integer;@6f1cf8ad' to type 'Integer[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Integer[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Long;@6ac97f59
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Long[]' value '[Ljava.lang.Long;@6ac97f59' to type 'Long[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Long[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Short;@148d015
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Short[]' value '[Ljava.lang.Short;@148d015' to type 'Short[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Short[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.String;@1c6cdbec
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'String[]' value '[Ljava.lang.String;@1c6cdbec' to type 'String[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a String[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Class;@4710ad01
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Class[]' value '[Ljava.lang.Class;@4710ad01' to type 'Class[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Class[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Date;@1d2580e4
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Date[]' value '[Ljava.util.Date;@1d2580e4' to type 'Date[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Date[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Calendar;@30c89de5
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'Calendar[]' value '[Ljava.util.Calendar;@30c89de5' to type 'Calendar[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a Calendar[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.io.File;@559167e8
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'java.io.File[]' value '[Ljava.io.File;@559167e8' to type 'java.io.File[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.io.File[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Date;@e41210d
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@e41210d' to type 'java.sql.Date[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Date[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Time;@4e73e6cd
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@4e73e6cd' to type 'java.sql.Time[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Time[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Timestamp;@6312702b
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@6312702b' to type 'java.sql.Timestamp[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Timestamp[]
+2016-01-19 23:44:02 DEBUG ArrayConverter:353 - Setting default value: [Ljava.net.URL;@168ef985
+2016-01-19 23:44:02 DEBUG ArrayConverter:140 - Converting 'java.net.URL[]' value '[Ljava.net.URL;@168ef985' to type 'java.net.URL[]'
+2016-01-19 23:44:02 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.net.URL[]
+2016-01-19 23:44:02 DEBUG JRBaseFiller:1197 - Fill 1: adding page 1
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:301 - Fill 1: title at 20
+2016-01-19 23:44:02 DEBUG SimpleTextLineWrapper:302 - creating element font infos cache of size 2000
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:345 - font java.awt.Font[family=SansSerif,name=SansSerif,style=bold,size=34] has complex layout false, leading 1.1123047
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 34.0, style: 1} and element 3d6026bb-ad2b-4237-91a8-f511f42ac7dc
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 234.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=bold,size=34]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:567 - exact line break index measured at 9
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 177.603515625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:345 - font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=14] has complex layout false, leading 0.4580078
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 14.0, style: 0} and element c7262b5f-e72b-4bee-9c16-ddc5563bf0d3
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 3 in width 180.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=14]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:567 - exact line break index measured at 3
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 3 at width 29.55859375
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateFrame@69aebd29
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@685a0883
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@62d89480
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1116770232}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:377 - Fill 1: page header at 92
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 701770383}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:459 - Fill 1: column header at 105
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:345 - font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10] has complex layout false, leading 0.32714844
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element b2888bdb-45e7-4043-9888-5e2ad7f3f032
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 3 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:567 - exact line break index measured at 3
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 3 at width 11.1181640625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element ecdccc1f-2190-4e61-ae2c-629958251036
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 6 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 6 at width 35.56640625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element a83c1eb9-4c52-496c-8c3f-979955452c6b
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 40.5810546875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 91235fc3-bbf1-41f3-851d-0436aff2340d
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 41.6796875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 7c9ce477-7ee1-415b-9965-89bf2e52a153
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 10 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 10 at width 47.802734375
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateLine@4c4da2f3
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@f2e3abd
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@f2e3abd for object net.sf.jasperreports.engine.fill.JRTemplateText@2fd14d8c
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@f2e3abd for object net.sf.jasperreports.engine.fill.JRTemplateText@8edea70
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@f2e3abd for object net.sf.jasperreports.engine.fill.JRTemplateText@49e3c29e
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@f2e3abd for object net.sf.jasperreports.engine.fill.JRTemplateText@434e25e1
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 994691633}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 126
+2016-01-19 23:44:02 DEBUG JRFillTextField:680 - af76e49c-5d14-4ea0-b384-f34f0d05820f: pattern timezone property net.sf.jasperreports.sql.date.pattern.timezone is null, resolved to null
+2016-01-19 23:44:02 DEBUG JRFillTextField:680 - af76e49c-5d14-4ea0-b384-f34f0d05820f: pattern timezone property net.sf.jasperreports.pattern.timezone is null, resolved to null
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2004-05-05 (java.sql.Date/1083708000000) to 5/5/04 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 8026bc24-9db1-404e-9c0b-d02636fc93e4
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element b51fb0dd-ed37-4e42-8393-3641a1e54b79
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 4 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 4 at width 18.3447265625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 6d296b9b-54b1-494f-9fca-bf273ba46f87
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 16 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 16 at width 80.0439453125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element fd7a13e4-92aa-4cac-b665-059472ec82af
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 11 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 11 at width 51.689453125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element af76e49c-5d14-4ea0-b384-f34f0d05820f
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateLine@989c09e
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@15a74f84
+2016-01-19 23:44:02 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@15a74f84 for (null, {java.lang.Integer, null,null,null,null})
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@2bf7a4f8
+2016-01-19 23:44:02 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@2bf7a4f8 for (null, null)
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@2bf7a4f8 for object net.sf.jasperreports.engine.fill.JRTemplateText@3642495f
+2016-01-19 23:44:02 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@2bf7a4f8 for (null, null)
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@2bf7a4f8 for object net.sf.jasperreports.engine.fill.JRTemplateText@43649898
+2016-01-19 23:44:02 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@2bf7a4f8 for (null, null)
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@7e5fa01d
+2016-01-19 23:44:02 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@7e5fa01d for (null, {java.sql.Date, M/d/yy h:mm a,null,null,null})
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 147
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2005-04-27 (java.sql.Date/1114552800000) to 4/27/05 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 31.6845703125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 14 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 14 at width 68.9453125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 76.15234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 16 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 16 at width 78.9453125
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 168
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2004-10-07 (java.sql.Date/1097100000000) to 10/7/04 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 35.576171875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 13 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 13 at width 57.2412109375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 39.4677734375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 16 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 16 at width 78.9453125
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 189
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-01 (java.sql.Date/1154383200000) to 8/1/06 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 31.6845703125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 43.9013671875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 11 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 11 at width 55.01953125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 210
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2002-10-30 (java.sql.Date/1035932400000) to 10/30/02 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 6 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 6 at width 28.90625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 13 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 13 at width 68.9404296875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 13 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 13 at width 67.2705078125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 17 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 17 at width 84.5068359375
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 231
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-01 (java.sql.Date/1154383200000) to 8/1/06 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 6 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 6 at width 28.896484375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 14 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 14 at width 72.2607421875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 35.0244140625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 252
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-05 (java.sql.Date/1154728800000) to 8/5/06 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 33.916015625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 12 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 12 at width 63.3447265625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 24 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 24 at width 108.9501953125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 273
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-08 (java.sql.Date/1154988000000) to 8/8/06 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 4 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 4 at width 22.79296875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 8 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 8 at width 42.8076171875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 8 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 8 at width 38.349609375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 294
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-07 (java.sql.Date/1154901600000) to 8/7/06 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 2 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 2 at width 11.123046875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 4 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 4 at width 18.9013671875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 46.1376953125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 8 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 8 at width 38.9208984375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:705 - Fill 1: detail at 315
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2015-12-06 (java.sql.Date/1449356400000) to 12/6/15 12:00 AM
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 2 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 2 at width 11.123046875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 6 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 6 at width 26.6748046875
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 13 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 13 at width 65.5859375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 14 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 14 at width 66.15234375
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 16 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 16 at width 78.9453125
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 620563088}
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 72423586}
+2016-01-19 23:44:02 DEBUG JRVerticalFiller:990 - Fill 1: page footer at 805
+2016-01-19 23:44:02 DEBUG JRFillTextField:680 - 1a3bed5e-f335-477f-853d-7ef0a852719d: pattern timezone property net.sf.jasperreports.pattern.timezone is null, resolved to null
+2016-01-19 23:44:02 DEBUG JRFillTextField:602 - 1a3bed5e-f335-477f-853d-7ef0a852719d: formatted value Tue Jan 19 23:44:02 CET 2016 (java.util.Date/1453243442429) to Tuesday 19 January 2016
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 8064ad02-690a-409b-98b2-e8f6a76f8896
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 515.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 42.8125
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 1a3bed5e-f335-477f-853d-7ef0a852719d
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 23 in width 100.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 23 at width 115.634765625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 18 at width 90.6103515625
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 19 to 23 in width 100.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 23 at width 22.24609375
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@1d74f93e
+2016-01-19 23:44:02 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@1d74f93e for (null, null)
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@1130ed80
+2016-01-19 23:44:02 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@1130ed80 for (null, null)
+2016-01-19 23:44:02 DEBUG BaseReportFiller:760 - Adding evaluation of net.sf.jasperreports.engine.fill.JRTemplatePrintText@4610c772 by net.sf.jasperreports.engine.fill.JRFillTextField@7796314d for evaluation {type: REPORT, group: null, band: 0}
+2016-01-19 23:44:02 DEBUG DelayedFillActions:185 - 1 adding delayed action delayed evaluation {element: net.sf.jasperreports.engine.fill.JRFillTextField@7796314d, printElement: net.sf.jasperreports.engine.fill.JRTemplatePrintText@4610c772} at {type: REPORT, group: null, band: 0}, key page net.sf.jasperreports.engine.base.JRBasePrintPage@210ce673, index 0
+2016-01-19 23:44:02 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@5785c569
+2016-01-19 23:44:02 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@5785c569 for (null, {java.util.Date, EEEEE dd MMMMM yyyy,null,null,null})
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 439113909}
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: COLUMN, group: null, band: 0}
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: PAGE, group: null, band: 0}
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: REPORT, group: null, band: 0}
+2016-01-19 23:44:02 DEBUG DelayedFillActions:254 - 1 running actions for page net.sf.jasperreports.engine.base.JRBasePrintPage@210ce673 at 0
+2016-01-19 23:44:02 DEBUG ElementEvaluationAction:56 - resolving element net.sf.jasperreports.engine.fill.JRTemplatePrintText@4610c772 by net.sf.jasperreports.engine.fill.JRFillTextField@7796314d on {type: REPORT, group: null, band: 0}
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element eada45a8-eca8-4e0d-a4d2-ed8584bfbb6e
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 2 in width 40.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:02 TRACE SimpleTextLineWrapper:736 - measured to index 2 at width 8.33984375
+2016-01-19 23:44:02 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: MASTER, group: null, band: 0}
+2016-01-19 23:44:02 DEBUG JRBaseFiller:568 - Fill 1: ended
+2016-01-19 23:44:11 DEBUG BaseReportFiller:147 - Fill 1: created for socios-report
+2016-01-19 23:44:11 DEBUG BaseReportFiller:186 - created delayed actions 1 for filler 1
+2016-01-19 23:44:11 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: BACKGROUND} for band 871911944
+2016-01-19 23:44:11 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: TITLE} for band 1671400522
+2016-01-19 23:44:11 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: PAGE_HEADER} for band 1958981833
+2016-01-19 23:44:11 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: COLUMN_HEADER} for band 1250352503
+2016-01-19 23:44:11 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: DETAIL} for band 1063317366
+2016-01-19 23:44:11 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: COLUMN_FOOTER} for band 413164278
+2016-01-19 23:44:11 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: PAGE_FOOTER} for band 1915652594
+2016-01-19 23:44:11 DEBUG JRFillBand:192 - Origin {reportName: null, groupName: null,bandType: SUMMARY} for band 2056425694
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:103 - Filler 1 - pageHeight: 842, columnFooterOffsetY: 805, lastPageColumnFooterOffsetY: 822
+2016-01-19 23:44:11 DEBUG JRBaseFiller:506 - Fill 1: filling report
+2016-01-19 23:44:11 DEBUG JRBaseFiller:1197 - Fill 1: adding page 1
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:301 - Fill 1: title at 20
+2016-01-19 23:44:11 DEBUG SimpleTextLineWrapper:302 - creating element font infos cache of size 2000
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:345 - font java.awt.Font[family=SansSerif,name=SansSerif,style=bold,size=34] has complex layout false, leading 1.1123047
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 34.0, style: 1} and element 3d6026bb-ad2b-4237-91a8-f511f42ac7dc
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 234.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=bold,size=34]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:567 - exact line break index measured at 9
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 177.603515625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:345 - font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=14] has complex layout false, leading 0.4580078
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 14.0, style: 0} and element c7262b5f-e72b-4bee-9c16-ddc5563bf0d3
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 3 in width 180.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=14]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:567 - exact line break index measured at 3
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 3 at width 29.55859375
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateFrame@56bc40b6
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@516eda19
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@326121a0
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1671400522}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:377 - Fill 1: page header at 92
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1958981833}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:459 - Fill 1: column header at 105
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:345 - font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10] has complex layout false, leading 0.32714844
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element b2888bdb-45e7-4043-9888-5e2ad7f3f032
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 3 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:567 - exact line break index measured at 3
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 3 at width 11.1181640625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element ecdccc1f-2190-4e61-ae2c-629958251036
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 6 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 6 at width 35.56640625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element a83c1eb9-4c52-496c-8c3f-979955452c6b
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 40.5810546875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 91235fc3-bbf1-41f3-851d-0436aff2340d
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 41.6796875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 7c9ce477-7ee1-415b-9965-89bf2e52a153
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 10 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 10 at width 47.802734375
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateLine@32a2e982
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@6d9a6441
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@6d9a6441 for object net.sf.jasperreports.engine.fill.JRTemplateText@15cfd851
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@6d9a6441 for object net.sf.jasperreports.engine.fill.JRTemplateText@6417ad4
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@6d9a6441 for object net.sf.jasperreports.engine.fill.JRTemplateText@27835149
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@6d9a6441 for object net.sf.jasperreports.engine.fill.JRTemplateText@7b429b9f
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1250352503}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 126
+2016-01-19 23:44:11 DEBUG JRFillTextField:680 - af76e49c-5d14-4ea0-b384-f34f0d05820f: pattern timezone property net.sf.jasperreports.sql.date.pattern.timezone is null, resolved to null
+2016-01-19 23:44:11 DEBUG JRFillTextField:680 - af76e49c-5d14-4ea0-b384-f34f0d05820f: pattern timezone property net.sf.jasperreports.pattern.timezone is null, resolved to null
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2004-05-05 (java.sql.Date/1083708000000) to 5/5/04 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 8026bc24-9db1-404e-9c0b-d02636fc93e4
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element b51fb0dd-ed37-4e42-8393-3641a1e54b79
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 4 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 4 at width 18.3447265625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 6d296b9b-54b1-494f-9fca-bf273ba46f87
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 16 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 16 at width 80.0439453125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element fd7a13e4-92aa-4cac-b665-059472ec82af
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 11 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 11 at width 51.689453125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element af76e49c-5d14-4ea0-b384-f34f0d05820f
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateLine@36f314f8
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@5c2147cb
+2016-01-19 23:44:11 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@5c2147cb for (null, {java.lang.Integer, null,null,null,null})
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@2c2c68e9
+2016-01-19 23:44:11 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@2c2c68e9 for (null, null)
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@2c2c68e9 for object net.sf.jasperreports.engine.fill.JRTemplateText@48112b54
+2016-01-19 23:44:11 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@2c2c68e9 for (null, null)
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:91 - Found existing instance net.sf.jasperreports.engine.fill.JRTemplateText@2c2c68e9 for object net.sf.jasperreports.engine.fill.JRTemplateText@4f2a7490
+2016-01-19 23:44:11 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@2c2c68e9 for (null, null)
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@300eff16
+2016-01-19 23:44:11 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@300eff16 for (null, {java.sql.Date, M/d/yy h:mm a,null,null,null})
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 147
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2005-04-27 (java.sql.Date/1114552800000) to 4/27/05 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 31.6845703125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 14 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 14 at width 68.9453125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 76.15234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 16 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 16 at width 78.9453125
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 168
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2004-10-07 (java.sql.Date/1097100000000) to 10/7/04 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 35.576171875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 13 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 13 at width 57.2412109375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 39.4677734375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 16 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 16 at width 78.9453125
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 189
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-01 (java.sql.Date/1154383200000) to 8/1/06 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 31.6845703125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 43.9013671875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 11 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 11 at width 55.01953125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 210
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2002-10-30 (java.sql.Date/1035932400000) to 10/30/02 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 6 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 6 at width 28.90625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 13 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 13 at width 68.9404296875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 13 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 13 at width 67.2705078125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 17 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 17 at width 84.5068359375
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 231
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-01 (java.sql.Date/1154383200000) to 8/1/06 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 6 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 6 at width 28.896484375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 14 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 14 at width 72.2607421875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 35.0244140625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 252
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-05 (java.sql.Date/1154728800000) to 8/5/06 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 7 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 7 at width 33.916015625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 12 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 12 at width 63.3447265625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 24 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 24 at width 108.9501953125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 273
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-08 (java.sql.Date/1154988000000) to 8/8/06 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 1 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 1 at width 5.5615234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 4 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 4 at width 22.79296875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 8 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 8 at width 42.8076171875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 8 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 8 at width 38.349609375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 294
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2006-08-07 (java.sql.Date/1154901600000) to 8/7/06 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 2 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 2 at width 11.123046875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 4 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 4 at width 18.9013671875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 46.1376953125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 8 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 8 at width 38.9208984375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 15 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 15 at width 73.3837890625
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:705 - Fill 1: detail at 315
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - af76e49c-5d14-4ea0-b384-f34f0d05820f: formatted value 2015-12-06 (java.sql.Date/1449356400000) to 12/6/15 12:00 AM
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 2 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 2 at width 11.123046875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 6 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 6 at width 26.6748046875
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 13 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 13 at width 65.5859375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 14 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 14 at width 66.15234375
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 16 in width 111.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 16 at width 78.9453125
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1063317366}
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 413164278}
+2016-01-19 23:44:11 DEBUG JRVerticalFiller:990 - Fill 1: page footer at 805
+2016-01-19 23:44:11 DEBUG JRFillTextField:680 - 1a3bed5e-f335-477f-853d-7ef0a852719d: pattern timezone property net.sf.jasperreports.pattern.timezone is null, resolved to null
+2016-01-19 23:44:11 DEBUG JRFillTextField:602 - 1a3bed5e-f335-477f-853d-7ef0a852719d: formatted value Tue Jan 19 23:44:11 CET 2016 (java.util.Date/1453243451539) to Tuesday 19 January 2016
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 8064ad02-690a-409b-98b2-e8f6a76f8896
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 9 in width 515.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 9 at width 42.8125
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element 1a3bed5e-f335-477f-853d-7ef0a852719d
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 23 in width 100.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 23 at width 115.634765625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 18 at width 90.6103515625
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 19 to 23 in width 100.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 23 at width 22.24609375
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@7760b783
+2016-01-19 23:44:11 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@7760b783 for (null, null)
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@55206928
+2016-01-19 23:44:11 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@55206928 for (null, null)
+2016-01-19 23:44:11 DEBUG BaseReportFiller:760 - Adding evaluation of net.sf.jasperreports.engine.fill.JRTemplatePrintText@5b0a7910 by net.sf.jasperreports.engine.fill.JRFillTextField@c923822 for evaluation {type: REPORT, group: null, band: 0}
+2016-01-19 23:44:11 DEBUG DelayedFillActions:185 - 1 adding delayed action delayed evaluation {element: net.sf.jasperreports.engine.fill.JRFillTextField@c923822, printElement: net.sf.jasperreports.engine.fill.JRTemplatePrintText@5b0a7910} at {type: REPORT, group: null, band: 0}, key page net.sf.jasperreports.engine.base.JRBasePrintPage@471dd46, index 0
+2016-01-19 23:44:11 DEBUG DeduplicableRegistry:84 - Added object net.sf.jasperreports.engine.fill.JRTemplateText@546cd6f8
+2016-01-19 23:44:11 DEBUG JRFillTextField:510 - created net.sf.jasperreports.engine.fill.JRTemplateText@546cd6f8 for (null, {java.util.Date, EEEEE dd MMMMM yyyy,null,null,null})
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: BAND, group: null, band: 1915652594}
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: COLUMN, group: null, band: 0}
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: PAGE, group: null, band: 0}
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: REPORT, group: null, band: 0}
+2016-01-19 23:44:11 DEBUG DelayedFillActions:254 - 1 running actions for page net.sf.jasperreports.engine.base.JRBasePrintPage@471dd46 at 0
+2016-01-19 23:44:11 DEBUG ElementEvaluationAction:56 - resolving element net.sf.jasperreports.engine.fill.JRTemplatePrintText@5b0a7910 by net.sf.jasperreports.engine.fill.JRFillTextField@c923822 on {type: REPORT, group: null, band: 0}
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:282 - creating element font info for {family: SansSerif, size: 10.0, style: 0} and element eada45a8-eca8-4e0d-a4d2-ed8584bfbb6e
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:420 - paragraph start at 0, truncate at char false, LTR true, exact measure false
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:509 - simple line measurement at 0 to 2 in width 40.0 with font java.awt.Font[family=SansSerif,name=SansSerif,style=plain,size=10]
+2016-01-19 23:44:11 TRACE SimpleTextLineWrapper:736 - measured to index 2 at width 8.33984375
+2016-01-19 23:44:11 DEBUG DelayedFillActions:227 - 1 running delayed actions on {type: MASTER, group: null, band: 0}
+2016-01-19 23:44:11 DEBUG JRBaseFiller:568 - Fill 1: ended
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:44:54 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:44:57 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:57 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:57 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:57 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:57 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:57 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:44:59 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:02 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:07 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:09 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:10 DEBUG LoansTableModel:153 - El prestamo 9 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 6 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 7 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:11 DEBUG LoansTableModel:153 - El prestamo 8 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 1 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 2 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización
+2016-01-19 23:45:13 DEBUG LoansTableModel:153 - El prestamo 3 no tiene fecha de finalización

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="debug" strict="true" name="XMLConfigTest">
+                 
+  <Properties>
+        <Property name="twitterLog">log/crawler-twitter.log</Property>
+        <Property name="clinicalLog">log/crawler-clinical.log</Property>
+  </Properties>
+ 
+    
+  <Appenders>
+        <Appender type="Console" name="STDOUT">
+          <Layout type="PatternLayout" pattern="%m%n"/>         
+        </Appender>
+
+        <RollingFile name="RollingFile-twitter" fileName="${twitterLog}"
+                     filePattern="log/$${date:yyyy-MM}/crawlertwitter-%d{MM-dd-yyyy}-%i.log.gz">
+          <PatternLayout>
+            <Pattern>%d %p %C{1} %m%n</Pattern>
+          </PatternLayout>
+          <Policies>
+            <TimeBasedTriggeringPolicy />
+            <SizeBasedTriggeringPolicy size="10 MB"/>
+          </Policies>
+          <DefaultRolloverStrategy max="10"/>
+        </RollingFile>  
+        <RollingFile name="RollingFile-clinical" fileName="${clinicalLog}"
+                     filePattern="log/$${date:yyyy-MM}/crawler-clinical-%d{MM-dd-yyyy}-%i.log.gz">
+          <PatternLayout>
+            <Pattern>%d %p %C{1} %m%n</Pattern>
+          </PatternLayout>
+          <Policies>
+            <TimeBasedTriggeringPolicy />
+            <SizeBasedTriggeringPolicy size="10 MB"/>
+          </Policies>
+          <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <!-- <List name="List"></List> -->     
+  </Appenders>
+    
+      <Loggers>
+        <Logger name="uned.java2016.apitwitter.twitter.crawler.Launcher" level="debug" additivity="false">
+          <AppenderRef ref="STDOUT"/>
+          <AppenderRef ref="RollingFile-twitter"/>
+        </Logger>                  
+        <Logger name="uned.java2016.apitwitter.clinical.crawler.Crawler" level="debug" additivity="false">
+          <AppenderRef ref="STDOUT"/>
+          <AppenderRef ref="RollingFile-clinical"/>
+        </Logger>
+        <Logger name="uned.java2016.apitwitter.clinical.crawler.util.Config" level="debug" additivity="false">
+          <AppenderRef ref="STDOUT"/>
+          <AppenderRef ref="RollingFile-clinical"/>
+        </Logger>                      
+        <Root level="trace">
+          <AppenderRef ref="List"/>
+        </Root>
+      </Loggers>
+    
+    </Configuration>

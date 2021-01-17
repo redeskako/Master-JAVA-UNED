@@ -1,0 +1,117 @@
+     #header {
+      position: fixed; width: 75%; height: 25%;
+      top: 0; right: 0; bottom: auto; left: 25%;
+      background-color: #565b55;
+      }
+      #sidebar {
+      position: fixed; width: 25%; height: 100%;
+      top: 0; right: auto; bottom: 100px; left: 0;
+      background-color:#565b55;
+      }
+      #main {
+      position: fixed; width: 75%; height:75%;
+      top: 25%; right: 0; bottom: 100px; left:  25%;
+      background-image: url("aura.jpg");
+      }
+      #footer {
+      position: fixed; width: 25%; height: 10%;
+      top: auto; right: 0; bottom: 0; left: 0%; 
+       background-color:#565b55;
+      }
+      #meses {
+      position: fixed; width: 100%; height:100%;
+      background-color:#F9D299 ;
+      }
+
+      
+      text1{
+      font-style: italic;
+	  font-weight: bold;
+	  font-size: 12px;
+	  font-family: arial, sans-serif;
+	  color:#f9ed8b;
+      }
+      text2{
+      font-style: italic;
+	  font-weight: bold;
+	  font-size: 16px;
+	  font-family: arial, sans-serif;
+	  color:#ff8d42;
+      }
+      
+      text3{
+      font-style: italic;
+	  font-weight: bold;
+	  font-size: 24px;
+	  font-family: arial, sans-serif;
+	  color:#f9ed8b;
+      }
+      
+      
+      a:link{color:#f9ed8b;}
+      a:visited{color:yellow;}
+      
+table.paginado{
+  border-collapse: collapse;
+  border: 1px solid #800000;
+  font: normal 11px verdana, arial, helvetica, sans-serif;
+  color: darkred;
+  background: #DEB887;
+  }
+td.paginado{color:darkgreen;}
+
+table.mod1{
+  border-collapse: collapse;	
+  border: 2px solid #ff8d42;
+  font: normal 12px arial, helvetica, sans-serif;
+  color: #ff8d42;
+  background: #565b55;
+  }
+caption.mod1 {
+  text-align: left;
+  border: 1px solid #ff8d42;
+  font: bold 18px arial, helvetica, sans-serif;
+  color: #f9ed8b;
+  background:#565b55;
+  }
+th.mod1{
+  border: 1px solid #ff8d42;
+  padding: .8em;
+  font: bold 18px arial, helvetica, sans-serif;
+  color:#ff8d42 ;
+  background:#565b55;
+  }
+td.mod1{
+  border: 1px dashed  #ff8d42;
+  font: bold 14px arial, helvetica, sans-serif; 
+  padding: .8em;
+  color: white;
+  }
+       
+table.mod2{
+  border-collapse: collapse;
+  border: 1px solid #800000;
+  font: normal 11px verdana, arial, helvetica, sans-serif;
+  color: darkred;
+  background: #DEB887;
+  }
+caption.mod2 {
+  text-align: left;
+  border: 1px solid #800000;
+  font: normal 12px verdana, arial, helvetica, sans-serif;
+  color: pink;
+  background:#B22222;
+  }
+td.mod2{
+  border: 1px solid #800000;
+  padding: .8em;
+  font: bold 16px arial, helvetica, sans-serif;
+  color:#F9D299 ;
+  background:#B22222;
+  }
+tr.mod2{
+  border: 1px dashed  #800000;
+  font: bold;
+  padding: .8em;
+  color: #B22222;
+  } 

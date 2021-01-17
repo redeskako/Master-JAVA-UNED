@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<h:head>
+	<title>ICEfaces</title>
+	<link rel="stylesheet" type="text/css"
+		href="./xmlhttp/css/rime/rime.css" />
+</h:head>
+<h:body styleClass="ice-skin-rime">
+	<h:form id="form">
+		<ace:panel header="Países">
+			<ace:dataTable id="tablaPaises" value="#{beanPaises.data}"
+				var="pais" paginator="true" paginatorPosition="bottom" rows="10"
+				lazy="true">
+				<ace:column id="codigo" headerText="Código">
+					<h:outputText id="codigoCell" value="#{pais.codigo}" />
+				</ace:column>
+				<ace:column id="nombre" headerText="Nombre">
+					<h:outputText id="nombreCell" value="#{pais.nombre}" />
+				</ace:column>
+			</ace:dataTable>
+		</ace:panel>
+	</h:form>
+</h:body>
+</html>

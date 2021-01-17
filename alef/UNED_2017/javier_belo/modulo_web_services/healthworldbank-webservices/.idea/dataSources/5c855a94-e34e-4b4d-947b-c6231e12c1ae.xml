@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="wildfly@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.1">
+    <root id="1"/>
+    <database id="2" parent="1" name="wildfly">
+      <ObjectId>57541</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-04-24.13:04:37.909</IntrospectionTimestamp>
+      <IntrospectionStateNumber>24245</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>12349</ObjectId>
+    </schema>
+    <table id="9" parent="3" name="userroles">
+      <ObjectId>57906</ObjectId>
+      <StateNumber>24245</StateNumber>
+    </table>
+    <table id="10" parent="3" name="users">
+      <ObjectId>57877</ObjectId>
+      <StateNumber>24230</StateNumber>
+    </table>
+    <column id="11" parent="9" name="username">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>24245</StateNumber>
+    </column>
+    <column id="12" parent="9" name="role">
+      <Position>2</Position>
+      <DataType>varchar(32)|0</DataType>
+      <StateNumber>24245</StateNumber>
+    </column>
+    <column id="13" parent="10" name="username">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>24230</StateNumber>
+    </column>
+    <column id="14" parent="10" name="passwd">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>24230</StateNumber>
+    </column>
+    <index id="15" parent="10" name="users_pkey">
+      <ObjectId>57883</ObjectId>
+      <ColNames>username</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="16" parent="10" name="users_pkey">
+      <ObjectId>57884</ObjectId>
+      <ColNames>username</ColNames>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>recursos_alpha</display-name>
+  	<servlet>
+		<description>
+		</description>
+		<display-name>AccesoUsuario</display-name>
+		<servlet-name>AccesoUsuario</servlet-name>
+		<servlet-class>es.uned2014.recursosAlpha.servlets.AccesoUsuario</servlet-class>
+	</servlet>
+	  	<servlet>
+		<description>
+		</description>
+		<display-name>CambioPerfil</display-name>
+		<servlet-name>CambioPerfil</servlet-name>
+		<servlet-class>es.uned2014.recursosAlpha.servlets.CambioPerfil</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SalidaUsuario</display-name>
+		<servlet-name>SalidaUsuario</servlet-name>
+		<servlet-class>es.uned2014.recursosAlpha.servlets.SalidaUsuario</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>MisPeticionesReservas</display-name>
+		<servlet-name>MisPeticionesReservas</servlet-name>
+		<servlet-class>es.uned2014.recursosAlpha.servlets.MisPeticionesReservas</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>AccionesRecursos</display-name>
+		<servlet-name>AccionesRecursos</servlet-name>
+		<servlet-class>es.uned2014.recursosAlpha.servlets.AccionesRecursos</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>AccionesReservas</display-name>
+		<servlet-name>AccionesReservas</servlet-name>
+		<servlet-class>es.uned2014.recursosAlpha.servlets.AccionesReservas</servlet-class>		
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>AccionesUsuarios</display-name>
+		<servlet-name>AccionesUsuarios</servlet-name>
+		<servlet-class>es.uned2014.recursosAlpha.servlets.AccionesUsuarios</servlet-class>		
+	</servlet>	
+	<servlet>
+		<description></description>
+		<display-name>Tareas</display-name>
+		<servlet-name>Tareas</servlet-name>
+		<servlet-class>es.uned2014.recursosAlpha.servlets.Tareas</servlet-class>		
+	</servlet>	
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>AccesoUsuario</servlet-name>
+		<url-pattern>/AccesoUsuario</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CambioPerfil</servlet-name>
+		<url-pattern>/CambioPerfil</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SalidaUsuario</servlet-name>
+		<url-pattern>/SalidaUsuario</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MisPeticionesReservas</servlet-name>
+		<url-pattern>/MisPeticionesReservas</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AccionesRecursos</servlet-name>
+		<url-pattern>/AccionesRecursos</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AccionesReservas</servlet-name>
+		<url-pattern>/AccionesReservas</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AccionesUsuarios</servlet-name>
+		<url-pattern>/AccionesUsuarios</url-pattern>
+	</servlet-mapping>	
+	<servlet-mapping>
+		<servlet-name>Tareas</servlet-name>
+		<url-pattern>/Tareas</url-pattern>
+	</servlet-mapping>
+	  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+</web-app>

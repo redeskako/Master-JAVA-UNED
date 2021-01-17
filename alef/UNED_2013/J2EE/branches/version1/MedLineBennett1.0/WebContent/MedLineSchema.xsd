@@ -1,0 +1,101 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="health-topics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="health-topic" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="also-called" maxOccurs="unbounded" minOccurs="0"/>
+              <xs:element type="xs:string" name="full-summary"/>
+              <xs:element name="group" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+                      <xs:attribute type="xs:byte" name="id" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="language-mapped-topic">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+                      <xs:attribute type="xs:short" name="id" use="optional"/>
+                      <xs:attribute type="xs:string" name="language" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="mesh-heading" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="descriptor">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="id" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="other-language" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="vernacular-name" use="optional"/>
+                      <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="primary-institute" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="related-topic" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+                      <xs:attribute type="xs:short" name="id" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="see-reference" maxOccurs="unbounded" minOccurs="0"/>
+              <xs:element name="site" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="information-category" maxOccurs="unbounded" minOccurs="0"/>
+                    <xs:element type="xs:string" name="organization" maxOccurs="unbounded" minOccurs="0"/>
+                    <xs:element type="xs:string" name="standard-description" maxOccurs="unbounded" minOccurs="0"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="title" use="optional"/>
+                  <xs:attribute type="xs:string" name="url" use="optional"/>
+                  <xs:attribute type="xs:anyURI" name="language-mapped-url" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="title" use="optional"/>
+            <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+            <xs:attribute type="xs:short" name="id" use="optional"/>
+            <xs:attribute type="xs:string" name="language" use="optional"/>
+            <xs:attribute type="xs:string" name="date-created" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:short" name="total"/>
+      <xs:attribute type="xs:string" name="date-generated"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

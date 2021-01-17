@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+   Universidad Nacional de Educación a Distancia
+   Máster en Diseño y Desarrollo de Aplicaciones Web Dinámicas
+
+   Autor: Antonio Jesús Arquillos Álvarez
+          Paseo de San Isidro, 30
+          13600, Alcázar de San Juan
+          Ciudad Real
+ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.3-strict.dtd" lang="es" xml:lang="es">    
+  <head>
+    <!-- Zona de etiquetas META -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Antonio Jes&uacute;s Arquillos &Aacute;lvarez" />
+    <!-- Zona de título -->
+    <title></title>
+  </head>
+  <body>
+    <wicket:panel> 
+      <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" valign="top">
+            <h2><i><u><span wicket:id="titulo">Gesti&oacute;n Reservas</span></u></i></h2>          
+          </td>
+          <td valign="top">
+            <!-- menu -->
+            <table align="right" valign="top" border="1" cellspacing="0" cellpadding="5" rules="cols" frame="void">
+              <tr>
+                <td align="center" >
+                  <a href="#" wicket:id="enlaceCalendario">Calendario</a>
+                </td>
+                <td align="center" wicket:id="contenedorUsuarios">
+                  <a href="#" wicket:id="enlaceUsuarios">Usuarios</a>
+                </td>
+                <td align="center" wicket:id="contenedorRecursos">
+                  <a href="#" wicket:id="enlaceRecursos">Recursos</a>
+                </td>
+                <td align="center">
+                  <a href="#" wicket:id="enlaceReservas">Reservas 
+                    <span style="color: red" wicket:id="precisanSupervision"></span>
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- fin menu -->
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td align="right">
+            <a href="#" wicket:id="enlaceEditarUsuarioActual" style="font-weight: bold">
+              <span wicket:id="nombreUsuarioActual"></span>
+            </a> 
+            (<a href="#" wicket:id="enlaceLogout">Logout</a>)            
+          </td>
+        </tr>
+      </table>
+    </wicket:panel>
+  </body>
+</html>

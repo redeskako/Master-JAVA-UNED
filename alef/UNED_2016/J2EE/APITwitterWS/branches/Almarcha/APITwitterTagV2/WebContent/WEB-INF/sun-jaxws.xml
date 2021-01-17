@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">  
+  <endpoint  
+     name="NeighboursWS"  
+     implementation="uned.java2016.apitwitter.services.soap.neighbours.NeighbourServiceImpl"  
+     url-pattern="/services/soap/NeighboursWS"/> 
+  <endpoint  
+     name="ClinicalStudyWS"  
+     implementation="uned.java2016.apitwitter.services.soap.estudios.EstudioServiceImpl"  
+     url-pattern="/services/soap/ClinicalStudyWS"/> 
+</endpoints> 

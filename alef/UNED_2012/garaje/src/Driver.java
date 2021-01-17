@@ -1,0 +1,43 @@
+import java.util.*;
+
+import es.uned.master.java.*;
+
+public class Driver {
+	public static void main(String[] arg) {
+		/* Asignamos al tipo leyenda true porque queremos que nos pinte la
+		   cadena Garaje vacío que es lo primero que vamos a mostrar*/
+		boolean leyenda = true;
+
+		/* Inicializa un garaje de asignando colores de forma aleatoria
+		   Debe tener cada planta todos lo colores*/
+		Garaje g = new Garaje();
+		
+		// Mostramos la asignacion de colores a las plazas con el garaje vacío
+		g.pintarGaraje(leyenda);
+		
+		/* Si no caben más devuelve el valor de los coches que no ha podido
+		   aparcar
+		   Si devuelve un valor negativo (-1) es que el random ha sido 0, ningún
+		   coche a aparcar
+		   Calculo el número de vehículos a entrar de forma aleatoria*/
+		Random random = new Random();
+		int aleatorio = random.nextInt(100);
+		int sobra = g.entradaCoches(aleatorio);
+		leyenda = false;
+		
+		if (aleatorio > 0) {
+			// Entra más de un coche
+			System.out.println("Resultado de vehículos aparcados:\n");
+			g.pintarGaraje(leyenda);
+			System.out.println("Se han intentado aparcar " + aleatorio
+					+ " coches.");
+			if (sobra != 0) {
+				// Han sobrado coches.
+				System.out.println("No han cabido " + sobra + " coches");
+			}
+			
+		} else {
+			System.out.println("No hay coches");
+		}
+	}
+}

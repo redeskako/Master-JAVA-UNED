@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="hwb@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.3">
+    <root id="1"/>
+    <database id="2" parent="1" name="hwb">
+      <ObjectId>118982</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12641</ObjectId>
+    </database>
+    <database id="4" parent="1" name="main">
+      <ObjectId>16384</ObjectId>
+    </database>
+    <database id="5" parent="1" name="original_v2">
+      <ObjectId>21333</ObjectId>
+    </database>
+    <database id="6" parent="1" name="test">
+      <ObjectId>27034</ObjectId>
+    </database>
+    <database id="7" parent="1" name="wildfly">
+      <ObjectId>57541</ObjectId>
+    </database>
+    <schema id="8" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-07-27.14:43:31.576</IntrospectionTimestamp>
+      <IntrospectionStateNumber>315235</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="9" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="information_schema">
+      <ObjectId>12349</ObjectId>
+    </schema>
+    <table id="14" parent="8" name="country">
+      <ObjectId>119187</ObjectId>
+      <StateNumber>313398</StateNumber>
+    </table>
+    <table id="15" parent="8" name="data">
+      <ObjectId>119253</ObjectId>
+      <StateNumber>315235</StateNumber>
+    </table>
+    <table id="16" parent="8" name="health_indicator">
+      <ObjectId>119223</ObjectId>
+      <StateNumber>315235</StateNumber>
+    </table>
+    <column id="17" parent="14" name="country_code">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>72365</StateNumber>
+    </column>
+    <column id="18" parent="14" name="country_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>66859</StateNumber>
+    </column>
+    <index id="19" parent="14" name="country_pkey">
+      <ObjectId>124963</ObjectId>
+      <ColNames>country_code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="20" parent="14" name="country_pkey">
+      <ObjectId>124964</ObjectId>
+      <ColNames>country_code</ColNames>
+      <UnderlyingIndexName>country_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="21" parent="15" name="indicator_code">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>72694</StateNumber>
+    </column>
+    <column id="22" parent="15" name="country_code">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>72694</StateNumber>
+    </column>
+    <column id="23" parent="15" name="year">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>72694</StateNumber>
+    </column>
+    <column id="24" parent="15" name="percentage">
+      <Position>4</Position>
+      <DataType>double precision|0</DataType>
+      <StateNumber>66903</StateNumber>
+    </column>
+    <index id="25" parent="15" name="data_pkey">
+      <ObjectId>125437</ObjectId>
+      <ColNames>indicator_code
+country_code
+year</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="26" parent="15" name="data_pkey">
+      <ObjectId>125438</ObjectId>
+      <ColNames>indicator_code
+country_code
+year</ColNames>
+      <UnderlyingIndexName>data_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="27" parent="15" name="data_indicator_code_fkey">
+      <ObjectId>474239</ObjectId>
+      <ColNames>indicator_code</ColNames>
+      <RefTableId>119223</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>health_indicator</RefTableName>
+      <RefKeyName>health_indicator_pkey</RefKeyName>
+      <RefColNames>indicator_code</RefColNames>
+    </foreign-key>
+    <foreign-key id="28" parent="15" name="data_country_code_fkey">
+      <ObjectId>471588</ObjectId>
+      <ColNames>country_code</ColNames>
+      <RefTableId>119187</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>country</RefTableName>
+      <RefKeyName>country_pkey</RefKeyName>
+      <RefColNames>country_code</RefColNames>
+    </foreign-key>
+    <column id="29" parent="16" name="indicator_code">
+      <Position>1</Position>
+      <DataType>varchar(255)|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>72415</StateNumber>
+    </column>
+    <column id="30" parent="16" name="indicator_name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>66884</StateNumber>
+    </column>
+    <column id="31" parent="16" name="source_note">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>66884</StateNumber>
+    </column>
+    <column id="32" parent="16" name="source_organization">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>66884</StateNumber>
+    </column>
+    <index id="33" parent="16" name="health_indicator_pkey">
+      <ObjectId>125032</ObjectId>
+      <ColNames>indicator_code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="16" name="health_indicator_pkey">
+      <ObjectId>125033</ObjectId>
+      <ColNames>indicator_code</ColNames>
+      <UnderlyingIndexName>health_indicator_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

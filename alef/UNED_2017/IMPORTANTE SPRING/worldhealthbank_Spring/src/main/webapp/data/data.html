@@ -1,0 +1,58 @@
+      <form class="form-signin">
+     	{{vm.hola}}
+     	
+     	
+     	<div class="container" style="width:900px;">
+<div class="mt-2">
+<caption><h2>Tabla Data</h2></caption>
+<div class="form-group">
+			    <label for="anno">Buscar Pais</label>
+			    <input type="text" id="busqueda" ng-change = "vm.load()" aria-describedby="emailHelp" ng-model="vm.busqueda">
+		    </div>
+		    
+<a href="#/data/dataEdit/nuevo" class="btn btn-secondary">Nuevo</a>
+<table class="table table-striped">
+	<thread>
+		<tr>
+			<td><strong>Id</strong></td>
+			<td><strong>Pais</strong></td>
+			<td><strong>Health</strong></td>
+			<td><strong>Año</strong></td>
+			<td><strong>Porcentage</strong></td>
+			<td><strong>Editar</strong></td>
+			<td><strong>Borrar</strong></td>
+		</tr>
+		<tr ng-repeat = "dato in vm.datos">
+  			<td>{{dato.idData}}</td>
+  			<td>{{dato.country.countryName}}</td>
+  			<td>{{dato.health.indicadorName}}</td>
+  			<td>{{dato.year}}</td>
+  			<td>{{dato.percentage}}</td>
+  			<td>
+  				<a href="#/data/dataEdit/{{dato.idData}}" class="btn btn-secondary">Editar</a>
+  			</td>
+  			<td>
+  				<button type="button" class="btn btn-danger" ng-click = "vm.del(dato.idData)">Borrar</button>
+        	</td>
+  		</tr>
+	</thread>
+</table>
+	<button ng-click = "vm.first()" ng-disabled='vm.pag == 0'>
+		<span class="glyphicon glyphicon-step-backward">Primera</span></a>
+	</button>
+	<button ng-click = "vm.pre()" ng-disabled='vm.pag == 0'>
+		<span class="glyphicon glyphicon-step-backward">Anterior</span></a>
+	</button>
+
+
+	<button ng-click = "vm.next()" ng-disabled='vm.pag == vm.totalPaginas-1'>
+		<span class="glyphicon glyphicon-step-backward">Siguiente</span></a>
+	</button>
+	<button ng-click = "vm.last()" ng-disabled='vm.pag == vm.totalPaginas-1'>
+		<span class="glyphicon glyphicon-step-backward">Ultima</span></a>
+	</button>
+ 
+
+     	
+    </div>
+</div>

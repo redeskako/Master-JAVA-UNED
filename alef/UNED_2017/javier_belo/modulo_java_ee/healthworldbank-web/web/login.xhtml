@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Title</title>
+</h:head>
+<h:body>
+    <div  align='center' style="font-family:Palatino;font-size:small">
+        <h3>Por favor identifíquese</h3>
+        <br/>
+        <table bgcolor="white" cellspacing="4">
+            <tbody>
+            <tr>
+                <td>
+                    <form name="loginForm" method="POST" action="j_security_check">
+                        <p><strong>Introduzca su nombre de usuario: </strong>
+                            <input type="text" name="j_username" size="15"/></p>
+                        <p><strong>Introduzca su contraseña: </strong>
+                            <input type="password" size="15" name="j_password"/></p>
+                        <p>
+                            <input type="submit" value="Submit"/>
+                            <input type="reset" value="Reset"/></p>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>USUARIO : user user</p>
+                    <p>ADMINISTRADOR: admin admin</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+    </div>
+
+</h:body>
+</html>

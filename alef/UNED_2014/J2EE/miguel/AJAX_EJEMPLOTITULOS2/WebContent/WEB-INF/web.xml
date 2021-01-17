@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<display-name>AJAX_EjemploTitulosLibros</display-name>
+<servlet>
+    <servlet-name>dwr-invoker</servlet-name>
+    <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>true</param-value>
+    </init-param>
+</servlet>
+
+<servlet>
+    <servlet-name>dwr-invoker</servlet-name>
+    <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>true</param-value>
+    </init-param>
+</servlet>
+
+<servlet>
+    <display-name>Datos</display-name>
+    <servlet-name>Datos</servlet-name>
+    <servlet-class>modelo.Datos</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>dwr-invoker</servlet-name>
+    <url-pattern>/dwr/*</url-pattern>
+  </servlet-mapping>
+  
+<servlet-mapping>
+    <servlet-name>Datos</servlet-name>
+    <url-pattern>/Datos</url-pattern>
+</servlet-mapping>
+
+ <welcome-file-list>
+    <welcome-file>titulos.html</welcome-file>
+  </welcome-file-list>
+</web-app>

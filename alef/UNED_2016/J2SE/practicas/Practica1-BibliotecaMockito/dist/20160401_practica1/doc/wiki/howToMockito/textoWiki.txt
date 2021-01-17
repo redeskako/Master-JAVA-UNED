@@ -1,0 +1,314 @@
+
+= Tutorial sobre JUnit y Mockito =
+
+== 1. Requisitos e instalacion ==
+
+Para la instalacion utilizaremos Maven, configurando las siguientes dependencias en el fichero 'pom.xml':
+
+{{{
+  <dependencies>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.12</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.mockito</groupId>
+  		<artifactId>mockito-all</artifactId>
+  		<version>1.10.19</version>
+  	</dependency>
+  </dependencies>
+}}}
+
+La estructura de directorios del proyecto propuesta por Maven ya incluye espacio propio para las pruebas, como se indicará más adelante.
+
+
+== 2. Conceptos basicos pruebas unitarias ==
+=== 2.1 Sistema orientado a objetos ===
+Podemos definir un sistema orientado a objetos como un conjunto ordenado de los mismos que colaboran entre sí para obtener un fin concreto
+
+[[Image(figura1_1.png)]]
+
+Distinguimos los siguientes roles
+* Cliente: Un cliente es un sistema q usa nuestro sistema orientado a objetos. Está fuera del ámbito del sistema OO a estudiar.
+* Gestores: Un gestor es una clase q para cumplir sus objetivos tiene q comunicarse con el resto de objetos dentro del sistema. Realmente es un coordinador de la ejecución del resto de objetos.
+* Trabajadores: Un trabajador es una clase q no necesita a nadie para cumplir sus objetivos,siendo utilizados por los gestores. Son los q realmente realizan el trabajo.
+
+=== 2.2 SUT y DOC ===
+* SUT (System Under Test): Es el objeto/sistema q realmente vamos a estudiar con una prueba unitaria. Es donde vamos a poner el foco para cerciorarnos de q funciona según lo esperado
+* DOC (Dependen On Component): Conjunto de objetos que son necesarios por parte del SUT para realizar la prueba unitaria que queremos realizar. Es decir, la funcionalidad q queremos probar en el SUT sólo puede ser ejecutada si estos objetos están presentes y accesibles al SUT.
+* Clase Test: Es la clase que contiene la lógica que después usaremos para llevar al SUT al estado que queremos comprobar. La clase Test 'utiliza' al SUT para ello. Es su clase cliente.
+
+=== 2.3 Prueba unitaria ===
+
+Una prueba unitaria se focaliza en UNA UNICA CLASE. Contempla lo siguiente:
+
+* La prueba sólo se realiza sobre una única clase. Sólo una. Esto permite que se haga de forma rápida y concisa, evitando complejidades innecesarias.
+* Durante la prueba se controla el contexto en el que se ejecuta la clase a estudiar.
+* Para ello reemplaza los colaboradores (DOC) utilizados por la clase a probar (SUT), por unos 'dobles' o 'impostores' sólo para la prueba. Aquí es donde Mockito opera.
+
+Ejemplo de prueba unitaria:
+
+* Sea una clase {{{Jugadorfutbol}}} . La clase debe cambiar su estado a 'expulsado' despues de recibir la segunda tarjeta amarilla.
+   * SUT: Clase {{{JugadorFutbol}}}
+   * DOCs: Para este contexto tiene sentido que exista una clase 'Arbitro' que saque las tarjetas amarillas al SUT.
+* Sea una clase Producto. Su constructor debe lanzar una excepción de tipo {{{ArgumentoIlegalException}}} si el argumento 'precio' es menor que cero.
+   * SUT: clase Producto
+   * DOCs: aquí no hay DOC's, en el contexto de esta prueba unitaria la clase Producto ésta adquiere el rol de 'Trabajador'
+
+=== 2.4 Interacciones durante una prueba unitaria ===
+
+durante una prueba unitaria el SUT se comunica con los DOC's, es necesario especificar y clasificar los tipos de comunicación entre unos y otros para entender qué probamos
+
+[[Image(figura_2_1.png)]]
+
+* Interacciones directas: Son aquellas que se dan entre la clase Test y el SUT. La clase Test actúa como cliente del SUT, utilizándolo. Se clasifican en entradas y salidas:
+   * Entradas directas: Fluyen de la clase Test hacia el SUT.
+     * Ejemplo: Llamada desde la clase Test contra el método calcularBonus() de la clase SUT con argumento 'idcliente' y 'salario'
+   * Salidas Directas: Fluyen desde el SUT hacia la clase Test
+     * Ejemplo: Devolucion del resultado de ejecutar 'calcularBonus()'
+* Interacciones indirectas: Son aquellas que se dan entre el SUT y sus DOC's asociados. Representa el comportamiento que el SUT tiene al utilizar a sus DOC's. Se clasifican también en entradas y salidas:
+   * Entradas indirectas: Fluyen desde los DOC's hacia el SUT.
+      *  Ejemplo:Llamada del SUT contra el metodo 'salvarHistorico' del DOC 'ClienteDAO' incluyendo en la llamada 'idclient' y 'bonus'.
+   * Salidas indirectas: Fluyen desde el SUT hacia los DOC's.
+      * Ejemplo: 'tipoCliente' devuelto por el DOC 'ClienteDAO' y 'bonus' devuelto por el DOC {{{CalculadorBonus}}}.
+
+=== 2.5 Tipos de pruebas unitarias ===
+Las pruebas unitarias podemos dividirlas en pruebas de estado y pruebas de interacción:
+
+* Pruebas de estado: En estas pruebas el SUT no requiere la colaboración de ninguno de sus DOC's para ejecutar el test. Durante estas pruebas estimulamos al SUT de la forma requerida para q cambie de estado.
+    * Esta es una prueba de 'caja negra'. Estimulamos al SUT, dejamos que haga su trabajo y comprobamos la salida. Como el SUT se comporte y lo que haga no es indiferente.
+    * En este punto sólo es estudian las interacciones DIRECTAS, entre la clase Test y el SUT.
+    * En este campo es donde JUnit se utiliza. JUnit es un framework que nos permitirá de forma fácil y estructurada crear la clase Test para poner al SUT en el estado que queremos para implementar el test.
+    * JUnit provee de mecanismos para comprobar el estado final del SUT después de la prueba, además de plantear un modelo de ejecución en el que la clase Test prepara lo necesario para llevar al SUT al estado inicial requerido, implementar la prueba, y comprobar si el estado final del SUT es el deseado. Para ello se usan las 'aserciones' o asserts.
+    * El modelo de ejecución de JUnit puede resumirse en 'configura, actúa y comprueba':
+       * configura: la clase Test crea las recursos necesarios para crear el entorno necesario para la prueba del SUT.
+       * actúa: La clase Test realiza las interacciones directas contra el SUT necesarias para implementar la prueba.
+       * comprueba: Una vez ejecutada la prueba, comprobamos que el SUT está en el estado correcto.					 
+* Pruebas de interacción: En estas pruebas se pone el foco en cómo el SUT interacciona con sus DOC's para cumplir con el cometido objeto de la prueba.
+    * Esta es una prueba de tipo 'caja blanca'. Tenemos interés en comprobar cómo el SUT se relaciona y cómo cumple con sus responsabilidades, delegando llamadas y lógica en sus DOC's
+    * En este punto sólo es estudian las interacciones INDIRECTAS, entre el SUT y sus DOC's
+    * Obviamente, para realizar una prueba de interaccion se siguen teniendo en cuenta la clase 'Test' y las interacciones directas entre Test y SUT. SUT sólo realizará llamadas contra sus DOC's bajo el uso de la clase Test de los métodos del SUT.De esta manera, las pruebas de estado y las de interaccion son complementarias. De ahí q JUnit y Mockito sean complementarias.
+    * Es en este punto donde opera Mockito, a nivel de interacciones indirectas. Mockito es capaz de SUPLANTAR a los DOC's usados por el SUT en estudio, y detectar cuando el SUT habla con sus DOC's.
+    * Adicionalmente, Mockito puede generar los 'suplantadores' y controlar sus entradas y salidas.
+
+Visto globalmente, JUnit nos permite crear la clase de Test dentro de un framework conocido y comprobar el estado en el que queda el SUT tras el test. Y Mockito nos permite crear los DOC's de forma muy rápida y poder influir en cómo se comportará cada DOC en el caso de prueba para probar en el SUT lo que queremos probar:
+* Así, las aserciones se realizan usando JUnit.
+* La creación de los DOC's y el comportamiento que necesitamos para los mismos se realizarán usando Mockito.
+* Y usando también Mockito podremos comprobar si el SUT se comunica como debe con cada uno de sus DOC's (aunque éstos serán suplantados, no serán los reales, pero el SUT no verá la diferencia).
+
+== 3. Conceptos basicos mockito ==
+=== 3.1 Objetivos ===
+El objetivo de Mockito es triple:
+1. Poder crear suplantadores o fakes de clases de forma rápida. En Mockito se llaman 'mocks':
+   * No importa la clase, Mockito es capaz de crear un suplandador con los métodos y atributos de la clase a 'suplantar'.
+   * Este suplantador tiene valores por defecto en sus atributos (para booleanos es false, para enteros es 0, etc) y sus métodos devuelven constantes y no hacen nada.
+   * A todos los efectos, un objeto de la clase A y de una clase que suplante a la clase A son idénticos.
+   * Esto permite crear de forma muy fácil los DOC's que un SUT va a utilizar, por muy complejos que éstos sean.
+2. Poder definir cómo este suplantador debe comportarse al ser usado por parte de otro objeto (el SUT en este caso).
+   * el suplantador registra qué método es llamado en cada momento, y con qué argumento. Desde Mockito se puede indicar al suplantador qué debe devolver en cada caso, según nuestro interés en la prueba.
+3. Poder realizar aserciones sobre a qué métodos del suplantador se ha llamado durante la prueba y con qué argumentos.
+   * De esta menra podemos comprobar cómo el SUT se ha comunicado con sus DOC's, comprobando si las interacicones indirectas son las esperadas o no.
+=== 3.1 Tipos de suplantadores ===
+* dummy: Suplantan a DOC's que, en el contexto de la prueba, sólo es necesaria su presencia, pero el SUT no los utiliza.
+  * Ejemplo: Clase 'Coche' (nuestro SUT) que en su constructor requiere una instancia del clase 'Marca'
+    * 'Marca' en el ámbito de nuestra prueba es un DOC. Y es dummy porque 'Coche' no interactuará con ella, pero requiere de su presencia para crear un objeto 'Coche'
+* Stub: Suplantan a DOC's que, en el contexto de la prueba, sólo mantienen con el SUT interacciones indirectas de entrada. Es decir, facilitan información al SUT que éste necesita, pero no son usados por éste.
+  * Ejemplo: ejemplo: Clase {{{ClienteCorreo}}} (nuestro SUT) que durante la prueba a realizar requiere de la clase {{{DatosServidor}}} (DOC) la dirección IP del servidor de correo.
+     * {{{DatosServidor}}} en el ámbito de nuestra prueba SOLO facilita la dirección IP del servidor, no hace nada más. Por eso se le considera un Stub, al sólo facilitar información al SUT.
+
+* Espias o Mocks: Suplantan a DOC's que, en el ámbito de nuestra prueba, mantienen con el SUT interacciones indirectas de entrada y salida. Es decir, el SUT los utilizará de forma activa para cumplir con su responsabilidad.
+  * Ejemplo: Clase {{{ClienteCorreo}}} (nuestro SUT) que durante la prueba a realizar requiere de la clase {{{ServidorCorreo}}} y {{{GestorPlantilla}}} (nuestros DOC's a suplantar con Espias)
+     * {{{ClienteCorreo}}} llama al método crearMensaje de {{{ServidorCorreo}}} obteniendo una instancia de 'Mensaje' (interacción indirecta de salida y de entrada). Posteriormente, llama a 'procesar' de {{{GestorPlantilla}}} con el mensaje para crear el mensaje final que se enviará (interaccion indirecta de entrada y de salida).
+  * Mockito nos permitirá comprobar si el SUT ha llamado a los métodos indicados, con qué valores y en qué orden.	  
+== 4. Flujo de trabajo ==
+=== 4.1 De qué partimos ===
+Partimos de un conjunto de clases que son el objeto de la prueba. Se sugiere (ojo, es una sugerencia, no un requisito, aunque maven propone ya esta estructura) que la estructura de código fuente sea la siguiente:
+* <raizProyecto>/src/main/....
+   * Aquí tendremos nuestros paquetes de clases, en el caso de org.jbarba.coche la estructura sería: <raizProyecto>/src/main/org/jbarba/coche/{{{FordKuga.java}}}
+* <raizProyecto>/src/test/....
+   * Aquí tendremos las clases 'Test' referidas anteriormente, teniendo en cuenta que la clase A.java se probará en la clase {{{ATest.java}}} asi: <raizProyecto>/src/main/org/jbarba/coche/{{{FordKugaTest.java}}}
+
+Las clases de las que partimos tendrán el rol de SUT o de DOC dependiendo de si son el objeto de la prueba o son requeridos por el objeto de la prueba (el objeto de la prueba depende de ellos) para poder realizar ésta.
+
+=== 4.2 Definir las pruebas a realizar ===
+Es capital saber qué queremos probar. Para ello, y por cada prueba a realizar:
+* Definir la clase objeto del estudio de la prueba unitaria: Quien es el SUT? Sólo probaremos esa clase, y nuestro objetivo será aislar esa clase de su entorno sustituyendo a éste por suplantadores.
+* Definir las dependencis de la clase objeto del estudio de la prueba unitaria: Quiénes son los DOC's? Detectamos qué clases utiliza el SUT para poder probar el comportamiento objeto de la prueba.
+* Definir claramente el caso de prueba: Para ello definiremos precondiciones, postcondiciones y qué operativa realizar sobre la clase para comprobar su comportamiento:
+   * Precondiciones: Las precondiciones establecen el punto de partida de la prueba. Aquí se definen los DOC's que se utilizarán, el estado inicial del SUT, etc.
+      * Las precondiciones permiten saber qué hacer para preparar la prueba, de manera que se implementarán en la clase Test.
+      * Para crear los DOC's usaremos Mockito, de forma que podamos detectar cuando y cómo el SUT ha utilizado a los DOC's en el contexto de la prueba a realizar.
+   * Postcondiciones: Aquí se define cómo debe quedar el SUT tras la prueba, y qué interacciones ha tenido éste con sus DOC's:
+      * Para comprobar el estado del SUT se realizarán las aserciones correspondientes en JUnit.
+      * Para comprobar que el SUT se ha comunicado como se espera con sus DOC's se utilizarán las aserciones en Mockito.
+   * Caso de prueba: Se define aquí cómo vamos a ejecutar la prueba, paso a paso, especificando en el caso de interacciones indirectas del SUT contra sus DOC's cómo deben comportarse los DOC's en cada caso.
+      * Como vamos a suplantar a los DOC's con fakes, usaremos Mockito para indicar a estos suplantadores qué deben devolver en cada caso.
+=== 4.3 Implementamos la clase Test usando como guía los casos de prueba previamente identificados ===
+Una vez tenemos todas las pruebas que creemos necesarias para validar cada clase:
+  * Creamos una clase Test para cada SUT a probar. Si el SUT es {{{FordKuga}}}, creamos una clase {{{FordKugaTest}}} para ejecutar cada test.
+  * Cada prueba necesaria se implementará como un método anotado con @Test para JUnit. Si hay 5 pruebas identificadas sobre una clase, la clase Test tendrá cinco métodos, cada uno probando un caso distinto.
+
+=== 4.4 Ejecutar las pruebas ===
+Usamos un IDE como Eclipse para lanzar las pruebas. El IDE reconocerá la clase Test como una clase JUnit y permitirá ejecutar y visualizar el resultado de los test, indicando cuales funcionaron y cuales fallaron
+== 5. Ejemplo de uso ==
+
+=== 5.1 Código a probar ===
+El juego de clases que usaremos representa un sencillo sistema en el que un coche realiza un viaje por varias localizaciones, y se considera posible que durante cada viaje entre dos localizaciones, el coche puede averiarse, pudiéndo dejar el coche inservible. El objeto de la prueba seran dos métodos, uno que realiza el viaje de A a B, y otro que permite simular el viaje entre N localizaciones distintas.
+
+Concretamente lo que probaremos es una clase cliente {{{SimuladorCoche}}} que utilizará el resto de clases, y lo más relevante del ejemplo es q gracias a Mockito NO tendremos que tener todo implementado. De hecho,la clase objeto de estudio (El SUT, {{{SimuladorCoche}}}) utilizará interfaces (iCoche) de los que aún no hay implementación, lo que nos permitirá ver si nuestro código se comporta como debe, aunque no exista implementación para los interfaces. Esto nos permite desacoplar el qué de una clase (su interfaz) del cómo (su implementación), y desacoplar el desarrollo, lo que se conoce como TDD (Test Driven Delevelopment).
+
+El código fuente de ejemplo se adjunta en este documento con nombre {{{simuladorCoche_mockitoJUnit.zip}}}?
+
+=== 5.2 probar método {{{SimuladorCoche.viajar}}} ===
+
+* precondiciones
+   * usaremos dos localizaciones, a y b, con una distancia indeterminada entre ellas (no es relevante para la prueba)		   
+   * durante el desplazamiento debe ocurrir un problema que NO inmovilice al coche.
+   * El problema ocurrirá en el kmt 50
+* postcondiciones
+   * el coche ha viajado desde a hasta b.		   
+   * el viaje debe recoger una única avería.
+* caso de prueba
+   * creamos las localizaciones distantes 100kmts
+   * llamamos a {{{SimuladorCoche.viajar}}} usando esas dos localizaciones
+
+El código fuente que implementa esta prueba es:
+
+{{{
+
+	@Test
+	public void testViajar(){
+		// preparamos en este test los stub's y mock's
+		this.setup_testViajar();
+		
+		// lanzamos la prueba
+		List<iProblema> problemas=this.SUT.viajar(this.a,this.b);
+		
+		// comprobamos que tuvimos problemas
+		assertNotNull(problemas);
+		assertEquals(problemas.size(),1);
+		// que el coche puede circular correctamente
+		assertTrue(problemas.get(0).puedeCircular());
+		// y que el problema ocurrió en el kmt 50
+		assertEquals(problemas.get(0).getKmts(),50);
+		
+		// y ahora comprobaomos la comunicacion indirecta entre el SUT y el DOC iCoche, para ver si
+		// realmente el viaje se hizo o no
+		verify(this.coche,times(1)).hacerViaje(this.a, this.b);
+	}
+
+}}}
+
+Y el codigo que configura la prueba, crea los mocks y los instruye para que se comporten como queremos es este:
+
+{{{
+
+	@Before
+	public void setupTest(){
+	   this.a=new Localizacion(100);
+	   this.b=new Localizacion(150);
+	   this.coche=mock(iCoche.class);
+	   this.genProblemas=mock(iGeneradorProblemas.class);
+	   
+	   this.SUT=new SimuladorCoche(this.coche,this.genProblemas);
+	}
+
+        /**
+	 * preparamos los stubs y mocks para el test viajar
+	 */
+	private void setup_testViajar(){
+
+		
+		// mockeamos el problema
+		iProblema problema=mock(iProblema.class);
+		   when(problema.puedeCircular()).thenReturn(true);
+		   when(problema.getKmts()).thenReturn(50);
+		   
+		// mockeamos el generador para que nos devuelva un problema concret
+		when(this.genProblemas.generarProblemas((iCoche)anyObject(),anyInt())).thenReturn(new iProblema[]{problema});
+		
+
+	}
+
+}}}
+
+=== 5.3 probar método {{{SimuladorCoche.viajarItinerario}}} ===
+En este caso simularemos que el coche recorre un itinerario con 4 localizaciones, e incluiremos que el coche se averia en el tramo del segundo al tercer itinerario. Tendremos que comprobar que el coche queda inmobilizado, que el ultimo tramo (del tercero al cuarto) no llego a realizarse, y que el itinerario se realizo en orden.
+
+* precondiciones
+   * Se considerarán 4 localizaciones q se recorrerán en orden
+   * En el tramo de la 2 a la 3 localización ocurrirá un problema que inmovilizara el coche.
+* postcondiciones
+   * El coche quedara inmobilizado
+   * El tramo del 3 al 4 localización NO será recorrido por el coche
+   * El orden será 1->2->3->4
+* Caso de prueba
+   * Llamamos al metodo viajarItinerario, incluyendo un array de localizaciones con el orden indicado
+   * El generador de problemas devolvera un solo problema q inmobilizara el coche entre la 2 y la 3 localizacion
+
+El codigo que configura la prueba es éste:
+
+{{{
+
+	// preparamos el test testViajarItinerario
+	private void setup_testViajarItinerario(){
+		
+		// mockeamos el problema que ocurrirá en el segundo trayecto
+		// y debe inmovilizar el vehículo
+		iProblema problema=mock(iProblema.class);
+		   when(problema.puedeCircular()).thenReturn(false);
+		   when(problema.getKmts()).thenReturn(50);		
+		
+		this.localizaciones = new ArrayList<Localizacion>();
+		// cargamos en el array las localizaciones
+		this.localizaciones.add(new Localizacion(0));
+		  this.localizaciones.add(new Localizacion(50));
+		  this.localizaciones.add(new Localizacion(100));
+		  this.localizaciones.add(new Localizacion(150));		
+		
+		// el problema se producira en el segundo trayecto, del 3 al 4 localizacion
+		// primero devolvemos un null, y despues el problema inhabilitante
+		when(this.genProblemas.generarProblemas((iCoche)anyObject(),anyInt()))
+		    .thenReturn(null)
+		    .thenReturn(new iProblema[]{problema});
+		
+		// preparamos el coche para las preguntas sobre si puede circular, tendra q hacerlo true 3 veces y false la cuarta
+		// esto lo sabemos pq conocemos la implementacion del metodo a probar, y necesitamos simular un comportamiento de las
+		// clases mockeadas y q aún no hemos creado.
+		when(this.coche.puedeCircular())
+		    .thenReturn(true)
+		    .thenReturn(true)		    
+		    .thenReturn(false);		
+	}
+
+}}}
+
+En este trozo de código instruimos a los mocks sobre cómo deben comportarse cuando sean utilizados por el SUT
+
+Y este es el código que implementa la prueba y comprueba que todo se ha desarrollado según lo esperado:
+
+{{{
+
+	@Test
+	public void testViajarItinerario(){
+		// configuramos la prueba
+		this.setup_testViajarItinerario();
+		
+		this.SUT.viajarItinerario(this.localizaciones);
+		
+		// comprobamos cosas
+		
+		// miramos si se marco el coche como inmovilizado
+		verify(this.coche,times(1)).inmovilizar((iProblema) any());
+		// y comprobamos q el ultimo trayecto NO se hizo
+		verify(this.coche,never()).hacerViaje(this.localizaciones.get(2),this.localizaciones.get(3));
+		// y q los trayectos q se hicieron se hicieron en orden
+		InOrder order = inOrder(this.coche,this.coche);		
+		order.verify(this.coche).hacerViaje(this.localizaciones.get(0),this.localizaciones.get(1));
+		order.verify(this.coche).hacerViaje(this.localizaciones.get(1),this.localizaciones.get(2));
+		
+	}
+
+}}}
+

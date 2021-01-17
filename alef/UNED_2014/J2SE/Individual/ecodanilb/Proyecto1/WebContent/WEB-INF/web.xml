@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Proyecto4</display-name>
+  <servlet>
+    <description>
+		</description>
+    <display-name>Act</display-name>
+    <servlet-name>Act</servlet-name>
+    <servlet-class>org.Servlet.Act</servlet-class>
+  </servlet>
+  <servlet>
+    <description>
+		</description>
+    <display-name>Actualizador</display-name>
+    <servlet-name>Actualizador</servlet-name>
+    <servlet-class>org.Servlet.Actualizador</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>CerrarSesion</display-name>
+    <servlet-name>CerrarSesion</servlet-name>
+    <servlet-class>org.Servlet.CerrarSesion</servlet-class>
+  </servlet>
+  <filter>
+    <filter-name>Mail</filter-name>
+    <filter-class>org.Filtros.Filtro</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Mail</filter-name>
+    <url-pattern>/recursos.jsp</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>TiempoCarga</filter-name>
+    <filter-class>org.Filtros.FiltroTiempoCarga</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>TiempoCarga</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

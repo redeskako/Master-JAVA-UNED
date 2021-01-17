@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+   Universidad Nacional de Educacion a Distancia
+   Master en Diseño y Desarrollo de Aplicaciones Web Dinamicas
+   Modulo J2SE / J2EE
+   2014, Antonio Jesus Arquillos Alvarez
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">     
+  <head>
+    <!-- Zona de etiquetas META -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Antonio Jes&uacute;s Arquillos &Aacute;lvarez" />
+    <!-- Zona de título -->
+    <title></title>
+    <!-- Zona de recursos enlazados (CSS, RSS, JavaScript) -->    
+    <wicket:link>
+	  <link rel="stylesheet" type="text/css" href="css/styles.css" />       
+    </wicket:link>
+  </head>
+  <body>
+    <div wicket:id="tituloMenu"></div>
+    <form wicket:id="formEditarUsuario">
+      <fieldset style="text-align: center">
+        <legend>
+          Mantenimiento de Usuarios
+        </legend>
+        <div wicket:id="feedback"></div>
+        <table 
+          align="center" 
+          rules="cols" 
+          frame="void" 
+          cellspacing="5" 
+          cellpadding="5">
+          <tr>
+            <td>        
+              <label class="requerido">
+                Login<br/>
+                <span wicket:id="bordeLogin">
+                  <input type="text" wicket:id="login"/>
+                </span>
+              </label>
+            </td>
+            <td>
+              <label class="requerido">
+                Nombre<br/>
+                <span wicket:id="bordeNombre">
+                  <input type="text" wicket:id="nombre"/>
+                </span>
+              </label>
+            </td>
+          </tr>          
+          <tr>
+            <td>
+              <label>
+                Password<br/>
+                <span wicket:id="bordePass1">
+                  <input type="password" wicket:id="pass1" />
+                </span> <br/>
+              </label>
+              <span wicket:id="bordePass2">
+                <input type="password" wicket:id="pass2" />
+              </span>
+            </td>
+            <td>
+              <label class="requerido">
+                Apellidos<br/>
+                <span wicket:id="bordeApellidos">
+                  <input type="text" wicket:id="apellidos"/>
+                </span>
+              </label>
+            </td>            
+          </tr>
+          <tr>
+            <td>        
+              <label style="border: thin dashed #AAA; padding: 2px">
+                <input type="checkbox" wicket:id="admin"/>
+                Administrador          
+              </label>
+            </td>
+            <td>
+              <label>
+                Email<br/>
+                <input type="text" wicket:id="email"/>
+              </label>
+            </td>            
+          </tr>            
+          <tr>
+            <td>
+              <label>
+                Autorizador:<br/>
+                <select wicket:id="autorizador">
+                  <option>Antonio Arquillos</option>
+                </select>
+              </label>
+            </td>
+            <td>
+              <label>
+                Tel&eacute;fono<br/>
+                <input type="text" wicket:id="telefono"/>
+              </label>
+            </td>            
+          </tr>
+          <tr>
+            <td>
+              <label>
+                Color:<br/>
+                <select wicket:id="color">
+                  <option>Azul</option>
+                </select>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label>
+                Comentarios<br/>
+                <textarea type="textarea" rows="5" cols="65" wicket:id="comentarios">
+                </textarea>
+              </label>
+            </td>
+          </tr>                   
+        </table>
+      </fieldset>
+      <p align="center">
+        <input type="submit" wicket:id="botonSalvar" />
+        <input type="submit" wicket:id="botonCancelar" />
+      </p>
+    </form>
+  </body>
+</html>

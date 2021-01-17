@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <Configuration status="debug" strict="true" name="XMLConfigTest"
+                   packages="uned.java2016.apitwitter.twitter.crawler">
+  <Properties>
+        <Property name="filename">log/crawler.log</Property>
+  </Properties>
+  
+     
+  <Appenders>
+        <Appender type="Console" name="STDOUT">
+          <Layout type="PatternLayout" pattern="%m%n"/>          
+        </Appender>
+
+	    <RollingFile name="RollingFile" fileName="${filename}"
+	                 filePattern="log/$${date:yyyy-MM}/crawler-%d{MM-dd-yyyy}-%i.log.gz">
+	      <PatternLayout>
+	        <Pattern>%d %p %C{1} %m%n</Pattern>
+	      </PatternLayout>
+	      <Policies>
+	        <TimeBasedTriggeringPolicy />
+	        <SizeBasedTriggeringPolicy size="10 MB"/>
+	      </Policies>
+	      <DefaultRolloverStrategy max="10"/>
+	    </RollingFile>        
+        <List name="List"></List>      
+  </Appenders>
+     
+      <Loggers>
+        <Logger name="uned.java2016.apitwitter.twitter.crawler.Crawler" level="debug" additivity="false">
+          <AppenderRef ref="STDOUT"/>
+          <AppenderRef ref="RollingFile"/>
+        </Logger>                
+        <Root level="trace">
+          <AppenderRef ref="List"/>
+        </Root>
+      </Loggers>
+     
+    </Configuration>

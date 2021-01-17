@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="600.0" prefWidth="450.0"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pro.jbelo.AddEditController">
+   <children>
+      <HBox prefHeight="70.0" prefWidth="450.0" style="-fx-background-color: gray;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="73.0">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="58.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/assets/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" prefHeight="70.0" prefWidth="313.0" text="World Bank Countries" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="59.0">
+               <children>
+                  <Button alignment="TOP_CENTER" contentDisplay="TEXT_ONLY"
+                          mnemonicParsing="false" onAction="#doBack" text="Countries List"
+                          textAlignment="CENTER" wrapText="true" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox prefHeight="460.0" prefWidth="450.0">
+         <children>
+            <Label prefHeight="40.0" prefWidth="170.0" text="* Coutry Code:">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="codeTxtField" prefHeight="50.0" prefWidth="430.0" promptText="Enter country name...">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="20.0" layoutY="10.0" prefHeight="40.0" prefWidth="170.0" text="* Country Name:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTxtField" prefHeight="50.0" prefWidth="430.0" promptText="Enter country name...">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></VBox>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="450.0" spacing="40.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#doBack" prefHeight="50.0" prefWidth="100.0" text="Cancel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#doClear" prefHeight="50.0" prefWidth="100.0" text="Clear">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#doSave" prefHeight="50.0" prefWidth="100.0" text="Save">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

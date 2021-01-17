@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableroOca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Documents%20and%20Settings/A126074/Escritorio/oca/BachelorDegree-master/workspace/OcaEnRed/xsd/tableroOca.xsd">
+	<Casilla indice="1">
+		<Tipo>1</Tipo>
+		<IndiceDestino>1</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>80</X>
+			<Y>460</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="2">
+		<Tipo>2</Tipo>
+		<IndiceDestino>2</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>160</X>
+			<Y>460</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="3">
+		<Tipo>2</Tipo>
+		<IndiceDestino>3</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>200</X>
+			<Y>460</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="4">
+		<Tipo>2</Tipo>
+		<IndiceDestino>4</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>240</X>
+			<Y>460</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="5">
+		<Tipo>3</Tipo>
+		<IndiceDestino>9</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>280</X>
+			<Y>460</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="6">
+		<Tipo>4</Tipo>
+		<IndiceDestino>12</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>320</X>
+			<Y>460</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="7">
+		<Tipo>2</Tipo>
+		<IndiceDestino>7</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>360</X>
+			<Y>460</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="8">
+		<Tipo>2</Tipo>
+		<IndiceDestino>8</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>400</X>
+			<Y>460</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="9">
+		<Tipo>3</Tipo>
+		<IndiceDestino>14</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>460</X>
+			<Y>430</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="10">
+		<Tipo>2</Tipo>
+		<IndiceDestino>10</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>470</X>
+			<Y>380</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="11">
+		<Tipo>2</Tipo>
+		<IndiceDestino>11</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>470</X>
+			<Y>340</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="12">
+		<Tipo>4</Tipo>
+		<IndiceDestino>6</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>470</X>
+			<Y>300</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="13">
+		<Tipo>2</Tipo>
+		<IndiceDestino>13</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>470</X>
+			<Y>260</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="14">
+		<Tipo>3</Tipo>
+		<IndiceDestino>18</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>470</X>
+			<Y>220</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="15">
+		<Tipo>2</Tipo>
+		<IndiceDestino>15</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>470</X>
+			<Y>180</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="16">
+		<Tipo>2</Tipo>
+		<IndiceDestino>16</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>485</X>
+			<Y>140</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="17">
+		<Tipo>2</Tipo>
+		<IndiceDestino>17</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>480</X>
+			<Y>100</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="18">
+		<Tipo>3</Tipo>
+		<IndiceDestino>23</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>475</X>
+			<Y>50</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="19">
+		<Tipo>5</Tipo>
+		<IndiceDestino>19</IndiceDestino>
+		<RondasSinJugar>2</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>440</X>
+			<Y>10</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="20">
+		<Tipo>2</Tipo>
+		<IndiceDestino>20</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>380</X>
+			<Y>10</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="21">
+		<Tipo>2</Tipo>
+		<IndiceDestino>21</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>340</X>
+			<Y>10</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="22">
+		<Tipo>2</Tipo>
+		<IndiceDestino>22</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>300</X>
+			<Y>10</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="23">
+		<Tipo>3</Tipo>
+		<IndiceDestino>27</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>260</X>
+			<Y>10</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="24">
+		<Tipo>2</Tipo>
+		<IndiceDestino>24</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>220</X>
+			<Y>10</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="25">
+		<Tipo>2</Tipo>
+		<IndiceDestino>25</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>180</X>
+			<Y>10</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="26">
+		<Tipo>6</Tipo>
+		<IndiceDestino>53</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>140</X>
+			<Y>10</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="27">
+		<Tipo>3</Tipo>
+		<IndiceDestino>32</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>100</X>
+			<Y>10</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="28">
+		<Tipo>2</Tipo>
+		<IndiceDestino>28</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>70</X>
+			<Y>35</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="29">
+		<Tipo>2</Tipo>
+		<IndiceDestino>29</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>30</X>
+			<Y>80</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="30">
+		<Tipo>2</Tipo>
+		<IndiceDestino>30</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>30</X>
+			<Y>110</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="31">
+		<Tipo>7</Tipo>
+		<IndiceDestino>31</IndiceDestino>
+		<RondasSinJugar>2</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>30</X>
+			<Y>150</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="32">
+		<Tipo>3</Tipo>
+		<IndiceDestino>36</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>30</X>
+			<Y>190</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="33">
+		<Tipo>2</Tipo>
+		<IndiceDestino>33</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>30</X>
+			<Y>230</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="34">
+		<Tipo>2</Tipo>
+		<IndiceDestino>34</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>30</X>
+			<Y>270</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="35">
+		<Tipo>2</Tipo>
+		<IndiceDestino>35</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>30</X>
+			<Y>310</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="36">
+		<Tipo>3</Tipo>
+		<IndiceDestino>41</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>40</X>
+			<Y>350</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="37">
+		<Tipo>2</Tipo>
+		<IndiceDestino>37</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>95</X>
+			<Y>380</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="38">
+		<Tipo>2</Tipo>
+		<IndiceDestino>38</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>135</X>
+			<Y>380</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="39">
+		<Tipo>2</Tipo>
+		<IndiceDestino>39</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>175</X>
+			<Y>380</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="40">
+		<Tipo>2</Tipo>
+		<IndiceDestino>40</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>215</X>
+			<Y>380</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="41">
+		<Tipo>3</Tipo>
+		<IndiceDestino>45</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>255</X>
+			<Y>380</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="42">
+		<Tipo>8</Tipo>
+		<IndiceDestino>30</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>295</X>
+			<Y>380</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="43">
+		<Tipo>2</Tipo>
+		<IndiceDestino>43</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>335</X>
+			<Y>380</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="44">
+		<Tipo>2</Tipo>
+		<IndiceDestino>44</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>390</X>
+			<Y>350</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="45">
+		<Tipo>3</Tipo>
+		<IndiceDestino>50</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>390</X>
+			<Y>310</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="46">
+		<Tipo>2</Tipo>
+		<IndiceDestino>46</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>390</X>
+			<Y>270</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="47">
+		<Tipo>2</Tipo>
+		<IndiceDestino>47</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>390</X>
+			<Y>230</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="48">
+		<Tipo>2</Tipo>
+		<IndiceDestino>48</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>390</X>
+			<Y>190</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="49">
+		<Tipo>2</Tipo>
+		<IndiceDestino>49</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>390</X>
+			<Y>150</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="50">
+		<Tipo>3</Tipo>
+		<IndiceDestino>54</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>365</X>
+			<Y>120</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="51">
+		<Tipo>2</Tipo>
+		<IndiceDestino>51</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>330</X>
+			<Y>100</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="52">
+		<Tipo>9</Tipo>
+		<IndiceDestino>52</IndiceDestino>
+		<RondasSinJugar>3</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>290</X>
+			<Y>100</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="53">
+		<Tipo>6</Tipo>
+		<IndiceDestino>26</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>250</X>
+			<Y>100</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="54">
+		<Tipo>3</Tipo>
+		<IndiceDestino>59</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>true</RepetirTurno>
+		<CoordenadasGUI>
+			<X>210</X>
+			<Y>100</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="55">
+		<Tipo>2</Tipo>
+		<IndiceDestino>55</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>170</X>
+			<Y>100</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="56">
+		<Tipo>2</Tipo>
+		<IndiceDestino>56</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>140</X>
+			<Y>120</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="57">
+		<Tipo>2</Tipo>
+		<IndiceDestino>57</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>120</X>
+			<Y>130</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="58">
+		<Tipo>10</Tipo>
+		<IndiceDestino>1</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>120</X>
+			<Y>180</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="59">
+		<Tipo>3</Tipo>
+		<IndiceDestino>63</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>120</X>
+			<Y>220</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="60">
+		<Tipo>2</Tipo>
+		<IndiceDestino>60</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>120</X>
+			<Y>260</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="61">
+		<Tipo>2</Tipo>
+		<IndiceDestino>61</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>150</X>
+			<Y>290</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="62">
+		<Tipo>2</Tipo>
+		<IndiceDestino>62</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>190</X>
+			<Y>290</Y>
+		</CoordenadasGUI>
+	</Casilla>
+	<Casilla indice="63">
+		<Tipo>11</Tipo>
+		<IndiceDestino>63</IndiceDestino>
+		<RondasSinJugar>0</RondasSinJugar>
+		<RepetirTurno>false</RepetirTurno>
+		<CoordenadasGUI>
+			<X>250</X>
+			<Y>230</Y>
+		</CoordenadasGUI>
+	</Casilla>
+</TableroOca>

@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+   Universidad Nacional de Educacion a Distancia
+   Master en Diseño y Desarrollo de Aplicaciones Web Dinamicas
+
+   2014, Antonio Jesus Arquillos Alvarez
+   ----------------------------------------------------------------- -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <wicket:panel>
+      <table align="center" width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <table align="center" width="100%" border="1" cellspacing="0">
+              <tr>
+                <td bgcolor="yellow" align="center">
+                  <a href="#" style="font-size: 75%" wicket:id="anoAnterior">&lt;&lt; A&ntilde;o Anterior</a>
+                </td>
+                <td bgcolor="orange" align="center" wicket:id="mesAnterior">
+                  <a href="#" style="font-size: 75%">&lt; Mes Anterior</a>
+                </td>
+                <td bgcolor="red" align="center">
+                  <select wicket:id="seleccionMes">
+                    <option>Enero</option>
+                    <option>Febrero</option>
+                    <option>Marzo</option>
+                    <option>Abril</option>
+                  </select>
+                  <select wicket:id="seleccionAno">
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                  </select>
+                </td>              
+                <td bgcolor="orange" align="center">
+                  <a href="#" style="font-size: 75%" wicket:id="mesSiguiente">Mes Siguiente &gt;</a>
+                </td>
+                <td bgcolor="yellow" align="center">
+                  <a href="#" style="font-size: 75%" wicket:id="anoSiguiente">A&ntilde;o Siguiente &gt;&gt;</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table border="1" cellspacing="0" width="100%">
+              <tr wicket:id="filasCalendario">
+                <td wicket:id="cols" width="14%" height="60px" valign="top">
+                  <div wicket:id="diaCalendario"></div>
+                </td>
+              </tr>
+            </table>                      
+          </td>
+        </tr>
+      </table>
+    </wicket:panel>
+  </body>
+</html>

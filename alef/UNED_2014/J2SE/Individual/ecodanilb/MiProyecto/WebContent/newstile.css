@@ -1,0 +1,177 @@
+@charset "utf-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #4E5869;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Selectores de elemento/etiqueta ~~ */
+ul, ol, dl { /* Debido a las diferencias existentes entre los navegadores, es recomendable no añadir relleno ni márgenes en las listas. Para lograr coherencia, puede especificar las cantidades deseadas aquí o en los elementos de lista (LI, DT, DD) que contienen. Recuerde que lo que haga aquí se aplicará en cascada en la lista .nav, a no ser que escriba un selector más específico. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+a img { /* este selector elimina el borde azul predeterminado que se muestra en algunos navegadores alrededor de una imagen cuando está rodeada por un vínculo */
+	border: none;
+}
+
+/* ~~ La aplicación de estilo a los vínculos del sitio debe permanecer en este orden (incluido el grupo de selectores que crea el efecto hover -paso por encima-). ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* a no ser que aplique estilos a los vínculos para que tengan un aspecto muy exclusivo, es recomendable proporcionar subrayados para facilitar una identificación visual rápida */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* este grupo de selectores proporcionará a un usuario que navegue mediante el teclado la misma experiencia de hover (paso por encima) que experimenta un usuario que emplea un ratón. */
+	text-decoration: none;
+}
+
+/* ~~ este contenedor rodea a todas las demás divs, lo que les asigna su anchura basada en porcentaje ~~ */
+.container {
+	width: 90%;
+	max-width: 1260px;/* puede que sea conveniente una anchura máxima (max-width) para evitar que este diseño sea demasiado ancho en un monitor grande. Esto mantiene una longitud de línea más legible. IE6 no respeta esta declaración. */
+	min-width: 780px;/* puede que sea conveniente una anchura mínima (min-width) para evitar que este diseño sea demasiado estrecho. Esto permite que la longitud de línea sea más legible en las columnas laterales. IE6 no respeta esta declaración. */
+	background-color: #FFF; /* el valor automático de los lados, unido a la anchura, centra el diseño. No es necesario si establece la anchura de .container en el 100%. */
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+/* ~~no se asigna una anchura al encabezado. Se extenderá por toda la anchura del diseño. Contiene un marcador de posición de imagen que debe sustituirse por su propio logotipo vinculado~~ */
+.header {
+	font-family: Verdana, Geneva, sans-serif;
+	background-image: url(fondo2.png);
+	width: 100%;
+	height: 10em;
+	border: 1px solid #FFF;
+}
+.menu {
+	height: 5em;
+	width: 100px;
+	border: 0px solid #FFF;
+}
+.menu 
+	{
+	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 12px;
+	clear: both;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+.container .content center h1 {
+	line-height: 120%;
+	margin-top: 2em;
+	margin-right: 0em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 36px;
+	font-weight: bolder;
+}
+
+	
+/***********************QUITAR MARCAS DE MENU********************************************/	
+	.menu ul 
+		{ list-style-type: none;}
+
+/***********************SUBNIVELES CON CLASE NIVEL1  IZQ + ANCHO Y MARGEN CON RESPECTO AL FINAL*/	
+
+		.menu ul li 
+			{ float: left;width: 140px;margin-right: 20px;border-top:2px solid #39F;}
+
+/***********************SUBNIVELES TIPO BLOQUE PARA QUE TENGA SU ESPACIO*********************/
+		
+			.menu ul li a 
+				{display:block;color:#909;background-color:#FFF;border: solid 1px #fff;padding: 8px;}
+
+/***********************SUBNIVELES AL PASAR EL RATÓN*********************/
+
+	.menu ul li:hover 
+		{position: relative; color: white; text-decoration:underline;}
+	
+/* CAMBIAR FONDO Y COLOR CUANDO PASE EL RATÓN POR ENCIMA*/
+
+			.menu ul li a:hover, .menu ul li:hover a.nivel1 
+				{background-color:#909;color: white;}
+
+/****************************************** OCULTAR SUBMENU******************************/
+	.menu ul li ul 
+		{display:none;}
+/****************************************** BORDES Y RELLENO******************************/
+	.menu ul li ul li a 
+		{padding: 10px 10px 10px 10px;}
+
+/************* MOSTRAR SUBMENU EN BLOQUE CUANDO PASE RATÓN******************/
+
+	.menu ul li a:hover ul, .menu ul li:hover ul 
+		{display: block;position: absolute;}
+
+/************* ICONOS PDF******************/
+	.menu .pdf
+		{padding:6px 0px 8px 10px; background: #FFF url(pdf.png) no-repeat left center;}
+
+
+/* ~~ Esta es la información de diseño. ~~ 
+
+1) El relleno sólo se sitúa en la parte superior y/o inferior de la div. Los elementos situados dentro de esta div tienen relleno a los lados. Esto le ahorra las "matemáticas de modelo de cuadro". Recuerde que si añade relleno o borde lateral a la div propiamente dicha, éste se añadirá a la anchura que defina para crear la anchura *total*. También puede optar por eliminar el relleno del elemento en la div y colocar una segunda div dentro de ésta sin anchura y el relleno necesario para el diseño deseado.
+
+*/
+.content {
+	padding: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	background-color: #FFF;
+	background-image: url(magenta.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	border: 1px solid #FFF;
+	height: 52em;
+}
+.container .content center h2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 24px;
+	line-height: 200%;
+}
+
+
+/* ~~ Este selector agrupado da espacio a las listas del área de .content ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* este relleno reproduce en espejo el relleno derecho de la regla de encabezados y de párrafo incluida más arriba. El relleno se ha colocado en la parte inferior para que el espacio existente entre otros elementos de la lista y a la izquierda cree la sangría. Estos pueden ajustarse como se desee. */
+}
+
+/* ~~ El pie de página ~~ */
+.footer {
+	padding: 10px;
+	background-color: #6F7D94;
+	color: #FFF;
+	border: 1px solid #FFF;
+}
+
+/* ~~ clases float/clear varias ~~ */
+.fltrt {  /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase puede situarse en una <br /> o div vacía como elemento final tras la última div flotante (dentro de #container) si #footer se elimina o se saca fuera de #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}

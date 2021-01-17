@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<eclipse-userlibraries version="2">
+    <library name="jersey-client" systemlibrary="false">
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/aopalliance-repackaged-2.4.0-b34.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/hk2-api-2.4.0-b34.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/hk2-locator-2.4.0-b34.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/hk2-utils-2.4.0-b34.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/javassist-3.18.1-GA.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/javax.annotation-api-1.2.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/javax.inject-2.4.0-b34.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/javax.ws.rs-api-2.0.1.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/jersey-client-2.23.1.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/jersey-common-2.23.1.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/jersey-guava-2.23.1.jar"/>
+        <archive path="/JAXClient/lib/jersey-2.23.1-client/osgi-resource-locator-1.0.1.jar"/>
+    </library>
+</eclipse-userlibraries>

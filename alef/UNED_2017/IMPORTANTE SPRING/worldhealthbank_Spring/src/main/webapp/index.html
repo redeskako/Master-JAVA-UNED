@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Insert title here</title>
+ <script src="../lib/angular.min.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/controllers/MainController.js"></script>
+<script src="../js/servicies/userService.js"></script>
+
+<link href="../theme/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div ng-app="myApp" ng-controller="MainController">
+<div class="container">
+<h2>Bienvenido a la práctica de WorldHealthBank en Spring</h2>
+</div>
+<div class="container" style="width:330px;">
+<div class="mt-2">
+      <form class="form-signin">
+     	
+        <h3 class="jumbotron-heading">Iniciar Sesión</h3>
+        <label for="inputEmail" class="sr-only">Usuario</label>
+        <input id="inputEmail" class="form-control" placeholder="login" required="" autofocus="" ng-model="login">
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        
+        <a href="./registro/registroUser.html"><button type="button" class="btn" >Registrarse</button></a>
+        <a href="http://localhost:8080/menu.html#/" class="btn btn-primary"><i class="fa fa-newspaper-o"></i> Iniciar Sesión</a>
+      </form>
+
+    </div>
+    </div>
+
+
+
+	
+	
+	
+
+  
+  
+ 
+  
+  
+ 
+  
+  
+  
+
+
+</body>
+</html>

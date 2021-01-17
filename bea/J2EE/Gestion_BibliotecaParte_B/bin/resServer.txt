@@ -1,0 +1,174 @@
+
+Clientes activos:1
+
+	[Host:127.0.0.1	Nombre->localhost
+]
+
+
+Cliente no activos:11
+
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 240 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 21 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 19 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 15 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 12 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 13 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 10 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 17 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 11 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 9 mseg.
+	[Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+, Host:127.0.0.1	Nombre->localhost
+]
+
+
+Tiempo de actividad: 10 mseg.

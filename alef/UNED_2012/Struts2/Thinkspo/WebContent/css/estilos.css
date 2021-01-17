@@ -1,0 +1,64 @@
+	    .thinspo{
+	      background-color: #d0e5f5;
+	    }
+	    .login{
+	      font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+	      font-size: 1.1em;
+	      font-weight: bold;
+	      color:#222222;
+	      background-color: #fcfdfd;
+	      position: absolute;
+	      top:50%;
+	      left:50%;
+	      width: 310px;
+	      height: 100px;
+	      margin-top: -50px;   /* height/2 = 500px / 2 */
+	      margin-left: -150px;  /* width/2 = 500px / 2 */
+	    }
+	    .crear{
+	      font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+	      font-size: 1.1em;
+	      font-weight: bold;
+	      color:#222222;
+	      background-color: #fcfdfd;
+	      position: absolute;
+	      top:40%;
+	      left:50%;
+	      width: 310px;
+	      height: 180px;
+	      margin-top: -50px;   /* height/2 = 500px / 2 */
+	      margin-left: -150px;  /* width/2 = 500px / 2 */
+	    }
+	    .graficas{
+	      font-family: Lucida Grande, Lucida Sans, Arial, sans-serif;
+	      font-size: 1.1em;
+	      font-weight: bold;
+	      color:#222222;
+	      background-color: #fcfdfd;
+	      position: absolute;
+	      top:50%;
+	      left:50%;
+	      margin-top: -50px;   /* height/2 = 500px / 2 */
+	      margin-left: -100px;  /* width/2 = 500px / 2 */
+	    }
+		.errors {
+			background-color:#fef1ec;
+			border:1px solid #cd0a0a;
+			color:#cd0a0a;
+			width:500px;
+			margin-bottom:8px;
+			position: absolute;
+		    top:75%;
+			z-index:10; 
+		}
+		.errorsFields {
+			background-color:#fef1ec;
+			border:1px solid #cd0a0a;
+			color:#cd0a0a;
+			width:500px;
+			margin-bottom:8px;
+			position: absolute;
+		    top:30%;
+			z-index:11; 
+		}
+		

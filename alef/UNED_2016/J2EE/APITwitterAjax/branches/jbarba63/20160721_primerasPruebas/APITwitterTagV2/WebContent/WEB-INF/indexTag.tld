@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+	<tlib-version>1.0</tlib-version>
+    <jsp-version>1.1</jsp-version>
+    <short-name>hola</short-name>
+    <uri></uri>
+    <info>taglib para index.jsp</info>
+    <tag>
+    	<name>userStatusMessage</name>
+    	<body-content>empty</body-content>
+    	<info>Mensajes para usuario segun su estado en la pagina principal</info>
+        <tag-class>uned.java2016.apitwitterweb.tag.index.UserStatusMessage</tag-class>
+    </tag>  
+</taglib>

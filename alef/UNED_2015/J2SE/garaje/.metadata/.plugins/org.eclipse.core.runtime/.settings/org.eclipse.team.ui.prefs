@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+org.eclipse.team.ui.first_time=false
+org.eclipse.team.ui.sychronizing_default_participant=org.tigris.subversion.subclipse.participant
+org.eclipse.team.ui.sychronizing_default_participant_sec_id=1424211960432
+teamContentDescriptors/org.eclipse.core.resources.modelProvider/enabled=false
+teamContentDescriptors/org.eclipse.egit.ui.changeSetModel/enabled=false
+teamContentDescriptors/org.eclipse.jdt.ui.modelProvider/enabled=false
+teamContentDescriptors/org.eclipse.team.cvs.core.changeSetModel/enabled=false
+teamContentDescriptors/org.eclipse.team.svn.core.svnChangeSetModel/enabled=false
+teamContentDescriptors/org.eclipse.team.ui.patchModelProvider/enabled=false

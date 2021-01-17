@@ -1,0 +1,93 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tienda on line</title>
+
+<link rel="stylesheet" href="css/modelo1.css" type="text/css" />
+        <script type="text/javascript">
+            function validar(e) { // 1
+            tecla = (document.all) ? e.keyCode  : e.which; // 2
+            if (tecla==8) return true; // 3
+            patron = /\d/; // Solo acepta nÃƒÂºmeros
+            te = String.fromCharCode(tecla); // 5
+            return patron.test(te); // 6
+            }
+            //============================================================
+            function vacio(cadena)
+  			{                                    // DECLARACION DE CONSTANTES
+		    var blanco = " \n\t" + String.fromCharCode(13); // blancos
+		                                       // DECLARACION DE VARIABLES
+		    var i;                             // indice en cadena
+		    var es_vacio;                      // cadena es vacio o no
+		    for(i = 0, es_vacio = true; (i < cadena.length) && es_vacio; i++) // INICIO
+		      es_vacio = blanco.indexOf(cadena.charAt(i)) != - 1;
+		    return(es_vacio);
+		  	}
+            //============================================================
+            function validacion(formulario) {
+
+            var er_codigopostal = /(^([0-9]{5,5})|^)$/			//5 numeros o cadena vacia
+            var er_dni = /(^([0-9]{8,8}\-[A-Z])|^)$/		//8 nÃƒÂºmeros, un guion y una letra, o cadena vacia
+			//comprueba si algun campo esta vacio
+			if(vacio(formulario.nombre.value)||vacio(formulario.apellido1.value)||vacio(formulario.apellido2.value)||
+				vacio(formulario.dni.value)||vacio(formulario.telefono.value)||vacio(formulario.direccion.value)||
+				vacio(formulario.codigopostal.value)||vacio(formulario.localidad.value)||vacio(formulario.provincia.value)||
+				vacio(formulario.usuario.value)||vacio(formulario.pass.value)){
+				alert("Por favor rellene todos los campos.");
+      			return false
+      		}
+            //comprueba campo codigo postal
+            if(!er_codigopostal.test(formulario.codigopostal.value)) {
+                    alert('Contenido del campo CODIGO POSTAL incorrecto.\nDebe introducir 5 numeros')
+                    return false
+            }
+            //comprueba campo dni
+            if(!er_dni.test(formulario.dni.value)) {
+                    alert('Contenido del campo DNI incorrecto.\nFormato: 8 numeros + guion + Letra Mayuscula')
+                    return false
+            }
+
+            return true
+            }
+            //========================================================================
+			function validacioncita(formulario) {
+            var er_dni = /(^([0-9]{8,8}\-[A-Z])|^)$/		//8 nÃƒÂºmeros, un guion y una letra, o cadena vacia
+			//comprueba si algun campo esta vacio
+			if(	vacio(formulario.dni.value)||vacio(formulario.codigocita.value)||
+				vacio(formulario.tipoServicio.value)||vacio(formulario.turno.value)){
+				alert("Por favor rellene todos los campos.");
+      			return false
+      		}
+            //comprueba campo dni
+            if(!er_dni.test(formulario.dni.value)) {
+                    alert('Contenido del campo DNI incorrecto.\nFormato: 8 numeros + guion + Letra Mayuscula')
+                    return false
+            }
+
+            return true
+            }
+            //========================================================================
+            function validacioneditacita(formulario) {
+            //comprueba si algun campo esta vacio
+			if(vacio(formulario.tipoServicio.value)||vacio(formulario.turno.value)){
+				alert("Por favor rellene todos los campos.");
+      			return false
+      		}
+            return true
+            }
+            //========================================================================
+
+        </script>
+</head>
+
+
+<div id="header">
+
+
+    <center>
+	<table>
+	<br>
+    <img src="template/logo1.png" heigth=20% width=20%>
+
+	</table>
+	</center>
+	</div>

@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+    <title></title>
+    <script> 
+        var xhr;
+        function validar(){
+            if(window.ActiveXObject){
+                xhr=new ActiveXObject("Microsoft.XMLHttp");      
+            }
+            else if((window.XMLHttpRequest) || (typeof XMLHttpRequest)!=undefined){
+                xhr=new XMLHttpRequest();
+            }
+            else{
+                alert("Su navegador no tiene soporte para AJAX");
+                return;
+            }
+            enviaPeticion();
+        }
+        function enviaPeticion(){
+        	// Los parametros se enviaran mediante el metodo post
+            xhr.open("POST",document.forms[0].action,true);
+            
+            // Cuando se reciba 
+            xhr.onreadystatechange=procesaResultado;
+            //definición del tipo de contenido del cuerpo 
+            //para formularios HTML
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            var datos=obtenerDatos();
+            //se envían los datos en el cuerpo de la petición
+            xhr.send(datos);
+        }
+        function obtenerDatos(){
+            var controles=document.forms[0].elements;
+            var datos=new Array();
+            var cad="";
+            for(var i=0;i<controles.length;i++){
+                cad=encodeURIComponent(controles[i].name)+"=";
+                cad+=encodeURIComponent(controles[i].value);
+                datos.push(cad);
+            }
+            //se forma la cadena con el método join() del array
+            //para evitar múltiples concatenaciones
+            cad=datos.join("&");
+            return cad;
+        }
+        function procesaResultado(){
+            if(xhr.readyState==4){  
+                if(xhr.status==200){
+                    document.getElementById("resultado").innerHTML=xhr.responseText;               
+                    var encabezados="<h2>Encabezados de respuesta</h2>";
+                    encabezados+=xhr.getAllResponseHeaders();
+                    document.getElementById("encabezados").innerHTML=encabezados;
+                }
+                else
+                    alert(xhr.statusText);
+            }
+        }
+    </script>
+  </head>
+  <body>
+      <center>
+          <h1>Formulario de solicitud de datos</h1>
+          <br/>
+          <br/>
+          <form action="Validador">
+          <table>
+              <tr>
+                  <td>
+                      Nombre:
+                  </td>
+                  <td>
+                      <input type="text" name="txtnombre"/>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      Apellido:
+                  </td>
+                  <td>
+                      <input type="text" name="txtapellido"/>
+                  </td>
+              </tr> 
+              <tr>
+                  <td>
+                      Email:
+                  </td>
+                  <td>
+                      <input type="text" name="txtemail"/>
+                  </td>
+              </tr> 
+              <tr>
+                  <td>
+                      Ciudad:
+                  </td>
+                  <td>
+                      <input type="text" name="txtciudad"/>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="2" align="center">
+                      <input type="button" name="btnvalidar" onclick="validar();" value="Procesar"/>
+                  </td>
+              </tr>             
+          </table>
+          </form>
+          <br/>
+          <br/>
+          <div id="resultado">   
+          </div>
+           <div id="encabezados">   
+          </div>
+      </center>
+  </body>
+</html>

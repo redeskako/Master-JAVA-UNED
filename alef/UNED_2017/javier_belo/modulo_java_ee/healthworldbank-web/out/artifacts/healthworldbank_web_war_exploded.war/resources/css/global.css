@@ -1,0 +1,143 @@
+
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#header div{
+    min-width: 500px;
+    float: left;
+}
+
+#header form{
+    float: right;
+}
+
+#header #helper{
+    clear: both;
+}
+
+#left-panel{
+    float: left;
+    width: 400px;
+}
+
+#right-panel{
+    float: left;
+    width: 600px;
+}
+
+#footer{
+    clear: both;
+}
+
+#menu-links {
+    width: 400px;
+}
+
+#menu-links li {
+    width: 100px;
+    display: inline-block; }
+
+#countries_page li, #indicators_page li{
+    width: 150px;
+    display: inline-block;
+}
+
+.selected {
+    background-color: brown;
+    color: #FFF;
+}
+
+#photo-panel{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid darkgrey;
+}
+
+#geo-chart{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto 30px;
+    border: 1px solid darkgrey;
+}
+
+table{
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid gray;
+    table-layout: fixed;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+caption{
+    text-align: left;
+    padding-left: 5px;
+}
+
+thead, tbody{
+    display: block;
+}
+
+tbody{
+    height: 100px;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+th{
+    text-align: center;
+    background-color: white;
+    font-size: small;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    padding: 1px;
+    width: 100px;
+    color: black;
+    font-family: Arial;
+    font-style: normal;
+    font-size: small;
+}
+
+td {
+    word-break: break-all;
+    word-wrap: break-word;
+    font-size: x-small;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:hover{
+    background-color: darkgray;
+}
+
+
+select option {
+    white-space: nowrap;
+    min-width: 350px;
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#select-year {
+    min-width: 100px;
+    max-width: 100px;
+}
+
+ul{
+    padding-top: 0;
+}
+
+fieldset{
+    border: 0px;
+}
+

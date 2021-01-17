@@ -1,0 +1,19 @@
+table.tabla {width:550px;border:1;font:12px Arial;}
+table.tabla caption{height:40px;border-bottom:1px solid #AABBCC; }
+table.tabla th {height:35px;border-bottom:1px solid #000000;}
+table.tabla th.tit {width:250px;background:#48D1CC;text-align:center;}
+table.tabla th.des {width:200px;background:#66CDAA;text-align:center;}
+table.tabla th.link {width:100px;background:#E5E5E5;text-align:right;}
+
+table.tabla td {height:35px;border-bottom:1px solid #000000;}
+table.tabla td.tit {width:250px;background:#DDA0DD;text-align:center;}
+table.tabla td.des {width:200px;background:#E6E6FA;text-align:center;}
+table.tabla td.link {width:100px;background:#E5E5E5;text-align:right;}
+
+div.tabla {width:550px;border:0;font:12px Arial;position:relative;}
+div.tabla span.tit {width:250px;font-weight:bold;position:absolute;top:0;left:0;background:#DD0000;}
+div.tabla span.speech {width:250px;position:absolute;top:15px;left:0;background:#BBFFFF;}
+div.tabla span.des {width:200px;position:absolute;top:0;left:250px;text-align:center;background:#00FFFF;}
+div.tabla span.link {width:100px;position:absolute;top:0;left:450px;text-align:right;background:#AFAFAF;}
+div.tabla span.link2 {width:100px;position:absolute;top:15px;left:450px;text-align:right;background:#EFEFEF;}
+table.tabla tr.boton {width:200px;background-color:#9bcd9b  ;color: black;font-family: arial;}

@@ -1,0 +1,473 @@
+/* HOJA DE ESTILOS PRINCIPAL */
+
+/* FUENTES ***************************************************************************************************************************************************/
+/* Light */
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: normal;
+	font-weight: 300;
+	src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url("Roboto_Condensed/RobotoCondensed-Light.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: italic;
+	font-weight: 300;
+	src: local('Roboto Condensed Light Italic'), local('RobotoCondensed-LightItalic'), url("Roboto_Condensed/RobotoCondensed-LightItalic.ttf") format('truetype');
+}
+ 
+/* Normal */
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: normal;
+	font-weight: 400;
+	src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url("Roboto_Condensed/RobotoCondensed-Regular.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: italic;
+	font-weight: 400;
+	src: local('Roboto Condensed Italic'), local('RobotoCondensed-Italic'), url("Roboto_Condensed/RobotoCondensed-Italic.ttf") format('truetype');
+}
+ 
+/* Bold */
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: normal;
+	font-weight: 700;
+	src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url("Roboto_Condensed/RobotoCondensed-Bold.ttf") format('truetype');
+}
+@font-face {
+	font-family: "Roboto Condensed";
+	font-style: italic;
+	font-weight: 700;
+	src: local('Roboto Condensed Bold Italic'), local('RobotoCondensed-BoldItalic'), url("Roboto_Condensed/RobotoCondensed-BoldItalic.ttf") format('truetype');
+}
+/* FUENTES ***************************************************************************************************************************************************/
+
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	font-family: 'Roboto Condensed', Verdana, Geneva, sans-serif;
+}
+
+#faja{
+	position: relative;	/* AJUSTAMOS A DIFERENTES RESOLUCINES PORQUE USAMOS LA FAJA COMO ELEMENTO DE CONTROL */
+	width: 62.5em; /* 1000px */
+	margin: 0 auto;
+	background: #ffffff;
+}
+
+header{
+	float:left;
+	width: 62.5em; /* 1000px */
+	background: #123456;
+	height: 2em; /* BORRAR */
+}
+
+#centro{
+	float:left;
+	width: 60.5em; 
+	background: #ffffff;
+	padding: 1em;
+}
+
+.misZonas{
+	float:left;
+	width: 60.3em;
+	background: #ffffff;
+	border-radius: 2em;
+	border: 0.2em solid #2f4f4f;
+	margin-bottom: 1em;
+}
+
+#zonaApiTwitter{
+	float:left;
+	width: 24em;
+	padding-top: 1em;
+	padding-left: 4em;
+}
+
+#zonaApiTwitter img{
+	
+}
+
+#zonaHashtag{
+	float:left;
+	width: 27.3em;
+	padding-top: 0.9em;
+	padding-left: 5em;
+}
+
+#zonaHashtag h5{
+	font-size: 120%;
+	font-weight: bold;
+	letter-spacing: -0.063em;
+	margin: 0em;	
+	color: #000000;
+	display:inline;
+}
+
+.select_busqueda{
+	background: #eeeeee;
+	border-radius: 0.313em;
+	padding-left: 1em;
+	width: 16em;
+	font-size: 80%;
+	margin-left: 1em;
+	background: url(../imagenes/zona_buscar/lupa.png) no-repeat;
+	color: #000000;
+}
+
+.select_busqueda option:first-child{
+  color: #777777;
+}
+
+.boton{
+	background: #eeeeee;
+	border-radius: 0.313em;
+	width: 4.5em;
+	margin-left: 16.5em;
+	margin-top: 0.5em;
+}
+
+#zonaUsuario{
+	float:left;
+	width: 26.3em;
+	padding-left: 5em;
+	padding-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+#zonaUsuario h5{
+	font-size: 110%;
+	font-weight: bold;
+	letter-spacing: -0.063em;
+	margin: 0em;	
+	color: #2f4f4f;;
+	display:inline;
+}
+
+#zonaUsuario p{
+	font-size: 100%;
+	margin: 0em;	
+	color: #222222;
+	display:inline;
+}
+
+#zonaTitulo{
+	float:left;
+	width: 35.3em;
+	padding-left: 25em;
+	padding-top: 0.5em;
+}
+
+#zonaTitulo h5{
+	font-size: 110%;
+	font-weight: bold;
+	letter-spacing: -0.063em;
+	margin: 0em;	
+	color: #000000;
+	display:inline;
+}
+
+#zonaTitulo p{
+	font-size: 100%;
+	margin: 0em;	
+	color: #222222;
+	display:inline;
+}
+
+#zonaEnlaces{
+	float:left;
+	width: 52.3em;
+	padding-left: 4em;
+	margin-bottom: 1em;
+}
+
+.enlaces{
+	float:left;
+	width: 13.43em;
+	padding-left: 4em;
+	padding-top: 0.5em;
+}
+
+.enlaces a{
+	text-decoration: none;
+	font-size: 120%;
+	color: #2f4f4f;
+	letter-spacing: -0.063em;
+}
+
+.enlaces a:hover{
+	letter-spacing: 0em;
+}
+
+#zonaResultadosTitulo{
+	float:left;
+	width: 56.3em;
+	padding-left: 4em;
+	padding-top: 0.5em;
+}
+
+#zonaResultadosTituloTexto{
+	float:left;
+	width: 20em;
+}
+
+#zonaResultadosTituloSelect{
+	float:left;
+	width: 32.3em;
+	text-align: right;
+	padding-right: 4em;
+}
+
+#zonaResultadosTituloSelect p{
+	font-size: 100%;
+	margin: 0em;	
+	color: #222222;
+	display:inline;
+}
+
+#zonaResultadosTitulo h5{
+	font-size: 110%;
+	font-weight: bold;
+	letter-spacing: -0.063em;
+	margin: 0em;	
+	color: #000000;
+	display:inline;
+}
+
+#zonaResultadosGeneral{
+	float:left;
+	width: 56.3em;
+	padding-left: 0em;
+	padding-top: 0em;
+	padding-bottom: 0.75em;
+	padding-left: 4em;
+}
+
+#zonaResultadosGeneral h5{
+	font-size: 110%;
+	font-weight: bold;
+	letter-spacing: -0.063em;
+	margin: 0em;	
+	color: #2f4f4f;
+	display:inline;
+}
+
+#zonaResultadosGeneral p{
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0em;	
+	color: #000000;
+	display:inline;
+}
+
+.zonaResultadoParticular{
+	float:left;
+	width: 52.3em;
+	padding-left: 0em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border-top: solid 0.1em #2f4f4f;
+	border-bottom: solid 0.1em #2f4f4f;
+}
+
+.zonasID{
+	float:left;
+	width: 15em;
+	padding-left: 0em;
+	padding-top: 0.5em;
+}
+
+.zonasAutor{
+	float:left;
+	width: 15em;
+	padding-left: 0em;
+	padding-top: 0.5em;
+}
+
+.zonasUrl{
+	float:left;
+	width: 22.3em;
+	padding-left: 0em;
+	padding-top: 0.5em;
+}
+
+.zonasUrl a{
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0em;	
+	color: #000000;
+	display:inline;
+	text-decoration: none;
+	letter-spacing: -0.063em;
+}
+
+.zonasUrl a:hover{
+	letter-spacing: 0em;
+}
+
+.zonasTexto{
+	float:left;
+	width: 52.3em;
+	padding-left: 0em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.zonaResultadoParticularEnlaces{
+	width: 15em;
+	padding-left: 0em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-top: solid 0.1em #2f4f4f;
+	border-bottom: solid 0.1em #2f4f4f;
+}
+
+.zonaResultadoParticularEnlaces a{
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0em;	
+	color: #000000;
+	display:inline;
+	text-decoration: none;
+	letter-spacing: -0.063em;
+}
+
+.zonaResultadoParticularEnlaces a:hover{
+	letter-spacing: 0em;
+}
+
+#capa_errores1{
+	float:left;
+	width: 56.3em;
+	padding-left: 4em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+#capa_errores1 p{
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0em;	
+	color: #dd1111;
+}
+
+#capa_errores2{
+	float:left;
+	width: 56.3em;
+	padding-left: 4em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+#capa_errores2 p{
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0em;	
+	color: #dd1111;
+}
+
+.zonaResultadoParticularEstudios{
+	float:left;
+	width: 52.3em;
+	padding-left: 0em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border-top: solid 0.1em #2f4f4f;
+	border-bottom: solid 0.1em #2f4f4f;
+}
+
+.zonasNTCID{
+	float:left;
+	width: 52.3em;
+	padding-left: 0em;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+}
+
+.zonasNTCID a{
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0em;	
+	color: #000000;
+	display:inline;
+	text-decoration: none;
+	letter-spacing: -0.063em;
+}
+
+.zonasNTCID a:hover{
+	letter-spacing: 0em;
+}
+
+.zonasTituloInforme{
+	float:left;
+	width: 52.3em;
+	padding-left: 0em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.zonasResumen{
+	float:left;
+	width: 52.3em;
+	padding-left: 0em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.zonasResumen p{
+	text-align: justify;
+}
+
+.zonasFecha{
+	float:left;
+	width: 52.3em;
+	padding-left: 0em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.zonasOrganizacion{
+	float:left;
+	width: 52.3em;
+	padding-left: 0em;
+	padding-top: 0.25em;
+	padding-bottom: 0.5em;
+}
+
+#zonaPaginacion{
+	float:left;
+	width: 29.3em;
+	padding-left: 23em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border-top: solid 0.1em #2f4f4f;
+	border-bottom: solid 0.1em #2f4f4f;
+	text-align: center;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+
+.zonaNumeros{
+	float:left;
+	width: 1em;
+	display: inline-block;
+}
+
+footer{
+	float:left;
+	width: 62.5em; /* 1000px */
+	background: #123456;
+	border-radius: 0em;
+	margin-bottom: 1em;
+	height: 2em; /* BORRAR */
+}
+
