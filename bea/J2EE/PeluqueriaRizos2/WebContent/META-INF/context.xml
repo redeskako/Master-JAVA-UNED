@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Context>
-	<Resource name="jdbc/rizos_bd" auth="Container"
-		type="javax.sql.DataSource" username="usuario1" password="usuario1"
-		driverClassName="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost/rizos_bd" validation="select 1"
-		maxActive="10" MaxIdle="4" />
-</Context>

@@ -1,3 +1,0 @@
-http://programacion.net/articulo/jsp_custom_tags-_etiquetas_a_medida_133
-http://chuwiki.chuidiang.org/index.php?title=Nuestra_primera_taglib
-https://tomcat.apache.org/tomcat-5.5-doc/jspapi/javax/servlet/jsp/tagext/Tag.html

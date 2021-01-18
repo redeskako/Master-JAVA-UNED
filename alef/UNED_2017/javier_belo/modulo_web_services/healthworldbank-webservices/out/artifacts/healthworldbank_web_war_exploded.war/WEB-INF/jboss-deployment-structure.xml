@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<jboss-deployment-structure>
-    <deployment>
-        <exclusions>
-            <module name="org.hibernate"/>
-            <module name="org.jboss.logging"/>
-        </exclusions>
-    </deployment>
-</jboss-deployment-structure>
