@@ -10,17 +10,33 @@ Ejemplos de ejercicios en Java Standar Edition
 # Sesiones de video formación
 
 ## Sesiones básicas
-* [![Primera sesión JAVA](https://img.youtube.com/vi/xc2O2PPW7Fc/0.jpg)](https://youtu.be/xc2O2PPW7Fc "Primera Sesión JAVA")
-* [![Segunda sesión JAVA: Clases y Objetos en JAVA](https://img.youtube.com/vi/UlGpy_uv2vA/0.jpg)](https://youtu.be/UlGpy_uv2vA "Segunda sesión JAVA")
-* [![Tercera sesión JAVA: Iteraciones y métodos en JAVA](https://img.youtube.com/vi/INCgwmXUbAY/0.jpg)](https://youtu.be/INCgwmXUbAY "Tercera sesión JAVA")
-* [![Cuarta sesión JAVA: Librería java.util.*](https://img.youtube.com/vi/kWu-xuQNLrE/0.jpg)](https://youtu.be/kWu-xuQNLrE "Cuarta sesión JAVA")
-* [![Quinta sesión JAVA: Círculos y polígonos](https://img.youtube.com/vi/YAg5N-1KL-M/0.jpg)](https://youtu.be/YAg5N-1KL-M "Quinta sesión JAVA")
-* [![Sexta sesión JAVA: GUI y Eventos](https://img.youtube.com/vi/nuQmnEfASx8/0.jpg)](https://youtu.be/nuQmnEfASx8 "Sexta sesión JAVA")
+### Primera sesión JAVA: Introducción a JAVA y elementos de configuración
+[![Primera sesión JAVA](https://img.youtube.com/vi/xc2O2PPW7Fc/0.jpg)](https://youtu.be/xc2O2PPW7Fc "Primera Sesión JAVA")
+### Segunda sesión JAVA: Clases y Objetos en JAVA
+[![Segunda sesión JAVA: Clases y Objetos en JAVA](https://img.youtube.com/vi/UlGpy_uv2vA/0.jpg)](https://youtu.be/UlGpy_uv2vA "Segunda sesión JAVA")
+
+### Tercera sesión JAVA: Iteraciones y métodos en JAVA
+[![Tercera sesión JAVA: Iteraciones y métodos en JAVA](https://img.youtube.com/vi/INCgwmXUbAY/0.jpg)](https://youtu.be/INCgwmXUbAY "Tercera sesión JAVA")
+
+### Cuarta sesión JAVA: Librerías básicas en JAVA
+[![Cuarta sesión JAVA: Librería java.util.*](https://img.youtube.com/vi/kWu-xuQNLrE/0.jpg)](https://youtu.be/kWu-xuQNLrE "Cuarta sesión JAVA")
+
+### Quinta sesión JAVA: Círculos y polígonos
+[![Quinta sesión JAVA: Círculos y polígonos](https://img.youtube.com/vi/YAg5N-1KL-M/0.jpg)](https://youtu.be/YAg5N-1KL-M "Quinta sesión JAVA")
+
+### Sexta sesión JAVA: GUI y eventos
+[![Sexta sesión JAVA: GUI y Eventos](https://img.youtube.com/vi/nuQmnEfASx8/0.jpg)](https://youtu.be/nuQmnEfASx8 "Sexta sesión JAVA")
 
 ## Maven y Docker en nuestro proyectos
-* [![Iniciar proyecto con Maven](https://img.youtube.com/vi/ixDpEA3a3Mc/0.jpg)](https://youtu.be/ixDpEA3a3Mc "Iniciando con Maven")
-* [![Docker en J2SE](https://img.youtube.com/vi/o0ZjWwKTCQU/0.jpg)](https://youtu.be/o0ZjWwKTCQU "Docker en J2SE")
-* [![Creando imagen con hub.docker](https://img.youtube.com/vi/uTHX32d6Jdg/0.jpg)](https://youtu.be/uTHX32d6Jdg "Imagen en docker HUB")
+
+### Iniciar proyecto con Maven
+[![Iniciar proyecto con Maven](https://img.youtube.com/vi/ixDpEA3a3Mc/0.jpg)](https://youtu.be/ixDpEA3a3Mc "Iniciando con Maven")
+
+### Docker en J2SE
+[![Docker en J2SE](https://img.youtube.com/vi/o0ZjWwKTCQU/0.jpg)](https://youtu.be/o0ZjWwKTCQU "Docker en J2SE")
+
+### Creación de imagen para docker HUB
+[![Creando imagen con hub.docker](https://img.youtube.com/vi/uTHX32d6Jdg/0.jpg)](https://youtu.be/uTHX32d6Jdg "Imagen en docker HUB")
 
 # Ejemplos de Librerías J2SE
 
