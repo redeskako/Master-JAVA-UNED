@@ -43,10 +43,10 @@ Desarrollo y ejercicios en Java Standar Edition
 ## Maven y Docker en nuestro proyectos
 
 * Ejercicios hechos con docker y maven
-    * [Ejercicio Empleados](MavenDocker/empleados/)
-    * [Ejercicio Garaje GUI](MavenDocker/garajeGUI/)
-    * [Ejercicio Kwic](MavenDocker/kwic/)
-    * [Ejercicio juego de la OCA](MavenDocker/Oca_v3/)
+    * [Ejercicio Empleados](Maven-Docker/empleados/)
+    * [Ejercicio Garaje GUI](Maven-Docker/garajeGUI/)
+    * [Ejercicio Kwic](Maven-Docker/kwic/)
+    * [Ejercicio juego de la OCA](Maven-Docker/Oca_v3/)
 
 ### Iniciar proyecto con Maven
 [![Iniciar proyecto con Maven](https://img.youtube.com/vi/ixDpEA3a3Mc/0.jpg)](https://youtu.be/ixDpEA3a3Mc "Iniciando con Maven")
