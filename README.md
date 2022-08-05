@@ -10,4 +10,4 @@ Ejemplos de ejercicios en Java Standar Edition
 # Ejemplos de Librerías J2SE
 
 ## Más código fuente
-* [Ejemplo Swing con BBDD](bea/comercio/README.md)
+* [Ejemplo Swing con BBDD](bea/comercio/)
