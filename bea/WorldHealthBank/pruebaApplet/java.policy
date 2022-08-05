@@ -1,0 +1,10 @@
+grant {
+  permission java.io.FilePermission
+       "configuracion.properties","read"; 
+  permission java.net.SocketPermission 
+       "*", "connect"; 
+  permission java.lang.RuntimePermission
+       "exitVM";
+  permission java.util.PropertyPermission
+       "*","read";     
+};

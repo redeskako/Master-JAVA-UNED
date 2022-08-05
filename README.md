@@ -47,6 +47,7 @@ Ejemplos de ejercicios en Java Standar Edition
 * [Pila Par por Herencia](bea/PilaInterfazHerencia/)
 * [Garaje](bea/garaje/)
 * [Conjuntos](bea/CONJUNTO/)
+* [Bolsa](bea/primerasLibrerias/)
 
 ## GUI
 * [Calculadora 1](bea/CalculadoraFlowLayout/)
@@ -63,7 +64,9 @@ Ejemplos de ejercicios en Java Standar Edition
 * [Disconformidades 2](bea/disconformidades_j2se2/)
 * [Disconformidades 3](bea/Disconformidades_grego/)
 * [Disconformidades 4](bea/Disconformidades_Maria/)
-* [Practica Video Club](bea/PracticaVideoClub/)
+* [Práctica Video Club](bea/PracticaVideoClub/)
+* [Práctica WorldHealthBank](bea/WordHealthBank/)
+* [Práctica de Tickaje Horario](bea/prTikaje/)
 
 ## Prácticas en contenedores
 * [Empleados](bea/MavenDocker/empleados/)
