@@ -3,6 +3,62 @@ Desarrollo y ejercicios en Java Standar Edition
 
 ## Esquema
 ![Image Principios J2SE](https://i.pinimg.com/originals/4c/02/09/4c0209e67b222509e094018cfdeca04e.jpg)
+
+## Colecciones
+![image Colecciones en J2SE](https://i.pinimg.com/originals/ca/ff/64/caff64b0af5ca89b0ee44b8976174b4b.jpg)
+
+# Sesiones de video formación
+
+## Sesiones básicas
+### Primera sesión JAVA: Introducción a JAVA y elementos de configuración
+[![Primera sesión JAVA](https://img.youtube.com/vi/xc2O2PPW7Fc/0.jpg)](https://youtu.be/xc2O2PPW7Fc "Primera Sesión JAVA")
+### Segunda sesión JAVA: Clases y Objetos en JAVA
+[![Segunda sesión JAVA: Clases y Objetos en JAVA](https://img.youtube.com/vi/UlGpy_uv2vA/0.jpg)](https://youtu.be/UlGpy_uv2vA "Segunda sesión JAVA")
+
+* [Ejercicio explicado en la sesión](J2SE/Basico/Pilas-Conjuntos-Bolsas/PilaInterfazHerencia/)
+* [Ejercicio explicado en la sesión](J2SE/Basico/Pilas-Conjuntos-Bolsas/PilaInterfazComposicion/)
+### Tercera sesión JAVA: Iteraciones y métodos en JAVA
+[![Tercera sesión JAVA: Iteraciones y métodos en JAVA](https://img.youtube.com/vi/INCgwmXUbAY/0.jpg)](https://youtu.be/INCgwmXUbAY "Tercera sesión JAVA")
+
+### Cuarta sesión JAVA: Librerías básicas en JAVA
+[![Cuarta sesión JAVA: Librería java.util.*](https://img.youtube.com/vi/kWu-xuQNLrE/0.jpg)](https://youtu.be/kWu-xuQNLrE "Cuarta sesión JAVA")
+
+### Quinta sesión JAVA: Círculos y polígonos
+[![Quinta sesión JAVA: Círculos y polígonos](https://img.youtube.com/vi/YAg5N-1KL-M/0.jpg)](https://youtu.be/YAg5N-1KL-M "Quinta sesión JAVA")
+
+### Sexta sesión JAVA: GUI y eventos
+[![Sexta sesión JAVA: GUI y Eventos](https://img.youtube.com/vi/nuQmnEfASx8/0.jpg)](https://youtu.be/nuQmnEfASx8 "Sexta sesión JAVA")
+
+## Gestión de ficheros en JAVA
+* [Ejemplo de gestión de ficheros](J2SE/Basico/EjemploIO/)
+
+## JUNIT y Mockito
+* [Ejemplo de JUNIT: Prueba Suma](J2SE/JUnit/PruebaSuma/)
+* [Ejemplo de JUNIT: Prueba UNIT](J2SE/JUnit/PruebaUnit/)
+* [Ejemeplo JUNIT: Preuba UNT2](J2SE/JUnit/PruebaUnit2/)
+* [Biblioteca Mockito](J2SE/Mockito/BibliotecaMockito/)
+* [Bilbioteca Mockito 2](J2SE/Mockito/BibliotecaMockito2/)
+* [Bibliogeca Mockito GrII](J2SE/Mockito/BibliotecaMockitoGrII/)
+
+## Maven y Docker en nuestro proyectos
+
+* Ejercicios hechos con docker y maven
+    * [Ejercicio Empleados](J2SE/MavenDocker/empleados/)
+    * [Ejercicio Garaje GUI](J2SE/MavenDocker/garajeGUI/)
+    * [Ejercicio Kwic](J2SE/MavenDocker/kwic/)
+    * [Ejercicio juego de la OCA](J2SE/MavenDocker/Oca_v3/)
+
+### Iniciar proyecto con Maven
+[![Iniciar proyecto con Maven](https://img.youtube.com/vi/ixDpEA3a3Mc/0.jpg)](https://youtu.be/ixDpEA3a3Mc "Iniciando con Maven")
+
+### Docker en J2SE
+[![Docker en J2SE](https://img.youtube.com/vi/o0ZjWwKTCQU/0.jpg)](https://youtu.be/o0ZjWwKTCQU "Docker en J2SE")
+
+### Creación de imagen para docker HUB
+[![Creando imagen con hub.docker](https://img.youtube.com/vi/uTHX32d6Jdg/0.jpg)](https://youtu.be/uTHX32d6Jdg "Imagen en docker HUB")
+
+# Ejemplos de Librerías J2SE
+
 ## Consola
 * [Pila Par por Composición](J2SE/Basico/Pilas-Conjuntos-Bolsas/PilaInterfazComposicion/)
 * [Pila Par por Herencia](J2SE/Basico/Pilas-Conjuntos-Bolsas/PilaInterfazHerencia/)
@@ -61,63 +117,6 @@ Desarrollo y ejercicios en Java Standar Edition
 * [Biblioteca Mockito](J2SE/Mockito/BibliotecaMockito/)
 * [Biblioteca Mockito 2](J2SE/Mockito/BibliotecaMockito2/)
 * [Biblioteca Mockito 3](J2SE/Mockito/BibliotecaMockitoGrII/)
-
-## Colecciones
-![image Colecciones en J2SE](https://i.pinimg.com/originals/ca/ff/64/caff64b0af5ca89b0ee44b8976174b4b.jpg)
-
-# Sesiones de video formación
-
-## Sesiones básicas
-### Primera sesión JAVA: Introducción a JAVA y elementos de configuración
-[![Primera sesión JAVA](https://img.youtube.com/vi/xc2O2PPW7Fc/0.jpg)](https://youtu.be/xc2O2PPW7Fc "Primera Sesión JAVA")
-### Segunda sesión JAVA: Clases y Objetos en JAVA
-[![Segunda sesión JAVA: Clases y Objetos en JAVA](https://img.youtube.com/vi/UlGpy_uv2vA/0.jpg)](https://youtu.be/UlGpy_uv2vA "Segunda sesión JAVA")
-
-* [Ejercicio explicado en la sesión](J2SE/Basico/Pilas-Conjuntos-Bolsas/PilaInterfazHerencia/)
-* [Ejercicio explicado en la sesión](J2SE/Basico/Pilas-Conjuntos-Bolsas/PilaInterfazComposicion/)
-### Tercera sesión JAVA: Iteraciones y métodos en JAVA
-[![Tercera sesión JAVA: Iteraciones y métodos en JAVA](https://img.youtube.com/vi/INCgwmXUbAY/0.jpg)](https://youtu.be/INCgwmXUbAY "Tercera sesión JAVA")
-
-### Cuarta sesión JAVA: Librerías básicas en JAVA
-[![Cuarta sesión JAVA: Librería java.util.*](https://img.youtube.com/vi/kWu-xuQNLrE/0.jpg)](https://youtu.be/kWu-xuQNLrE "Cuarta sesión JAVA")
-
-### Quinta sesión JAVA: Círculos y polígonos
-[![Quinta sesión JAVA: Círculos y polígonos](https://img.youtube.com/vi/YAg5N-1KL-M/0.jpg)](https://youtu.be/YAg5N-1KL-M "Quinta sesión JAVA")
-
-### Sexta sesión JAVA: GUI y eventos
-[![Sexta sesión JAVA: GUI y Eventos](https://img.youtube.com/vi/nuQmnEfASx8/0.jpg)](https://youtu.be/nuQmnEfASx8 "Sexta sesión JAVA")
-
-## Gestión de ficheros en JAVA
-* [Ejemplo de gestión de ficheros](J2SE/Basico/EjemploIO/)
-
-## JUNIT y Mockito
-* [Ejemplo de JUNIT: Prueba Suma](J2SE/JUnit/PruebaSuma/)
-* [Ejemplo de JUNIT: Prueba UNIT](J2SE/JUnit/PruebaUnit/)
-* [Ejemeplo JUNIT: Preuba UNT2](J2SE/JUnit/PruebaUnit2/)
-* [Biblioteca Mockito](J2SE/Mockito/BibliotecaMockito/)
-* [Bilbioteca Mockito 2](J2SE/Mockito/BibliotecaMockito2/)
-* [Bibliogeca Mockito GrII](J2SE/Mockito/BibliotecaMockitoGrII/)
-
-## Maven y Docker en nuestro proyectos
-
-* Ejercicios hechos con docker y maven
-    * [Ejercicio Empleados](J2SE/MavenDocker/empleados/)
-    * [Ejercicio Garaje GUI](J2SE/MavenDocker/garajeGUI/)
-    * [Ejercicio Kwic](J2SE/MavenDocker/kwic/)
-    * [Ejercicio juego de la OCA](J2SE/MavenDocker/Oca_v3/)
-
-### Iniciar proyecto con Maven
-[![Iniciar proyecto con Maven](https://img.youtube.com/vi/ixDpEA3a3Mc/0.jpg)](https://youtu.be/ixDpEA3a3Mc "Iniciando con Maven")
-
-### Docker en J2SE
-[![Docker en J2SE](https://img.youtube.com/vi/o0ZjWwKTCQU/0.jpg)](https://youtu.be/o0ZjWwKTCQU "Docker en J2SE")
-
-### Creación de imagen para docker HUB
-[![Creando imagen con hub.docker](https://img.youtube.com/vi/uTHX32d6Jdg/0.jpg)](https://youtu.be/uTHX32d6Jdg "Imagen en docker HUB")
-
-# Ejemplos de Librerías J2SE
-
-
 ## Prácticas en contenedores
 * [Empleados](J2SE/MavenDocker/empleados/)
 * [Garague GUI](J2SE/MavenDocker/garajeGUI/)
