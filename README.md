@@ -9,5 +9,20 @@ Ejemplos de ejercicios en Java Standar Edition
 
 # Ejemplos de Librerías J2SE
 
+#GUI
+* [Calculadora 1](bea/CalculadoraFlowLayout/)
+* [Calculadora 2](bea/CalculadoraGridLayout/)
+* [Interfaz](alef/UNED_2012/Prueba_interfaz/)
+* [Kwic 1](bea/kwic/)
+* [Kwic 2](bea/prKWIC/)
+
 ## Más código fuente
 * [Ejemplo Swing con BBDD](bea/comercio/)
+* [Disconformidades 1](bea/Disconformidades_j2se/)
+* [Disconformidades 2](bea/disconformidades_j2se2/)
+* [Disconformidades 3](bea/Disconformidades_grego/)
+* [Disconformidades 4](bea/Disconformidades_Maria/)
+* [Practica Video Club](bea/PracticaVideoClub/)
+
+# Referencias
+* [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html)
