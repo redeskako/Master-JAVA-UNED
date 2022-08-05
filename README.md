@@ -8,7 +8,7 @@ Ejemplos de ejercicios en Java Standar Edition
 ![image Colecciones en J2SE](https://i.pinimg.com/originals/ca/ff/64/caff64b0af5ca89b0ee44b8976174b4b.jpg)
 
 # Sesiones de video formación
-* [![Primera sesión JAVA](https://img.youtube.com/vi/xc2O2PPW7Fc/0.jpg)](https://youtu.be/xc2O2PPW7Fc "Primera Sesión JAVA"){:target="_blank"}
+* [![Primera sesión JAVA](https://img.youtube.com/vi/xc2O2PPW7Fc/0.jpg)](https://youtu.be/xc2O2PPW7Fc "Primera Sesión JAVA")
 
 # Ejemplos de Librerías J2SE
 
