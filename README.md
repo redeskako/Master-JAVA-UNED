@@ -29,7 +29,19 @@ Ejemplos de ejercicios en Java Standar Edition
 ### Sexta sesión JAVA: GUI y eventos
 [![Sexta sesión JAVA: GUI y Eventos](https://img.youtube.com/vi/nuQmnEfASx8/0.jpg)](https://youtu.be/nuQmnEfASx8 "Sexta sesión JAVA")
 
+## Gestión de ficheros en JAVA
+* [Ejemplo de gestión de ficheros](bea/EjemplIO/)
+
+## JUNIT y Mockito
+* [Ejemplo de JUNIT: Prueba Suma](bea/JUnitExamples/PruebaSuma/)
+* [Ejemplo de JUNIT: Prueba UNIT](bea/JUnitExamples/PruebaUnit/)
+* [Ejemeplo JUNIT: Preuba UNT2](bea/JUnitExamples/PruebaUnit2/)
 ## Maven y Docker en nuestro proyectos
+
+* [Ejercicio Empleados](bea/MavenDocker/empleados/)
+* [Ejercicio Garaje GUI](bea/MavenDocker/garajeGUI/)
+* [Ejercicio Kwic](bea/MavenDocker/kwic/)
+* [ejercicio juego de la OCA](bea/MavenDocker/Oca_v3/)
 
 ### Iniciar proyecto con Maven
 [![Iniciar proyecto con Maven](https://img.youtube.com/vi/ixDpEA3a3Mc/0.jpg)](https://youtu.be/ixDpEA3a3Mc "Iniciando con Maven")
@@ -48,14 +60,15 @@ Ejemplos de ejercicios en Java Standar Edition
 * [Garaje](bea/garaje/)
 * [Conjuntos](bea/CONJUNTO/)
 * [Bolsa](bea/primerasLibrerias/)
+* [Mixed de conjuntos y bolsas](bea/prPilaAlef/)
 
 ## GUI
 * [Calculadora 1](bea/CalculadoraFlowLayout/)
 * [Calculadora 2](bea/CalculadoraGridLayout/)
-* [Interfaz y Applet policies](alef/UNED_2012/Prueba_interfaz/)
 * [Kwic 1](bea/kwic/)
 * [Kwic 2](bea/prKWIC/)
 [![Explicación del ejercicio Kwic - POJO y clases básicas](https://img.youtube.com/vi/OKY45M3OGLY/0.jpg)](https://youtu.be/OKY45M3OGLY "Kwic POJO y clases básicas")
+* [Interfaz y Applet policies](bea/Prueba_Interfaz_KWIC_GUI/)
 * [Prueba JUNG](bea/PruebaJUNG/)
 
 ## Más código fuente
@@ -76,5 +89,7 @@ Ejemplos de ejercicios en Java Standar Edition
 
 # Lambda Expression
 * [Ejercicio Lambda](bea/MavenDocker/lambda-expression/)
+# Socket en JAVA
+* [Socket en JAVA](bea/PruebaSocket/)
 # Referencias
 * [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html){:target="_blank"}
