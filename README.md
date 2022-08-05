@@ -9,12 +9,19 @@ Ejemplos de ejercicios en Java Standar Edition
 
 # Ejemplos de Librerías J2SE
 
-# GUI
+## Consola
+* [Pila Par por Composición](bea/PilaInterfazComposicion/)
+* [Pila Par por Herencia](bea/PilaInterfazHerencia/)
+* [Garaje](bea/garaje/)
+* [Conjuntos](bea/CONJUNTO/)
+
+## GUI
 * [Calculadora 1](bea/CalculadoraFlowLayout/)
 * [Calculadora 2](bea/CalculadoraGridLayout/)
-* [Interfaz](alef/UNED_2012/Prueba_interfaz/)
+* [Interfaz y Applet policies](alef/UNED_2012/Prueba_interfaz/)
 * [Kwic 1](bea/kwic/)
 * [Kwic 2](bea/prKWIC/)
+* [Prueba JUNG](bea/PruebaJUNG/)
 
 ## Más código fuente
 * [Ejemplo Swing con BBDD](bea/comercio/)
@@ -25,4 +32,4 @@ Ejemplos de ejercicios en Java Standar Edition
 * [Practica Video Club](bea/PracticaVideoClub/)
 
 # Referencias
-* [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html)
+* [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html){:target="_blank"}
