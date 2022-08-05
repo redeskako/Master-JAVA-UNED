@@ -30,18 +30,23 @@ Ejemplos de ejercicios en Java Standar Edition
 [![Sexta sesión JAVA: GUI y Eventos](https://img.youtube.com/vi/nuQmnEfASx8/0.jpg)](https://youtu.be/nuQmnEfASx8 "Sexta sesión JAVA")
 
 ## Gestión de ficheros en JAVA
-* [Ejemplo de gestión de ficheros](bea/EjemplIO/)
+* [Ejemplo de gestión de ficheros](bea/EjemploIO/)
 
 ## JUNIT y Mockito
-* [Ejemplo de JUNIT: Prueba Suma](bea/JUnitExamples/PruebaSuma/)
-* [Ejemplo de JUNIT: Prueba UNIT](bea/JUnitExamples/PruebaUnit/)
-* [Ejemeplo JUNIT: Preuba UNT2](bea/JUnitExamples/PruebaUnit2/)
+* [Ejemplo de JUNIT: Prueba Suma](bea/JUnit/PruebaSuma/)
+* [Ejemplo de JUNIT: Prueba UNIT](bea/JUnit/PruebaUnit/)
+* [Ejemeplo JUNIT: Preuba UNT2](bea/JUnit/PruebaUnit2/)
+* [Biblioteca Mockito](bea/Mockito/BibliotecaMockito/)
+* [Bilbioteca Mockito 2](bea/Mockito/BibliotecaMockito2/)
+* [Bibliogeca Mockito GrII](bea/Mockito/BibliotecaMockitoGrII/)
+
 ## Maven y Docker en nuestro proyectos
 
-* [Ejercicio Empleados](bea/MavenDocker/empleados/)
-* [Ejercicio Garaje GUI](bea/MavenDocker/garajeGUI/)
-* [Ejercicio Kwic](bea/MavenDocker/kwic/)
-* [ejercicio juego de la OCA](bea/MavenDocker/Oca_v3/)
+* Ejercicios hechos con docker y maven
+    * [Ejercicio Empleados](bea/MavenDocker/empleados/)
+    * [Ejercicio Garaje GUI](bea/MavenDocker/garajeGUI/)
+    * [Ejercicio Kwic](bea/MavenDocker/kwic/)
+    * [Ejercicio juego de la OCA](bea/MavenDocker/Oca_v3/)
 
 ### Iniciar proyecto con Maven
 [![Iniciar proyecto con Maven](https://img.youtube.com/vi/ixDpEA3a3Mc/0.jpg)](https://youtu.be/ixDpEA3a3Mc "Iniciando con Maven")
@@ -59,26 +64,30 @@ Ejemplos de ejercicios en Java Standar Edition
 * [Pila Par por Herencia](bea/PilaInterfazHerencia/)
 * [Garaje](bea/garaje/)
 * [Conjuntos](bea/CONJUNTO/)
-* [Bolsa](bea/primerasLibrerias/)
+* [Bolsa](bea/Bolsa/)
 * [Mixed de conjuntos y bolsas](bea/prPilaAlef/)
 
 ## GUI
 * [Calculadora 1](bea/CalculadoraFlowLayout/)
 * [Calculadora 2](bea/CalculadoraGridLayout/)
-* [Kwic 1](bea/kwic/)
-* [Kwic 2](bea/prKWIC/)
+* Kwic
+    * [Kwic 1](bea/kwic/kwic/)
+    * [Kwic 2](bea/kwic/prKWIC/)
+    * [Kwic completo](bea/Kwic/KwicCompeto/)
+
 [![Explicación del ejercicio Kwic - POJO y clases básicas](https://img.youtube.com/vi/OKY45M3OGLY/0.jpg)](https://youtu.be/OKY45M3OGLY "Kwic POJO y clases básicas")
-* [Interfaz y Applet policies](bea/Prueba_Interfaz_KWIC_GUI/)
+* [Interfaz y Applet policies](bea/kwic/Kwic%20ejemplo%20Interfaz/)
 * [Prueba JUNG](bea/PruebaJUNG/)
 
 ## Más código fuente
-* [Ejemplo Swing con BBDD](bea/comercio/)
-* [Disconformidades 1](bea/Disconformidades_j2se/)
-* [Disconformidades 2](bea/disconformidades_j2se2/)
-* [Disconformidades 3](bea/Disconformidades_grego/)
-* [Disconformidades 4](bea/Disconformidades_Maria/)
+* [Ejemplo comercio con Swing y BBDD](bea/comercio/)
+* [Disconformidades 1](bea/Disconformidades/Disconformidades_j2se/)
+* [Disconformidades 2](bea/Disconformidades/disconformidades_j2se2/)
+* [Disconformidades 3](bea/Disconformidades/Disconformidades_grego/)
+* [Disconformidades 4](bea/Disconformidades/Disconformidades_Maria/)
 * [Práctica Video Club](bea/PracticaVideoClub/)
-* [Práctica WorldHealthBank](bea/WordHealthBank/)
+* [Práctica WorldHealthBank version 1](bea/WorldHealthBank/WorldHealthBank1/)
+* [Práctica WorldHealthBank version 2](bea/WorldHealthBank/WorldHealthBank2/)
 * [Práctica de Tickaje Horario](bea/prTikaje/)
 
 ## Prácticas en contenedores
@@ -91,5 +100,6 @@ Ejemplos de ejercicios en Java Standar Edition
 * [Ejercicio Lambda](bea/MavenDocker/lambda-expression/)
 # Socket en JAVA
 * [Socket en JAVA](bea/PruebaSocket/)
+* [Kwic en red](bea/Kwic/KwicNet/)
 # Referencias
-* [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html){:target="_blank"}
+* [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html){:target="_blank" rel="noopener"}
