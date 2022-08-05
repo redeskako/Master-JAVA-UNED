@@ -15,6 +15,8 @@ Ejemplos de ejercicios en Java Standar Edition
 ### Segunda sesión JAVA: Clases y Objetos en JAVA
 [![Segunda sesión JAVA: Clases y Objetos en JAVA](https://img.youtube.com/vi/UlGpy_uv2vA/0.jpg)](https://youtu.be/UlGpy_uv2vA "Segunda sesión JAVA")
 
+* [Ejercicio explicado en la sesión](bea/PilaInterfazHerencia/)
+* [Ejercicio explicado en la sesión](bea/PilaInterfazComposicion/)
 ### Tercera sesión JAVA: Iteraciones y métodos en JAVA
 [![Tercera sesión JAVA: Iteraciones y métodos en JAVA](https://img.youtube.com/vi/INCgwmXUbAY/0.jpg)](https://youtu.be/INCgwmXUbAY "Tercera sesión JAVA")
 
@@ -52,7 +54,7 @@ Ejemplos de ejercicios en Java Standar Edition
 * [Interfaz y Applet policies](alef/UNED_2012/Prueba_interfaz/)
 * [Kwic 1](bea/kwic/)
 * [Kwic 2](bea/prKWIC/)
-** [![Explicación del ejercicio Kwic - POJO y clases básicas](https://img.youtube.com/vi/OKY45M3OGLY/0.jpg)](https://youtu.be/OKY45M3OGLY "Kwic POJO y clases básicas")
+[![Explicación del ejercicio Kwic - POJO y clases básicas](https://img.youtube.com/vi/OKY45M3OGLY/0.jpg)](https://youtu.be/OKY45M3OGLY "Kwic POJO y clases básicas")
 * [Prueba JUNG](bea/PruebaJUNG/)
 
 ## Más código fuente
