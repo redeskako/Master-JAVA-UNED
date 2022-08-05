@@ -70,8 +70,11 @@ Desarrollo y ejercicios en Java Standard Edition
     * [Kwic](Basico/KWIC-Consola/kwic/)
     * [Kwic Interfaz](Basico/KWIC-Consola/prKWIC/)
         * POJO de KWIC y clases básicas
+
 [![Explicación del ejercicio Kwic - POJO y clases básicas](https://img.youtube.com/vi/OKY45M3OGLY/0.jpg)](https://youtu.be/OKY45M3OGLY "Kwic POJO y clases básicas")
+        
         * Colecciones en KWIC
+
 [![Explicación de KWIC](https://img.youtube.com/vi/tPxoMumQBwo/0.jpg)](https://youtu.be/tPxoMumQBwo "Explicación del ejercicio Kwic - Coleccion y ejecución")
 
 * Disconformidades
