@@ -31,5 +31,13 @@ Ejemplos de ejercicios en Java Standar Edition
 * [Disconformidades 4](bea/Disconformidades_Maria/)
 * [Practica Video Club](bea/PracticaVideoClub/)
 
+## Prácticas en contenedores
+* [Empleados](bea/MavenDocker/empleados/)
+* [Garague GUI](bea/MavenDocker/garajeGUI/)
+* [Contenedor Kwic](bea/MavenDocker/kwic/)
+* [Juego de la Oca 3.0](bea/MavenDocker/Oca_v3/)
+
+# Lambda Expression
+* [Ejercicio Lambda](bea/MavenDocker/lambda-expression/)
 # Referencias
 * [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html){:target="_blank"}
