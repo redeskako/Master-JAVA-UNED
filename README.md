@@ -30,23 +30,23 @@ Desarrollo y ejercicios en Java Standar Edition
 [![Sexta sesión JAVA: GUI y Eventos](https://img.youtube.com/vi/nuQmnEfASx8/0.jpg)](https://youtu.be/nuQmnEfASx8 "Sexta sesión JAVA")
 
 ## Gestión de ficheros en JAVA
-* [Ejemplo de gestión de ficheros](bea/EjemploIO/)
+* [Ejemplo de gestión de ficheros](J2SE/Basico/EjemploIO/)
 
 ## JUNIT y Mockito
-* [Ejemplo de JUNIT: Prueba Suma](bea/JUnit/PruebaSuma/)
-* [Ejemplo de JUNIT: Prueba UNIT](bea/JUnit/PruebaUnit/)
-* [Ejemeplo JUNIT: Preuba UNT2](bea/JUnit/PruebaUnit2/)
-* [Biblioteca Mockito](bea/Mockito/BibliotecaMockito/)
-* [Bilbioteca Mockito 2](bea/Mockito/BibliotecaMockito2/)
-* [Bibliogeca Mockito GrII](bea/Mockito/BibliotecaMockitoGrII/)
+* [Ejemplo de JUNIT: Prueba Suma](J2SE/JUnit/PruebaSuma/)
+* [Ejemplo de JUNIT: Prueba UNIT](J2SE/JUnit/PruebaUnit/)
+* [Ejemeplo JUNIT: Preuba UNT2](J2SE/JUnit/PruebaUnit2/)
+* [Biblioteca Mockito](J2SE/Mockito/BibliotecaMockito/)
+* [Bilbioteca Mockito 2](J2SE/Mockito/BibliotecaMockito2/)
+* [Bibliogeca Mockito GrII](J2SE/Mockito/BibliotecaMockitoGrII/)
 
 ## Maven y Docker en nuestro proyectos
 
 * Ejercicios hechos con docker y maven
-    * [Ejercicio Empleados](bea/MavenDocker/empleados/)
-    * [Ejercicio Garaje GUI](bea/MavenDocker/garajeGUI/)
-    * [Ejercicio Kwic](bea/MavenDocker/kwic/)
-    * [Ejercicio juego de la OCA](bea/MavenDocker/Oca_v3/)
+    * [Ejercicio Empleados](J2SE/MavenDocker/empleados/)
+    * [Ejercicio Garaje GUI](J2SE/MavenDocker/garajeGUI/)
+    * [Ejercicio Kwic](J2SE/MavenDocker/kwic/)
+    * [Ejercicio juego de la OCA](J2SE/MavenDocker/Oca_v3/)
 
 ### Iniciar proyecto con Maven
 [![Iniciar proyecto con Maven](https://img.youtube.com/vi/ixDpEA3a3Mc/0.jpg)](https://youtu.be/ixDpEA3a3Mc "Iniciando con Maven")
@@ -60,46 +60,65 @@ Desarrollo y ejercicios en Java Standar Edition
 # Ejemplos de Librerías J2SE
 
 ## Consola
-* [Pila Par por Composición](bea/PilaInterfazComposicion/)
-* [Pila Par por Herencia](bea/PilaInterfazHerencia/)
-* [Garaje](bea/garaje/)
-* [Conjuntos](bea/CONJUNTO/)
-* [Bolsa](bea/Bolsa/)
-* [Mixed de conjuntos y bolsas](bea/prPilaAlef/)
-
-## GUI
-* [Calculadora 1](bea/CalculadoraFlowLayout/)
-* [Calculadora 2](bea/CalculadoraGridLayout/)
+* [Pila Par por Composición](J2SE/Basico/Pilas-Conjuntos-Bolsas/PilaInterfazComposicion/)
+* [Pila Par por Herencia](J2SE/Basico/Pilas-Conjuntos-Bolsas/PilaInterfazHerencia/)
+* [Garaje](J2SE/Basico/garaje/)
+* [Conjuntos](J2SE/Basico/Pilas-Conjuntos-Bolsas/Conjunto/)
+* [Bolsa](J2SE/Basico/Pilas-Conjuntos-Bolsas/Bolsa/)
+* [Mixed de conjuntos y bolsas](J2SE/Basico/Pilas-Conjuntos-Bolsas/prPilaAlef/)
 * Kwic
-    * [Kwic 1](bea/kwic/kwic/)
-    * [Kwic 2](bea/kwic/prKWIC/)
-    * [Kwic completo](bea/Kwic/KwicCompeto/)
+    * [Kwic 1](J2SE/Basico/Kwic/kwic/)
+    * [Kwic Interfaz](J2SE/Basico/Kwic/Kwic%20Interfaz/)
+    * [Kwic 2](J2SE/Basico/Kwic/prKWIC/)
+    * [Kwic completo](J2SE/Basico/Kwic/KwicCompeto/)
 
 [![Explicación del ejercicio Kwic - POJO y clases básicas](https://img.youtube.com/vi/OKY45M3OGLY/0.jpg)](https://youtu.be/OKY45M3OGLY "Kwic POJO y clases básicas")
-* [Interfaz y Applet policies](bea/kwic/Kwic%20ejemplo%20Interfaz/)
-* [Prueba JUNG](bea/PruebaJUNG/)
+* Disconformidades
+    * [Disconformidades 1](J2SE/Basico/Disconformidades/Disconformidades_j2se/)
+    * [Disconformidades 2](J2SE/Bassico/Disconformidades/disconformidades_j2se2/)
+    * [Disconformidades 3](J2SE/Basico/Disconformidades/Disconformidades_grego/)
+    * [Disconformidades 4](bea/Disconformidades/Disconformidades_Maria/)
+* [Garaje Consola](J2SE/Basico/garaje/)
+* [Tikaje consola](J2SE/Basico/Tikaje/)
+* Juego de la OCA
+    * [OCA consola 1](J2SE/Basico/OCA/OCA-v1/)
+    * [OCA consola 2](J2SE/Basico/OCA/Oca_v2/)
 
-## Más código fuente
-* [Ejemplo comercio con Swing y BBDD](bea/comercio/)
-* [Disconformidades 1](bea/Disconformidades/Disconformidades_j2se/)
-* [Disconformidades 2](bea/Disconformidades/disconformidades_j2se2/)
-* [Disconformidades 3](bea/Disconformidades/Disconformidades_grego/)
-* [Disconformidades 4](bea/Disconformidades/Disconformidades_Maria/)
-* [Práctica Video Club](bea/PracticaVideoClub/)
-* [Práctica WorldHealthBank version 1](bea/WorldHealthBank/WorldHealthBank1/)
-* [Práctica WorldHealthBank version 2](bea/WorldHealthBank/WorldHealthBank2/)
-* [Práctica de Tickaje Horario](bea/prTikaje/)
+## JUnit
+
+## GUI
+* [JTable](J2SE/GUI/JTable/)
+* [JTable 2](J2SE/GUI/JTableEjemplo/)
+* [Calculadora 1](J2SE/GUI/CalculadoraFlowLayout/)
+* [Calculadora 2](J2SE/GUI/CalculadoraGridLayout/)
+* [Interfaz y Applet policies](J2Se/GUI/ kwic/Kwic%20ejemplo%20Interfaz/)
+
+### Más código fuente
+* [Ejemplo comercio con Swing y BBDD](J2SE/GUI/comercio/)
+* Biblioteca
+    * [Ejemplo Biblioteca](J2SE/GUI/Biblioteca/)
+    * [Ejemplo Biblioteca 2](J2SE/GUI/Gestion_Biblioteca/)
+* [Ejemplo Garaje](J2SE/GUI/garaje/)
+* [Práctica Video Club](J2SE/GUI/PracticaVideoClub/)
+* Juego del parchis
+    * [Parchis 1.0](J2SE/GUI/Parchis/Parchis%201.0/)
+    * [Parchis 1.1](J2SE/GUI/Parchis/Parchis%201.1/)
+    * [Parchis 2.0](J2SE/GUI/Parchis/Parchis%202.0/)
+* WorldHealthBank
+    * [Práctica WorldHealthBank version 1](J2SE/GUI/WorldHealthBank/WorldHealthBank1/)
+    * [Práctica WorldHealthBank version 2](J2SE/GUI/WorldHealthBank/WorldHealthBank2/)
+* [Prueba JUNG](J2Se/GUI/PruebaJUNG/)
 
 ## Prácticas en contenedores
-* [Empleados](bea/MavenDocker/empleados/)
-* [Garague GUI](bea/MavenDocker/garajeGUI/)
-* [Contenedor Kwic](bea/MavenDocker/kwic/)
-* [Juego de la Oca 3.0](bea/MavenDocker/Oca_v3/)
+* [Empleados](J2SE/MavenDocker/empleados/)
+* [Garague GUI](J2SE/MavenDocker/garajeGUI/)
+* [Contenedor Kwic](J2SE/MavenDocker/kwic/)
+* [Juego de la Oca 3.0](J2SE/MavenDocker/Oca_v3/)
 
 # Lambda Expression
-* [Ejercicio Lambda](bea/MavenDocker/lambda-expression/)
+* [Ejercicio Lambda](J2SE/MavenDocker/lambda-expression/)
 # Socket en JAVA
-* [Socket en JAVA](bea/PruebaSocket/)
-* [Kwic en red](bea/Kwic/KwicNet/)
+* [Socket en JAVA](J2SE/Socket-Threads/PruebaSocket/)
+* [Kwic en red](J2Se/Socket-Threads/KwicNet/)
 # Referencias
 * [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html)
