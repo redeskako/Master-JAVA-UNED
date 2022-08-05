@@ -1,0 +1,16 @@
+Palabras no claves: CON, LA, Y, 
+--Indice resultante--
+AZUL
+	... y verde 
+EL
+	... gato 
+FRESAS
+	... con nata 
+GATA
+	la ... 
+GATO
+	el ... 
+NATA
+	fresas con ... 
+VERDE
+	azul y ... 
