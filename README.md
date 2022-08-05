@@ -102,4 +102,4 @@ Ejemplos de ejercicios en Java Standar Edition
 * [Socket en JAVA](bea/PruebaSocket/)
 * [Kwic en red](bea/Kwic/KwicNet/)
 # Referencias
-* [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html){:target="_blank" rel="noopener"}
+* [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html)
