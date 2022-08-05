@@ -69,11 +69,11 @@ Desarrollo y ejercicios en Java Standard Edition
 * KeyWord in context (KWIC)
     * [Kwic](Basico/KWIC-Consola/kwic/)
     * [Kwic Interfaz](Basico/KWIC-Consola/prKWIC/)
-        * POJO de KWIC y clases básicas
+POJO de KWIC y clases básicas
 
 [![Explicación del ejercicio Kwic - POJO y clases básicas](https://img.youtube.com/vi/OKY45M3OGLY/0.jpg)](https://youtu.be/OKY45M3OGLY "Kwic POJO y clases básicas")
         
-        * Colecciones en KWIC
+Colecciones en KWIC
 
 [![Explicación de KWIC](https://img.youtube.com/vi/tPxoMumQBwo/0.jpg)](https://youtu.be/tPxoMumQBwo "Explicación del ejercicio Kwic - Coleccion y ejecución")
 
@@ -103,11 +103,16 @@ Desarrollo y ejercicios en Java Standard Edition
     * [KWIC Swing](GUI/KWIC/Kwic%20Interfaz/)
     * [Kwic completo](GUI/KWIC/KwicCompeto/)
 
+### Conexión a Bases de Datos
+* [![Conexión Swing a Bases de datos SQLite](https://img.youtube.com/vi/MOPPmk9xalY/0.jpg)](https://youtu.be/MOPPmk9xalY "Conexión a bases de datos")
 ### Más código fuente
 * [Ejemplo comercio con Swing y BBDD](GUI/comercio/)
 * Biblioteca
     * [Ejemplo Biblioteca](GUI/Biblioteca/)
     * [Ejemplo Biblioteca 2](GUI/Gestion_Biblioteca/)
+
+[![Biblioteca con Bases de Datos](https://img.youtube.com/vi/wa-SL92o4aE/0.jpg)](https://youtu.be/wa-SL92o4aE "Biblioteca con Bases de datos")
+
 * [Ejemplo Garaje](GUI/garaje/)
 * [Práctica Video Club](GUI/PracticaVideoClub/)
 * Juego del parchis
@@ -123,6 +128,7 @@ Desarrollo y ejercicios en Java Standard Edition
 * [Biblioteca Mockito](Mockito/BibliotecaMockito/)
 * [Biblioteca Mockito 2](Mockito/BibliotecaMockito2/)
 * [Biblioteca Mockito 3](Mockito/BibliotecaMockitoGrII/)
+
 ## Prácticas en contenedores
 * [Empleados](MavenDocker/empleados/)
 * [Garague GUI](MavenDocker/garajeGUI/)
@@ -131,12 +137,16 @@ Desarrollo y ejercicios en Java Standard Edition
 
 # Lambda Expression
 * [Ejercicio Lambda](MavenDocker/lambda-expression/)
+
+[![Lo básico en Lambda Expresion](https://img.youtube.com/vi/diOaHeht6wM/0.jpg)](https://youtu.be/diOaHeht6wM "Lo básico en Lambda")
 # Socket en JAVA
 * [Ejemplo Hilo](Socket-Threads/Thread/)
 * [Socket en JAVA](Socket-Threads/PruebaSocket/)
 * [Kwic en red](Socket-Threads/KwicNet/)
 * [OCA en red 1](Socket-Threads/Oca-Thread/Oca_v3/)
 * [OCA en red 2](Socket-Threads/Oca-Thread/OcaEnRed/)
+
+[![Ejemplo Juego de la Oca en Socket ](https://img.youtube.com/vi/I461fDA2Ck0/0.jpg)](https://youtu.be/I461fDA2Ck0 "Ejemplo de Juego de la Oca")
 
 # Referencias
 * [Referencia java j2ee](https://docs.oracle.com/javaee/7/tutorial/index.html)
