@@ -1,5 +1,5 @@
-# EjemplosJ2SE
-Ejemplos de ejercicios en Java Standar Edition
+# J2SE
+Desarrollo y ejercicios en Java Standar Edition
 
 ## Esquema
 ![Image Principios J2SE](https://i.pinimg.com/originals/4c/02/09/4c0209e67b222509e094018cfdeca04e.jpg)
@@ -15,8 +15,8 @@ Ejemplos de ejercicios en Java Standar Edition
 ### Segunda sesión JAVA: Clases y Objetos en JAVA
 [![Segunda sesión JAVA: Clases y Objetos en JAVA](https://img.youtube.com/vi/UlGpy_uv2vA/0.jpg)](https://youtu.be/UlGpy_uv2vA "Segunda sesión JAVA")
 
-* [Ejercicio explicado en la sesión](bea/PilaInterfazHerencia/)
-* [Ejercicio explicado en la sesión](bea/PilaInterfazComposicion/)
+* [Ejercicio explicado en la sesión](J2SE/Basico/PilaInterfazHerencia/)
+* [Ejercicio explicado en la sesión](J2SE/Basico/PilaInterfazComposicion/)
 ### Tercera sesión JAVA: Iteraciones y métodos en JAVA
 [![Tercera sesión JAVA: Iteraciones y métodos en JAVA](https://img.youtube.com/vi/INCgwmXUbAY/0.jpg)](https://youtu.be/INCgwmXUbAY "Tercera sesión JAVA")
 
