@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE ejb-jar PUBLIC '-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 1.1//EN' 'http://java.sun.com/j2ee/dtds/ejb-jar_1_1.dtd'>
+
+<ejb-jar>
+    <enterprise-beans>
+      <entity>
+	<ejb-name>libroBMP</ejb-name>
+	<home>novatech.ejb.entityBMP.libroHome</home>
+	<remote>novatech.ejb.entityBMP.libro</remote>
+	<ejb-class>novatech.ejb.entityBMP.libroBean</ejb-class>
+	<persistence-type>Bean</persistence-type>
+	<prim-key-class>java.lang.String</prim-key-class>
+	<reentrant>False</reentrant>
+      </entity>
+    </enterprise-beans>
+    <assembly-descriptor>
+      <container-transaction>
+	<method>
+	  <ejb-name>libroBMP</ejb-name>
+	  <method-name>*</method-name>
+	</method>
+	<trans-attribute>Required</trans-attribute>
+      </container-transaction>
+    </assembly-descriptor>
+  </ejb-jar>
