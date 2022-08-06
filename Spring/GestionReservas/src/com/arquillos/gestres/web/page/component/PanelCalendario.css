@@ -1,0 +1,22 @@
+.ultimoMes {
+    background-color: #EEE;   
+  color: #888;        
+}
+
+.pasado {
+    color: #444;
+}
+
+.hoy {
+    background-color: #FFE;
+    font-weight: bold;
+}
+
+.futuro {
+    color: #444;
+}
+
+.siguienteMes {
+    background-color: #EFF;
+    color: #888;
+}

@@ -1,0 +1,141 @@
+#cabeceraFondo {
+    background: #99ccff;       
+    width: 1000px;
+    height: 60px;
+    background-position: center;
+}
+#cabecera_titulo {
+    
+    left: 2%;
+    clip: rect(0px, 0px, 0px, 0px);
+    top: 50%;
+    position: relative;
+}
+#contenido{
+    width: 1000px;
+    background-color: #ffffcc;
+}
+
+
+#menu {    
+    background-color: #003399;
+    height: 36px;
+    width: 1000px;
+}
+
+#menu a {
+    font:10px arial;
+    color: #ffffff;
+    text-decoration:none;
+    letter-spacing:.1em;
+}
+
+#menu a:hover {
+    color: #99CCFF;
+}
+#submenu{
+	height: 39px;
+	width: 120px;
+	background-image: url(../template/pesta%C3%B1a.png);
+	position: absolute;
+	left: 109px;
+	top: 163px;
+}
+.tituloSubmenu{
+	height: 40px;
+	width: 1000px;
+	color: #00FF00;
+	clear: right;
+	float: left;
+	background-image: url(../template/menuP.png);
+}
+.opcionesMenu {
+    
+    font:10px arial;
+    color: #333300;
+    letter-spacing:.1em;
+    position: relative;
+    left: 2%;
+    top: 40%;
+}          
+
+.titulo {
+    font:18px times new roman;
+    color: #0E177C;
+    line-height:22px;
+    letter-spacing: 6px;
+    font-weight: bolder;
+}
+.slogan {
+    font:11px times new roman;
+    color: #CC3300;
+    letter-spacing:.2em;
+}
+.rightText{
+    position: relative;
+    left: 640px;
+    font-family: ADMUI2Sm;
+    font-variant: normal;
+    color: #990000;
+}
+#envioLogin{
+    float: none;
+    position: absolute;
+    left: 363px;
+    top: 127px;
+    width: 352px;
+    height: 206px;
+    margin-left: 2px;
+    background-image: url(login.png);
+    background-attachment: inherit;
+}
+#formLogin{
+    margin-left: 30px;
+    margin-top: 60px;
+    
+}
+.lineaAzul{
+    clear: both;
+    width: 1000px;
+    border-color: #99ccff;
+    border-bottom-style: double;
+    
+}
+.exception{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #ff0000;
+    margin-left: 60px;
+    font-size: 14px;
+}
+.error{
+    background-image: url(../template/error.png);
+    position: absolute;
+    left: 34px;
+    width: 26px;
+    height: 24px;
+    top: 161px;
+    
+}
+.usuarioLogin{
+    left: 700px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 68px;
+    font-style: italic;
+}
+.usuarioIdioma{
+	left: 916px;
+	color: #FFFFFF;
+	position: absolute;
+	top: 65px;
+	font-style: italic;
+}
+.logotipo{
+	background-image: url(../template/logoGrande.png);
+	position: absolute;
+	left: 849px;
+	top: 97px;
+	width: 151px;
+	height: 241px;
+}
