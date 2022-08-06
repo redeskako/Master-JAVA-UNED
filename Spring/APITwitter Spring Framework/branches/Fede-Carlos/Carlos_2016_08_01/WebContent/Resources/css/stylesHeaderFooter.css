@@ -1,0 +1,87 @@
+header{
+	float: left;
+	width: 62.5em;
+	background: #48487b;
+}
+
+#encabezado_izda{
+	float: left;
+	width: 30em;
+	height: 2.5em;
+}
+
+#encabezado_izda h3{
+	color: white; 
+	font-family: Verdana; 
+	padding-left: 7em;
+	padding-top: 0em;
+	line-height: 0em;
+}
+
+#encabezado_dcha{
+	float: left;
+	width: 32.5em;
+	height: 2.5em;
+}
+
+#encabezado_dcha h3{
+	color: white; 
+	font-family: Verdana; 
+	padding-right: 2.5em;
+	padding-top: 0em;
+	line-height: 0em;
+	text-align: right;
+}
+
+footer{
+	float:left;
+	width: 62.5em; /* 1000px */
+	background: #48487b;
+	border-radius: 0em;
+	margin-bottom: 1em;
+}
+
+#zona_foto{
+	float:left;
+	width: 10em; 
+	height: 3.2em;
+	padding-left: 5em;
+	padding-top: 0.2em;
+}
+
+#zona_foto img{
+	width: 3em; 
+	height: 3em;
+}
+
+#zona_estudios{
+	float:left;
+	width: 47.5em; 
+	height: 2.5em;
+	padding-top: 0.7em;
+}
+#zona_estudios p{
+	color: white; 
+	font-family: Verdana; 
+	padding-top: 0em;
+	line-height: 0em;
+}
+/*
+.footerDiv img,.headerDiv img {
+	height: 70px;  		 
+}
+
+.headerDiv h3, .footerDiv h3 {
+	color: white	; 
+	font-family: Verdana; 
+	text-align: center;
+}
+
+.headerDiv img {
+	height: 70px;  		 
+}
+
+.clear{
+	clear:both;
+}
+*/

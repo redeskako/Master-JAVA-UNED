@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#CCC;
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	color:#393;
+}
+input[type=text], select{
+	font-family: inherit;
+	font-size: 14px;
+	color: #525252;
+	border: 1px solid #939596;
+	/*padding: 10px;*/
+	line-height: 1.4;
+	resize: none;
+}
+input[type=text]{
+	width: 310px;
+}
+select{
+	width: 140px;
+}
+input[type=submit]{
+	background: #393;
+	color: #ffffff;
+	background-image: -webkit-linear-gradient(top,#393,#3C6);
+	box-shadow: 1px 1px 3px RGBA(0,0,0,0.5), inset 0px 1px 2px #ffffff;
+	display: inline-block;
+	zoom: 1;
+	cursor: pointer;
+	padding: 0.5em 1em 0.5em 1em;
+	width: auto;
+	text-align: center;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	font-size: 12px;
+}
+
+#logo{
+	background: url(../images/Medline287.jpg) no-repeat;
+	height: 84px;
+	width: 136px;
+	float: left;
+}
+
+#divEmergente{
+	margin-top: -3px;
+	display: none;
+	/* display: block;   muestra la tabla */
+}
+
+#divEmergente table{
+	border-collapse: collapse;
+    border-spacing: 0;
+    margin: -10px 0 20px;
+	border:#999 solid thin;
+    color: #525252;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+	width:100%;
+	z-index:1;
+	background:#FFF;
+}
+
+#divTabla table{
+	border-collapse: collapse;
+    border-spacing: 0;
+	border: 0 none;
+    color: #525252;
+    font: inherit;
+    vertical-align: baseline;
+	width:100%;
+	table-layout: fixed;
+}
+
+#divTabla th, #divTabla td{
+	white-space: nowrap;
+	overflow: hidden;
+	border: 1px solid #FAFAFA;
+    padding: 0.3em 10px 0.3em 5px;
+	text-align: center;
+	color: #597555;
+	max-width: 353px;
+	height: 25px;
+}
+
+#divTabla th{
+    font-weight: bold;
+	background-color: #CF9;
+    color: #393;
+}
+
+#divTabla td{
+	background-color: #DFFDC0;
+}
+
+#contenido{
+	background:#fff;
+	width: 700px ;
+	margin-left: auto ;
+	margin-right: auto ;
+	height: 700px;	
+}
+
+#cabecera, #topMenu, #divCentral{
+	padding:5px 0px;
+	width: 600px ;
+	padding: 0px 50px;
+}
+
+#cabecera, #pie{
+	font-family: 'Roboto', sans-serif;
+	color: #597555;
+	padding-top:20px;
+}
+
+#buscar{
+	text-align:right;
+	padding:10px 0px;
+	}
+	
+#opciones{
+	height:30px;
+}
+
+#topMenu{
+	position:absolute;
+	float:left;
+	z-index:99;
+}
+#divCentral {
+	top:200px;
+	position:absolute;
+	float:left;
+	background:#fff;
+}
+#divTabla{
+	float:left;
+	width: 600px ;
+}
+#divMenu, #divBusqueda, #divCampo, #menosDiez, #divBuscaPalabra, #masDiez{
+	float:left;
+	background:#FFF;	
+}
+#menosDiez, #masDiez{
+	width: 55px;	
+}
+#divBuscaPalabra{
+	width: 490px;
+	text-align:center;
+	padding:5px 0px;
+}
+#paginacion{
+	text-align:center;
+	/*width:600px;*/
+	padding:5px 0px;
+	margin-left: auto ;
+	margin-right: auto ;
+	}
+#pie{
+	text-align:center;
+	width:557px;
+	background:#FFF;
+}

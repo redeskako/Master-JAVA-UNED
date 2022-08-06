@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+
+<h:head>
+	<title>Recursos AJAX</title>
+	<link type="text/css" rel="stylesheet" href="Resources/css/grEstilos.css"/>
+</h:head>
+
+<h:body>
+
+	<div id="container">
+		<h3>Grupo ALPHA - UNED 2014</h3>
+
+		<div id="menu">
+			<ul>
+				<li><a href="../buscadorRecursoDWR.html">Buscador Recursos DWR</a></li>
+				<li><a href="buscadorJSF.xhtml">Buscador Reservas JSF</a></li>
+				<li><a href="../buscadorUsuarioDWR.html">Buscador Usuarios DWR</a></li>
+			</ul>
+		</div>
+		<!-- end menu -->
+
+		<div id="content">
+
+			<h3>Buscador de reservas</h3>
+
+			<h:form>
+				Seleccione usuario para ver sus reservas:		
+				<h:selectOneMenu value='#{reservasUsuariosBean.idUsuario}'>
+					<!-- opción vacía -->
+					<f:selectItem itemValue="" itemLabel="" />
+
+					<!-- resto de opciones -->
+					<f:selectItems value='#{reservasUsuariosBean.usuarios}' var='usu'
+						itemLabel='#{usu.nombreUsuario}' itemValue='#{usu.idUsuario}' />
+					<f:ajax event='valueChange' render='tablaReservas' />
+				</h:selectOneMenu>
+
+				<br />
+				<br />
+				
+				<h:panelGroup id='tablaReservas'>
+					
+					<c:if test='#{reservasUsuariosBean.idUsuario != 0}'>
+						
+						<h3>N&uacute;mero de resultados obtenidos: #{reservasUsuariosBean.reservas.size()}</h3>
+	
+						<h:dataTable border='1' value='#{reservasUsuariosBean.reservas}' var='res'>
+		
+								<h:column>
+									<f:facet name='header'>
+										<h:outputText value='Usuario'></h:outputText>
+									</f:facet>
+									<h:outputText value='#{res.nombreUsuario}'></h:outputText>
+								</h:column>
+								<h:column>
+									<f:facet name='header'>
+										<h:outputText value='Recurso'></h:outputText>
+									</f:facet>
+									<h:outputText value='#{res.descripcionRecurso}'></h:outputText>
+								</h:column>
+								<h:column>
+									<f:facet name='header'>
+										<h:outputText value='Inicio'></h:outputText>
+									</f:facet>
+									<h:outputText value='#{res.inicio}'></h:outputText>
+								</h:column>
+								<h:column>
+									<f:facet name='header'>
+										<h:outputText value='Final'></h:outputText>
+									</f:facet>
+									<h:outputText value='#{res.fin}'></h:outputText>
+								</h:column>
+								<h:column>
+									<f:facet name='header'>
+										<h:outputText value='Estado'></h:outputText>
+									</f:facet>
+									<h:outputText value='#{res.estado}'></h:outputText>
+								</h:column>
+		
+						</h:dataTable>
+					
+					</c:if>
+				
+				</h:panelGroup>
+
+			</h:form>
+		</div>
+		<!-- end content -->
+
+	</div>
+	<!-- end container -->
+</h:body>
+</html>

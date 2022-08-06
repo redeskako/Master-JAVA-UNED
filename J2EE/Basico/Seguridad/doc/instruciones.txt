@@ -1,0 +1,85 @@
+INTRODUCCION A LA SEGURIDAD CON TOMCAT
+
+Este documento sirve como guia para configurar y ejecutar el proyecto Seguridad que muestra como configurar la seguridad 
+inicial en tomcat.
+
+Lo primero que tiene que hacer es importarse el proyecto a workspace.
+
+Tal como este ejecute el proyecto como servidor tormacat con Run As>Run on Server por defecto nos saldrá una pantalla muy
+fea de bienvenida que nos dira que has entrado. Nuestra intenciención es dotarle de seguridad.
+
+Lo siguiente que vamos ha hacer es activar la seguridad. Para lo cual vamos al web.xml y descomentamos desde
+<security-constraint> hasta </login-config> (Vamos quitamos los comentarios). De momento vamos a comentar ademas las siguientes
+lineas:
+
+ <!-- <user-data-constraint>
+  	<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+  	</user-data-constraint>-->
+  	
+Hay que irse donde tengas instalado el tomcat y en el directorio conf hay un fichero llamdo server.xml. Editelo con el notepad con
+derechos de administrador y comente las siguientes lineas.
+
+<!-- <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+               resourceName="UserDatabase"/> -->
+               
+Como hemos quitado el reino de seguridad por defecto deberemos poner uno nuevo. En nuestro caso un reino de seguridad de base de
+datos. Cambie el usuario y password para que coincida con el de su mysql.
+
+	<Realm className="org.apache.catalina.realm.JDBCRealm" debug="99"
+	driverName="com.mysql.jdbc.Driver"
+	connectionURL="jdbc:mysql://localhost/Seguridad"
+	connectionName="root" connectionPassword="Kernel123"
+	userTable="users" userNameCol="user_name" userCredCol="user_pass"
+	userRoleTable="user_roles" roleNameCol="role_name"
+	digest="md5"/>
+  	
+ Como estamos usando base de datos hay que tener el driver de mysql en la carpeta lib del servidor.
+  
+ Una vez hecho esto volvemos a arrancar el servidor y si vemos la misma pantalla de antes es que no ha refrescado. Pulsamos 
+ refrescar. Ahora lo que tenemos que ver es un formulario de login. Pruebe a meter usuario y contraseña, pero como no está todavia
+ configurada bien la seguridad no vas a poder entrar.
+ 
+ Lo siguiente a hacer es dar de alta algun usuario para logarse. Hay dos script en la carpeta sql. Salga a la consola de windows
+ (cmd).Vayase a la carpeta sql y abra un terminal de mysql con el comando mysql -u usuario -p. Una vez dentro de mysl importe los
+ dos ficheros sql con source .\createDatabase.sql; y luego source .\createUsers.sql;. Si todo ha ido bien deberia tener dado de
+ alta el usuario marahaja con contraseña tomcat. Mire que ya introducimos la contraseña cifrada con MD5 y que al reino de seguridad
+ de base de datos le hemos dicho que usaremos ese cifrado.
+ 
+ Seria bonito que el eclipse funcionase bien siempre. Pero el siguiente paso hay que hacerlo desde fuera de eclipse. Generene el 
+ war del proyecto para lo cual pulse boton derecho sobre el boton exportar y digale a war. Guardelo en un fichero llamado Seguridad.war
+ .Si tiene arrancado el tomcat desde eclipse parelo. Ahora vayase a Inicio>Apache Tomcat>Monitor Tomcat. Le tiene que aparecer un
+ icono al lado del reloj con la pluma de tomcat y si se ha iniciado o no. Pulse sobre el con el boton derecho y pulse Start. Si
+ todo ha ido bien el icono de la pluma cambiara un triangulito verde. Si ha ido mal revise los logs.
+ 
+ Una vez arrancado el tomcat desde fuera del eclipse hay que poner el war para lo que entramos en la consola de administración con:
+ http://localhost:8080/manager/htm
+ 
+ Para importar el war hay que decirle la trayectoria ./Seguridad y la ruta del war en Directorio en mi caso 
+ C:\Users\Alberto_2\workspace\parchis\Seguridad\build\Seguridad.war. Al importarlo nos aparece en la lista superior. Eso quiere
+ decir que esta listo.
+ 
+ Para acceder al proyecto tenemos que poner http://localhost:8080/Seguridad/. Nos saldra el formulario, si ponemos el usuario y
+ el password nos dejara acceder con lo que habremos completado la primera parte.
+ 
+ El problema de este sistema es que el formulario se envia sin cifrar por lo que cualquiera que este en medio puede leerlo. Deberemos
+ mejorar la seguridad con https. ¿Se acuerda de las lineas que dejamos comentadas en el web.xml?Descomentelas. Lo siguiente es
+ decirle al servidor que vamos a usar https para lo cual en el server.xml hay que poner
+ 
+ <Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true"
+               maxThreads="150" scheme="https" secure="true"
+	       keystoreFile="C:\Users\Alberto_2\.keystore" keystorePass="tomcat"
+               clientAuth="false" sslProtocol="TLS" />
+ 
+ El keyStoreFile el almacen de certificados esta en tu directorio de usuario. De momento no lo veras porque no lo hemos creado.
+ Para crear un certificado de prueba vaya a la carpeta bin del jdk y ejecute:
+ keytool -genKey -alias tomcat -keyalg RSA
+ 
+ Conteste al nombre de usuario como localhost el resto completelo como mejor vea. Una vez completado esto tendremos el almacen de
+ certificados con un certificado y configurado el servidor. Vuelva a exportar el war y despleguelo en el tomcat como hemos hecho
+ antes. Al acceder ahora a la pagina nos avisará de que el certificado es falso (logico lo hemos creado nosotros) esto se debe
+ a que los certificados los generan solo empresas autorizadas. Le podemos decir que asumimos los riesgos y nos deja usar el 
+ certificado nuestro con lo que estaría cifrada la conexion. El resto es igual.
+ 
+ Un saludo y buena suerte.
+ Alberto Delso
+ delsoencabo@gmail.com

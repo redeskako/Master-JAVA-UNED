@@ -1,0 +1,15 @@
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN" "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+  <allow>
+    <create creator="new" javascript="JRecurso">
+      <param name="class" value="es.uned2014.recursosAlpha.recurso.Recurso"/>
+    </create>
+    <convert converter="bean" match="es.uned2014.recursosAlpha.recurso.Recurso"/>
+    
+    <create creator="new" javascript="JUsuario">
+      <param name="class" value="es.uned2014.recursosAlpha.usuario.Usuario"/>
+    </create>
+    <convert converter="bean" match="es.uned2014.recursosAlpha.usuario.Usuario"/>
+  </allow>
+</dwr>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+<wb-module deploy-name="HolaEAR">
+<wb-resource deploy-path="/" source-path="/EarContent"/>
+<dependent-module deploy-path="/" handle="module:/resource/HolaBeans/HolaBeans">
+<dependent-object>EjbModule_1178033445308</dependent-object>
+<dependency-type>uses</dependency-type>
+</dependent-module>
+<dependent-module archiveName="HolaBeansClient.jar" deploy-path="/" handle="module:/resource/HolaBeansClient/HolaBeansClient">
+<dependency-type>uses</dependency-type>
+</dependent-module>
+<dependent-module deploy-path="/" handle="module:/resource/HolaWeb/HolaWeb">
+<dependent-object>WebModule_1178034350435</dependent-object>
+<dependency-type>uses</dependency-type>
+</dependent-module>
+</wb-module>
+</project-modules>

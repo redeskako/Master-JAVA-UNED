@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+  <!--  Empty for now. There are many uses for faces-config.xml, but
+        the most common are navigation rules (instead of having
+        the return value of the "action" method be the base filename),
+        bean declarations (instead of using @ManagedBean), and
+        properties files (aka resource bundles).
+        
+        If you are not using faces-config.xml, it is perfectly legal
+        to omit the file entirely. But, most people prefer to have
+        a blank one already in their project for later use. -->
+</faces-config>
