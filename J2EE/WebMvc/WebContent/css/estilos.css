@@ -1,0 +1,147 @@
+body
+{
+    font-family: "Century Gothic", verdana, helvetica, arial, sans-serif;
+}
+
+/* Contenedor de la página */
+#contenedor
+{
+   	width: 900px;
+   	margin: 30px auto;
+}
+
+h1
+{
+	margin-bottom: 10px;
+}
+
+h1.login
+{
+	margin: 10px auto;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.leyenda
+{
+	color:red;
+}
+
+.indice
+{
+	color:navy;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.indice p
+{
+	margin-bottom: 5px;
+}
+
+.video img
+{
+	float: left;
+	width: 120px;
+	height: 90px;
+	margin-right: 10px;
+	margin-top:5px;
+}
+
+.video p
+{
+	line-height: 1.5em;
+	height: 120px;
+}
+
+.canal p
+{
+	line-height: 1.5em;
+	margin-top: 25px;
+}
+
+.desactivado
+{
+	color: lightgray;
+}
+
+#pnlClave
+{
+	margin: 20px auto;
+	width: 240px;
+	border: 1px solid navy;	
+	padding: 10px;
+	background-color: #F3FBFF;
+	border-radius: 8px;
+}
+
+#pnlClave *
+{
+	padding: 2px;
+	margin: 5px;
+}
+
+#pnlClave [type=password]
+{
+	margin-left: 19px;
+}
+
+#pnlClave [type=submit]
+{
+	margin-top: 10px;
+	margin-left: 90px;
+}
+
+#pnlCanal
+{
+	margin: 20px auto;
+	width: 890px;
+	border: 1px solid navy;	
+	padding: 10px;
+	background-color: #F3FBFF;
+	border-radius: 8px;
+}
+
+#pnlCanal *
+{
+	padding: 2px;
+	margin: 5px;
+}
+
+#pnlCanal input
+{
+	margin-right: 15px;
+}
+
+#pnlCanal [type=submit]
+{
+	margin-top: 10px;
+	margin-left: 420px;
+}
+
+#pnlCanal [name=descripcion]
+{
+	margin-left: 7px;
+}
+
+
+.pie
+{
+	text-align: center;
+}
+
+.cerrarSesion
+{
+	color: #8AB8E6;
+	float: right;
+}
+
+#error
+{
+	text-align: center;
+}
+#error p
+{
+	color: red;
+}
