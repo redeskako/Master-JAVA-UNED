@@ -1,0 +1,26 @@
+db:
+  image: mysql:latest
+  environment:
+    MYSQL_ROOT_PASSWORD: uneduned
+    MYSQL_DATABASE: libreria
+    MYSQL_USER: uned
+    MYSQL_PASSWORD: uned
+  ports:
+    - "3307:3306"
+  volumes:
+   - ./db/mysql-init.sql:/docker-entrypoint-initdb.d/mysql-init.sql:ro
+
+web:
+  image: tomcat:latest
+  # Environment variables do not appear to be getting loaded the first time Tomcat starts!
+  restart: on-failure
+  environment:
+    JDBC_URL: jdbc:mysql://db/libreria
+    JDBC_USER: uned
+    JDBC_PASS: uned
+  ports:
+   - "8081:8080"
+  volumes:
+   - ./target:/usr/local/tomcat/webapps
+  links:
+    - db
