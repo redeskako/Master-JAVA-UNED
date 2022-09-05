@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<tns:Libros xmlns:tns="http://www.example.org/libros-schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/libros-schema libros-schema.xsd ">
-  <tns:Nombre>La noche oscura</tns:Nombre>
-  <tns:ISBN>1111DDDD</tns:ISBN>
-</tns:Libros>
