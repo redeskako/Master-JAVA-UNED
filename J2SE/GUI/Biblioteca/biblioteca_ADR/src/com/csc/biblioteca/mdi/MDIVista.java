@@ -1,0 +1,258 @@
+/**
+ * Gestión básica de una biblioteca.
+ * @author Antonio Dorado
+ * @version 1.2 - 22/12/2015
+ */
+
+package com.csc.biblioteca.mdi;
+
+import com.csc.biblioteca.util.Constantes;
+import com.csc.biblioteca.util.Messages;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowListener;
+import java.beans.PropertyVetoException;
+import javax.swing.JFrame;
+import javax.swing.JInternalFrame;
+
+/** Ventana principal de la aplicación, con formato MDI y menú de opciones. */
+public class MDIVista extends JFrame {
+
+    /**
+     * Genera la ventana principal de la aplicación (MDI).
+     * @param titulo Título de la ventana.
+     */
+    public MDIVista(String titulo) {
+        this.initComponents();
+        this.setTitle(titulo);
+    }
+    
+    /**
+     * Registrar el controlador que gestionará las acciones de la ventana (menú).
+     * @param controlador Gestor de acciones que se producen en la ventana.
+     */
+    public void registrarActionListener(ActionListener controlador) {
+        this.menuAcercade.addActionListener(controlador);
+        this.menuSocios.addActionListener(controlador);
+        this.menuLibros.addActionListener(controlador);
+        this.menuPrestamos.addActionListener(controlador);
+        this.menuSalir.addActionListener(controlador);
+        this.menuPrestamosSocio.addActionListener(controlador);
+        this.menuPrestamosLibro.addActionListener(controlador);
+        this.menuEspanol.addActionListener(controlador);
+        this.menuIngles.addActionListener(controlador);
+    }
+    
+    /**
+     * Registrar el controlador que gestionará los eventos de la ventana.
+     * @param controlador Gestor de eventos que produce la ventana.
+     */
+    public void registrarWindowListener(WindowListener controlador) {
+        this.addWindowListener(controlador);
+    }
+    
+    /**
+     * Añade la ventana interna indicada a la ventana principal de la aplicación.
+     * @param ventana Ventana interna a añadir.
+     * @param centrada Si la ventana debe centrarse en el espacio disponible.
+     */
+    public void addVentana(JInternalFrame ventana, boolean centrada) {
+        if (centrada) {
+            int x = (this.desktopPane.getWidth() / 2) - ventana.getWidth() / 2;
+            int y = (this.desktopPane.getHeight() / 2) - ventana.getHeight() / 2;
+ 
+            ventana.setLocation(x, y);
+        }
+        this.desktopPane.add(ventana);        
+    }
+    
+    /**
+     * Presenta la ventana interna indicada dentro de la ventana principal.
+     * @param ventana Ventana interna a mostrar.
+     * @param maximizada Si debe mostrarse maximizada (true) o no (false).
+     */
+    public void mostrarVentana(JInternalFrame ventana, boolean maximizada) {
+        try {
+            if (maximizada) ventana.setMaximum(true);
+            ventana.show();
+            ventana.setSelected(true);
+        } catch (PropertyVetoException ex) {}
+    }
+    
+    /**
+     * Obtener si la ventana principal contiene ventanas abiertas.
+     * @return Indica si hay ventanas abiertas (true) o no (false).
+     */
+    public boolean tieneVentanas() {
+        return (this.desktopPane.getSelectedFrame() != null);
+    }
+    
+    /**
+     * Control del estado de activación de las opciones del menú de idioma.
+     * Sólo se permite el cambio de idioma si no hay ventanas abiertas.
+     * @param activo Activar o desactivar las opciones de menú de idioma.
+     */
+    public void setEstadoMenuIdioma(boolean activo) {
+        this.menuEspanol.setEnabled(activo);
+        this.menuIngles.setEnabled(activo);
+    }
+    
+    /** Método para cambiar el idioma del menú de la ventana principal. */
+    public void cambiarIdioma() {
+        this.menuArchivo.setText(Messages.getString("MENU_GESTION"));
+        this.menuIdioma.setText(Messages.getString("MENU_IDIOMA"));
+        this.menuInformes.setText(Messages.getString("MENU_INFORMES"));
+        this.menuAyuda.setText(Messages.getString("MENU_AYUDA"));
+
+        this.menuLibros.setText(Messages.getString("ITEM_LIBROS"));
+        this.menuSocios.setText(Messages.getString("ITEM_SOCIOS"));
+        this.menuPrestamos.setText(Messages.getString("ITEM_PRESTAMOS"));
+        this.menuSalir.setText(Messages.getString("ITEM_SALIR"));
+        
+        this.menuPrestamosLibro.setText(Messages.getString("ITEM_PRESTAMOS_LIBRO"));
+        this.menuPrestamosSocio.setText(Messages.getString("ITEM_PRESTAMOS_SOCIO"));
+        
+        this.menuEspanol.setText(Messages.getString("ITEM_ESPANOL"));
+        this.menuIngles.setText(Messages.getString("ITEM_INGLES"));
+        
+        this.menuContenido.setText(Messages.getString("ITEM_CONTENIDO"));
+        this.menuAcercade.setText(Messages.getString("ITEM_ACERCADE"));
+    }
+    
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        grupoIdioma = new javax.swing.ButtonGroup();
+        desktopPane = new javax.swing.JDesktopPane();
+        menuBar = new javax.swing.JMenuBar();
+        menuArchivo = new javax.swing.JMenu();
+        menuLibros = new javax.swing.JMenuItem();
+        menuSocios = new javax.swing.JMenuItem();
+        menuPrestamos = new javax.swing.JMenuItem();
+        menuSeparator1 = new javax.swing.JPopupMenu.Separator();
+        menuSalir = new javax.swing.JMenuItem();
+        menuInformes = new javax.swing.JMenu();
+        menuPrestamosSocio = new javax.swing.JMenuItem();
+        menuPrestamosLibro = new javax.swing.JMenuItem();
+        menuIdioma = new javax.swing.JMenu();
+        menuEspanol = new javax.swing.JRadioButtonMenuItem();
+        menuIngles = new javax.swing.JRadioButtonMenuItem();
+        menuAyuda = new javax.swing.JMenu();
+        menuContenido = new javax.swing.JMenuItem();
+        menuAcercade = new javax.swing.JMenuItem();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+
+        menuArchivo.setMnemonic('f');
+        menuArchivo.setText("Gestión");
+
+        menuLibros.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.ALT_MASK));
+        menuLibros.setMnemonic('l');
+        menuLibros.setText("Libros");
+        menuLibros.setActionCommand(Constantes.MENU_LIBROS);
+        menuArchivo.add(menuLibros);
+
+        menuSocios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.ALT_MASK));
+        menuSocios.setMnemonic('s');
+        menuSocios.setText("Socios");
+        menuSocios.setActionCommand(Constantes.MENU_SOCIOS);
+        menuArchivo.add(menuSocios);
+
+        menuPrestamos.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_MASK));
+        menuPrestamos.setMnemonic('p');
+        menuPrestamos.setText("Préstamos");
+        menuPrestamos.setActionCommand(Constantes.MENU_PRESTAMOS);
+        menuArchivo.add(menuPrestamos);
+        menuArchivo.add(menuSeparator1);
+
+        menuSalir.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_X, java.awt.event.InputEvent.ALT_MASK | java.awt.event.InputEvent.CTRL_MASK));
+        menuSalir.setMnemonic('s');
+        menuSalir.setText("Salir");
+        menuSalir.setActionCommand(Constantes.MENU_SALIR);
+        menuArchivo.add(menuSalir);
+
+        menuBar.add(menuArchivo);
+
+        menuInformes.setText("Informes");
+
+        menuPrestamosSocio.setText("Préstamos por socio");
+        menuPrestamosSocio.setActionCommand(Constantes.MENU_PRESTAMOS_SOCIO);
+        menuInformes.add(menuPrestamosSocio);
+
+        menuPrestamosLibro.setText("Préstamos por libro");
+        menuPrestamosLibro.setActionCommand(Constantes.MENU_PRESTAMOS_LIBRO);
+        menuInformes.add(menuPrestamosLibro);
+
+        menuBar.add(menuInformes);
+
+        menuIdioma.setText("Idioma");
+
+        grupoIdioma.add(menuEspanol);
+        menuEspanol.setSelected(true);
+        menuEspanol.setText("Español");
+        menuEspanol.setActionCommand(Constantes.MENU_SPANISH);
+        menuIdioma.add(menuEspanol);
+
+        grupoIdioma.add(menuIngles);
+        menuIngles.setText("Inglés");
+        menuIngles.setActionCommand(Constantes.MENU_ENGLISH);
+        menuIdioma.add(menuIngles);
+
+        menuBar.add(menuIdioma);
+
+        menuAyuda.setText("Ayuda");
+
+        menuContenido.setMnemonic('c');
+        menuContenido.setText("Contenido");
+        menuContenido.setEnabled(false);
+        menuAyuda.add(menuContenido);
+
+        menuAcercade.setMnemonic('a');
+        menuAcercade.setText("Acerca de...");
+        menuAcercade.setActionCommand(Constantes.MENU_ACERCADE);
+        menuAyuda.add(menuAcercade);
+
+        menuBar.add(menuAyuda);
+
+        setJMenuBar(menuBar);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+    
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane desktopPane;
+    private javax.swing.ButtonGroup grupoIdioma;
+    private javax.swing.JMenuItem menuAcercade;
+    private javax.swing.JMenu menuArchivo;
+    private javax.swing.JMenu menuAyuda;
+    private javax.swing.JMenuBar menuBar;
+    private javax.swing.JMenuItem menuContenido;
+    private javax.swing.JRadioButtonMenuItem menuEspanol;
+    private javax.swing.JMenu menuIdioma;
+    private javax.swing.JMenu menuInformes;
+    private javax.swing.JRadioButtonMenuItem menuIngles;
+    private javax.swing.JMenuItem menuLibros;
+    private javax.swing.JMenuItem menuPrestamos;
+    private javax.swing.JMenuItem menuPrestamosLibro;
+    private javax.swing.JMenuItem menuPrestamosSocio;
+    private javax.swing.JMenuItem menuSalir;
+    private javax.swing.JPopupMenu.Separator menuSeparator1;
+    private javax.swing.JMenuItem menuSocios;
+    // End of variables declaration//GEN-END:variables
+}

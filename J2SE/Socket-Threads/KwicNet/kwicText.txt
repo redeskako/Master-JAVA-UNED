@@ -1,0 +1,44 @@
+alabras no claves: A, ANTE, BAJO, CABE, CON, CONTRA, DE, DESDE, EL, EN, ENTRE, HACIA, HASTA
+PARA, LA, LAS, LOS, NO
+
+, O, POR, SEGÚN, SI, SIN, SOBRE, TRAS, UN, UNA, UNAS, UNOS, Y
+--Indice resultante--
+AL
+	El dinero llama ... dinero 
+AZAFRAN
+	La rosa del ... 
+CAIRO
+	La rosa purpura del ... 
+COLOR
+	... púrpura 
+	El ... del dinero 
+CORRE
+	Toma el dinero y ... 
+DEL
+	El color ... dinero 
+	La rosa ... azafran 
+	La rosa purpura ... Cairo 
+DINERO
+	El ... llama al ... 
+	El color del ... 
+	Toma el ... y corre 
+IMPOSIBLE
+	Mision: ... 
+LLAMA
+	El dinero ... al dinero 
+MISION
+	La ... 
+MISION:
+	... imposible 
+NOMBRE
+	El ... de la rosa 
+PURPURA
+	La rosa ... del Cairo 
+PÚRPURA
+	Color ... 
+ROSA
+	El nombre de la ... 
+	La ... del azafran 
+	La ... purpura del Cairo 
+TOMA
+	... el dinero y corre 
