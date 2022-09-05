@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<Context path="/PracticaYouTube">
-    <Resource name="jdbc/PracticaYoutubeDB" auth="Container" type="javax.sql.DataSource"
-        maxActive="100" maxIdle="30" maxWait="10000"
-        username="myusername" password="mypassword" driverClassName="org.sqlite.JDBC"
-        url="jdbc:sqlite:${user.home}/PracticaYoutubeDB.sqlite"/>
-</Context>
