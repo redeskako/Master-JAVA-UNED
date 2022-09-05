@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prueba de DWR</title>
+
+<link type="text/css" rel="stylesheet" href="Resources/css/estilos.css">
+	
+<script type='text/javascript' src='/PruebaDWR/dwr/engine.js'></script>
+<script type='text/javascript' src='/PruebaDWR/dwr/interface/JRecurso.js'></script>
+<script type='text/javascript' src='/PruebaDWR/dwr/util.js'></script>
+
+<script language="javascript">
+
+        function mostrarCombo(ev){
+        	if((ev.keyCode>=48 && ev.keyCode<=57) || (ev.keyCode>=65 && ev.keyCode<=90) || (ev.keyCode=8)){
+	        	
+        		var texto = dwr.util.getValue("texto");
+	        	
+	        	if(texto.length>=2){
+	        		JRecurso.sqlBuscadorRecursos(texto, buscarCombo);
+	            } else {
+	            	dwr.util.removeAllRows("combo"); 
+	            }
+        	}
+        }
+        
+        function buscarCombo(sql){
+        	JRecurso.recursosBuscar(0, sql, generarCombo);	
+        }
+        
+        function generarCombo (array){
+        	dwr.util.setValue("tablaTitulo", "");
+        	dwr.util.removeAllRows("tabla_encabezado"); 
+        	dwr.util.removeAllRows("tabla_cuerpo"); 
+        	dwr.util.removeAllRows("combo"); 
+        	
+        	if(array.length > 0){
+            	
+            	// Cuerpo:
+            	var funcCombo = [
+            	                 function(data) { return "<a href='javascript:void(0)' onclick='linkCombo(\"" + data.descripcion + "\")' >" + data.descripcion + "</a>" }
+            	               ];
+        	
+            	dwr.util.addRows("combo", array, funcCombo, { escapeHtml:false });
+        	}
+        }
+        
+        function botonBuscar(){
+        	var texto = dwr.util.getValue("texto");
+        	
+        	JRecurso.sqlBuscadorRecursos(texto, buscarResultado);
+        }
+        
+        function buscarResultado(sql){
+        	JRecurso.recursosBuscar(0, sql, generarTabla);
+        }
+        
+        function generarTabla (array){
+        	
+        	dwr.util.removeAllRows("combo"); 
+        	
+        	dwr.util.setValue("tablaTitulo", "<h1>Resultado de la búsqueda:</h1>", { escapeHtml:false });
+        	dwr.util.removeAllRows("tabla_encabezado"); 
+        	dwr.util.removeAllRows("tabla_cuerpo"); 
+        	
+        	if(array.length > 0){
+        		
+        		// Encabezado:
+            	var arrayEncabezado = ["encabezado"];
+            	var funcEncabezado = [
+            	                 function(data) { return "ID Recurso"; },
+            	                 function(data) { return "Descripción" }
+            	               ];
+            	dwr.util.addRows("tabla_encabezado", arrayEncabezado, funcEncabezado);
+            	
+            	// Cuerpo:
+            	var funcCasillas = [
+               	                 function(data) { return data.idRecurso; },
+               	                 function(data) { return data.descripcion; }
+               	               ];
+               	dwr.util.addRows("tabla_cuerpo", array, funcCasillas);
+        	}
+        }
+        
+        function linkCombo(texto){
+        	dwr.util.setValue("texto", texto);
+        	dwr.util.removeAllRows("combo"); 
+        	
+        	botonBuscar();
+        }
+
+    </script>
+</head>
+<body>
+	<div id="container"> 
+		<div id="buscador">
+			<h1>Introduzca recurso:</h1>
+			<input type="text" id="texto" onkeyup="mostrarCombo(event)" style="width: 300px">
+			<input type='button' value='buscar' onclick='botonBuscar();'/>
+		
+			<table id="combo" style="width: 300px">
+			</table>
+		</div>
+
+		<div id="resultado">
+			<div id="tablaTitulo"></div>		
+			<table id="tabla">
+				<thead id="tabla_encabezado">
+				</thead>
+				<tbody id="tabla_cuerpo"> 
+				</tbody>
+			</table>
+			<div id="info"></div>
+		</div>
+	</div>	
+	
+</body>
+</html>

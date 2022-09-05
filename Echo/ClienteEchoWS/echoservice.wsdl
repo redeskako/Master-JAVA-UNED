@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ns="http://servicioswebs.uned.es" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://servicioswebs.uned.es">
+    <wsdl:types>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://servicioswebs.uned.es">
+            <xs:element name="despedir">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="despedirResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="saludar">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="saludarResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="despedirRequest">
+        <wsdl:part name="parameters" element="ns:despedir"/>
+    </wsdl:message>
+    <wsdl:message name="despedirResponse">
+        <wsdl:part name="parameters" element="ns:despedirResponse"/>
+    </wsdl:message>
+    <wsdl:message name="saludarRequest">
+        <wsdl:part name="parameters" element="ns:saludar"/>
+    </wsdl:message>
+    <wsdl:message name="saludarResponse">
+        <wsdl:part name="parameters" element="ns:saludarResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="EchoServicePortType">
+        <wsdl:operation name="despedir">
+            <wsdl:input message="ns:despedirRequest" wsaw:Action="urn:despedir"/>
+            <wsdl:output message="ns:despedirResponse" wsaw:Action="urn:despedirResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="saludar">
+            <wsdl:input message="ns:saludarRequest" wsaw:Action="urn:saludar"/>
+            <wsdl:output message="ns:saludarResponse" wsaw:Action="urn:saludarResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="EchoServiceSoap11Binding" type="ns:EchoServicePortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="despedir">
+            <soap:operation soapAction="urn:despedir" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saludar">
+            <soap:operation soapAction="urn:saludar" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="EchoServiceSoap12Binding" type="ns:EchoServicePortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="despedir">
+            <soap12:operation soapAction="urn:despedir" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saludar">
+            <soap12:operation soapAction="urn:saludar" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="EchoServiceHttpBinding" type="ns:EchoServicePortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="despedir">
+            <http:operation location="despedir"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saludar">
+            <http:operation location="saludar"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="EchoService">
+        <wsdl:port name="EchoServiceHttpSoap11Endpoint" binding="ns:EchoServiceSoap11Binding">
+            <soap:address location="http://localhost:8080/axis2/services/EchoService.EchoServiceHttpSoap11Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="EchoServiceHttpSoap12Endpoint" binding="ns:EchoServiceSoap12Binding">
+            <soap12:address location="http://localhost:8080/axis2/services/EchoService.EchoServiceHttpSoap12Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="EchoServiceHttpEndpoint" binding="ns:EchoServiceHttpBinding">
+            <http:address location="http://localhost:8080/axis2/services/EchoService.EchoServiceHttpEndpoint/"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

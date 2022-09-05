@@ -1,0 +1,38 @@
+/* CSS Document */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #F0F0F0;
+}
+#container {
+	width: 1024px;
+	padding: 1%;
+	margin: auto;
+	background-color: #FFF;
+	border: 1px #CCCCCC solid;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+#combo {
+	border: 1px #CCCCCC solid;
+} 
+
+a {
+	color: #666;
+	font-size: .8em;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+	border: 0;
+}
+th, td {
+	border: 1px #999 solid;
+	padding: 2px 10px;
+}
+thead {
+	font-weight: bold;
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER"
+      maxHeight="-Infinity"
+      maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="600.0"
+      prefWidth="450.0"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="pro.jbelo.ListCountriesController">
+   <children>
+      <HBox prefHeight="70.0" prefWidth="450.0" style="-fx-background-color: gray;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="73.0">
+               <children>
+                  <ImageView fitHeight="59.0" fitWidth="58.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/assets/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Label alignment="CENTER" prefHeight="70.0" prefWidth="313.0" text="Países World Bank" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="59.0">
+               <children>
+                  <Button alignment="TOP_CENTER" contentDisplay="TEXT_ONLY" mnemonicParsing="false" onAction="#newCountry"
+                          text="Nuevo"
+                          textAlignment="CENTER" wrapText="true" />
+               </children>
+            </HBox>
+         </children></HBox>
+      <BorderPane prefHeight="50.0" prefWidth="450.0" style="-fx-border-color: black;">
+         <left>
+            <TextField fx:id="searchCountries"
+                       prefHeight="36.0" prefWidth="341.0" promptText="busca países..." BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="10.0" />
+               </BorderPane.margin></TextField>
+         </left>
+         <right>
+            <Label fx:id="countriesCount" alignment="CENTER" prefHeight="24.0"
+                   prefWidth="63.0" text="" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets right="10.0" />
+               </BorderPane.margin>
+            </Label>
+         </right>
+         <center>
+            <Separator orientation="VERTICAL" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <TableView fx:id="countriesListTable" prefHeight="415.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="columnCode" editable="false" prefWidth="155.0" text="Código" />
+          <TableColumn fx:id="columnName" editable="false" prefWidth="290.0" text="Nombre" />
+        </columns>
+      </TableView>
+      <Separator prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="450.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#doDelete" prefHeight="40.0" prefWidth="100.0" text="Borrar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#doEdit" prefHeight="40.0" prefWidth="100.0" text="Editar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

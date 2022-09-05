@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CuentasService" targetNamespace="http://sw.uned.es/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://sw.uned.es/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://sw.uned.es/" schemaLocation="cuentas_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="sumarResponse">
+    <wsdl:part name="parameters" element="tns:sumarResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="sumar">
+    <wsdl:part name="parameters" element="tns:sumar">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Cuentas">
+    <wsdl:operation name="sumar">
+      <wsdl:input name="sumar" message="tns:sumar">
+    </wsdl:input>
+      <wsdl:output name="sumarResponse" message="tns:sumarResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CuentasServiceSoapBinding" type="tns:Cuentas">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="sumar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="sumar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sumarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CuentasService">
+    <wsdl:port name="CuentasPort" binding="tns:CuentasServiceSoapBinding">
+      <soap:address location="http://localhost:8080/JAX_Servidor/services/CuentasPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

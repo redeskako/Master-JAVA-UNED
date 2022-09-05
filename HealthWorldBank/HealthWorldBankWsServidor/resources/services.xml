@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.6.2  Built on : Apr 17, 2012 (05:33:49 IST) -->
+<serviceGroup>
+    <service name="HealthWorldBankWs">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="es.uned.master.java.healthworldbankws.healthworldbankws.HealthWorldBankWsMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">es.uned.master.java.healthworldbankws.healthworldbankws.HealthWorldBankWsSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="ObtenerEstadisticas" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/">
+            <actionMapping>http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/ObtenerEstadisticas</actionMapping>
+            <outputActionMapping>http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/HealthWorldBankWs/ObtenerEstadisticasResponse</outputActionMapping>
+        </operation>
+        <operation name="ObtenerIndicadores" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/">
+            <actionMapping>http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/ObtenerIndicadores</actionMapping>
+            <outputActionMapping>http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/HealthWorldBankWs/ObtenerIndicadoresResponse</outputActionMapping>
+        </operation>
+        <operation name="ObtenerPaises" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/">
+            <actionMapping>http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/ObtenerPaises</actionMapping>
+            <outputActionMapping>http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/HealthWorldBankWs/ObtenerPaisesResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

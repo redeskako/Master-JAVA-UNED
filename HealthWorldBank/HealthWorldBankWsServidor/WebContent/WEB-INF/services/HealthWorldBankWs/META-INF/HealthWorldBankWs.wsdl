@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="HealthWorldBankWs" targetNamespace="http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/">
+      <xsd:element name="ObtenerPaises">
+        <xsd:complexType>
+          <xsd:sequence>
+          	<xsd:element name="primerRegistro" type="xsd:int"/>
+          	<xsd:element name="limite" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ObtenerPaisesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+          	<xsd:element name="primerRegistro" type="xsd:int"/>
+          	<xsd:element name="limite" type="xsd:int"/>
+          	<xsd:element name="totalRegistros" type="xsd:int"/>
+          	<xsd:element maxOccurs="unbounded" minOccurs="0" name="Pais" type="tns:PaisType">
+          	</xsd:element>
+          	<xsd:element maxOccurs="1" minOccurs="0" name="error" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ObtenerIndicadores">
+      	<xsd:complexType>
+      		<xsd:sequence>
+
+      			<xsd:element name="primerRegistro" type="xsd:int"/>
+      			<xsd:element name="limite" type="xsd:int"/>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ObtenerIndicadoresResponse">
+      	<xsd:complexType>
+      		<xsd:sequence>
+
+      			<xsd:element name="primerRegistro" type="xsd:int"/>
+      			<xsd:element name="limite" type="xsd:int"/>
+      			<xsd:element name="totalRegistros" type="xsd:int"/>
+      			<xsd:element maxOccurs="unbounded" minOccurs="0" name="Indicador" type="tns:IndicadorType">
+      			</xsd:element>
+      			<xsd:element minOccurs="0" name="error" type="xsd:string"/>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ObtenerEstadisticas">
+      	<xsd:complexType>
+      		<xsd:sequence>
+
+      			<xsd:element name="primerRegistro" type="xsd:int"/>
+      			<xsd:element name="limite" type="xsd:int"/>
+      			<xsd:element name="codigoPais" type="xsd:string"/>
+      			<xsd:element name="codigoIndicador" type="xsd:string"/>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+      <xsd:element name="ObtenerEstadisticasResponse">
+      	<xsd:complexType>
+      		<xsd:sequence>
+
+      			<xsd:element name="primerRegistro" type="xsd:int"/>
+      			<xsd:element name="limite" type="xsd:int"/>
+      			<xsd:element name="totalRegistros" type="xsd:int"/>
+      			<xsd:element maxOccurs="unbounded" minOccurs="0" name="Estadistica" type="tns:EstadisticaType">
+      			</xsd:element>
+      			<xsd:element maxOccurs="1" minOccurs="0" name="error" type="xsd:string"/>
+      		</xsd:sequence>
+      	</xsd:complexType>
+      </xsd:element>
+    
+      <xsd:complexType name="PaisType">
+      	<xsd:sequence>
+      		<xsd:element name="codigo" type="xsd:string"/>
+      		<xsd:element name="nombre" type="xsd:string"/>
+      	</xsd:sequence>
+      </xsd:complexType>
+    
+      <xsd:complexType name="IndicadorType">
+      	<xsd:sequence>
+      		<xsd:element name="codigo" type="xsd:string"/>
+      		<xsd:element name="nombre" type="xsd:string"/>
+      		<xsd:element name="nota" type="xsd:string"/>
+      		<xsd:element name="organizacion" type="xsd:string"/>
+      	</xsd:sequence>
+      </xsd:complexType>
+      
+            <xsd:complexType name="EstadisticaType">
+            	<xsd:sequence>
+            		<xsd:element name="codigoPais" type="xsd:string"/>
+            		<xsd:element name="codigoIndicador" type="xsd:string">
+            		</xsd:element>
+            		<xsd:element name="ano" type="xsd:int"/>
+            		<xsd:element name="dato" type="xsd:double"/>
+            	</xsd:sequence>
+            </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ObtenerEstadisticasResponse">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadisticasResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ObtenerPaisesResponse">
+    <wsdl:part name="parameters" element="tns:ObtenerPaisesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ObtenerIndicadoresRequest">
+    <wsdl:part name="parameters" element="tns:ObtenerIndicadores">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ObtenerIndicadoresResponse">
+    <wsdl:part name="parameters" element="tns:ObtenerIndicadoresResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ObtenerEstadisticasRequest">
+    <wsdl:part name="parameters" element="tns:ObtenerEstadisticas">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ObtenerPaisesRequest">
+    <wsdl:part name="parameters" element="tns:ObtenerPaises">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="HealthWorldBankWs">
+    <wsdl:operation name="ObtenerPaises">
+      <wsdl:input message="tns:ObtenerPaisesRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:ObtenerPaisesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIndicadores">
+      <wsdl:input message="tns:ObtenerIndicadoresRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:ObtenerIndicadoresResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadisticas">
+      <wsdl:input message="tns:ObtenerEstadisticasRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:ObtenerEstadisticasResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HealthWorldBankWsSOAP" type="tns:HealthWorldBankWs">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ObtenerPaises">
+      <soap:operation soapAction="http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/ObtenerPaises"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIndicadores">
+      <soap:operation soapAction="http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/ObtenerIndicadores"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEstadisticas">
+      <soap:operation soapAction="http://healthworldbankws.java.master.uned.es/HealthWorldBankWs/ObtenerEstadisticas"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HealthWorldBankWs">
+    <wsdl:port name="HealthWorldBankWsSOAP" binding="tns:HealthWorldBankWsSOAP">
+      <soap:address location="http://www.example.org/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

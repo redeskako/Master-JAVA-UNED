@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<description> Web service que emite un saludo o una despedida
+	</description>
+	<messageReceivers>
+		<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out"
+			class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+	</messageReceivers>
+	<parameter name="ServiceClass">es.uned.servicioswebs.Echo
+	</parameter>
+	<operation name="saludar" mep="http://www.w3.org/2004/08/wsdl/in-out" />
+	<operation name="despedir" mep="http://www.w3.org/2004/08/wsdl/in-out" />
+</service>
