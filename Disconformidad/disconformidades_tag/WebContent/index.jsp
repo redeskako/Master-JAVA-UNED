@@ -11,37 +11,42 @@
 		<table aling="center">
 			<tr>
 				<td>Usuario</td>
-				<td><input type="TEXT" name="txtUsuario" size="10"></td>
-			</tr>
+				<td><input type="TEXT" name="txtUsuario" size="10"> </td>
+			</tr>			
 			<tr>
 				<td>Password</td>
-				<td><input type="PASSWORD" name="txtPwd" size="10"></td>
+				<td><input type="PASSWORD" name="txtPwd" size="10"> </td>
 			</tr>
 			<tr>
-				<td><input type="submit" name="cmdAceptar" value="Aceptar"></td>
-				<td><input type="reset" name="cmdLimpiar" value="Limpiar"></td>
+				<td><input type="submit" name="cmdAceptar" value="Aceptar"> </td>
+				<td><input type="reset" name="cmdLimpiar" value="Limpiar"> </td>
 			</tr>
-		</table>
+		</table>		
 	</form>
 <%
 	// Controlar que ha dado a aceptar
-	String aceptar = (String) request.getParameter("cmdAceptar");
-
-	if ((aceptar != null) && (aceptar.equalsIgnoreCase("Aceptar"))){
+	String aceptar= request.getParameter("cmdAceptar");
+	if (aceptar.equalsIgnoreCase("Aceptar")){
 		//Validación de usuario
 %>
-		<jsp:useBean id="elcontrolador" class="org.aprende.java.Controlador"></jsp:useBean>
+	<jsp:useBean id="elcontrolador" class="org.aprende.java.Controlador"></jsp:useBean>
 <%
-		elcontrolador.logarse(request);
-		//Recuperas si existe la sesion
-		if (session.getAttribute("idUsuario") != null){
-			//Error usuario no autentificado
-			response.sendRedirect("disconformidades.jsp");
-		}
+	elcontrolador.logarse(request);
+	//Recuperas si existe la sesion....
+	
+	if (session.getAttribute("idUsuario")==null) {
+	//		Error usuario no autentificado
+		response.sendRedirect("index.jsp");		
+	}
+%>	
+	<center><hr/><h1>Usuario o password inconrrectos</h1><br>
+	<h2>Intentalo de nuevo ceporro.</h2></center>
+<%
 	}else{
+		response.sendRedirect("disconformidades.jsp");		
+		
 %>
- 			<center><hr/><h1>Usuario o password inconrrectos</h1><br>
-			<center><h2>Intentalo de nuevo</h2></center>
+
 <%
 	}
 %>

@@ -15,20 +15,20 @@ public class Servicios extends TreeSet {
 	}
 
 	//Metodo que devuelve una lista de servicios
-	//Si nos llegan errores de los metodos abrirConexion y cerrarConexion se lanzan a la clase DisconformidadException
+	//Si nos llegan errores de los m�todos abrirConexion y cerrarConexion se lanzan a la clase DisconformidadException
 		
 	public Servicios AllServicios() throws DisconformidadException{
-		miBd.abrirConexion(); //No hacemos tratamiento de errores porque ya se ha hecho en el m�todo abrirConexion.
+		miBd.abrirConexion(); //No hacemos tratamiento de errores porque ya se ha hecho en el m�todo abrirConexi�n.		
 		this.addAll( miBd.listadoServicios("Select * from Servicios"));
-		miBd.cerrarConexion();//No hacemos tratamiento de errores porque ya se ha hecho en el m�todo abrirConexion.
-		return this;
+		miBd.cerrarConexion();//No hacemos tratamiento de errores porque ya se ha hecho en el m�todo abrirConexi�n.
+		return this;		
 	}
 	
 	public Servicio getServicio (int id) throws DisconformidadException{
 		Servicio s =new Servicio();
 		Iterator it=this.iterator();
 		
-		while(it.hasNext() && s.Id()!=id ) {
+		while(it.hasNext() && s.Id()!=id )  {
 				s=(Servicio) it.next();
 		}
 		if (s.Id()!=id ){
@@ -42,7 +42,7 @@ public class Servicios extends TreeSet {
 		Servicio s =new Servicio();
 		Iterator it=this.iterator();
 		
-		while(it.hasNext() && s.nombre()!=nombre ){
+		while(it.hasNext() && s.nombre()!=nombre )  {
 				s=(Servicio) it.next();
 		}
 		if (s.nombre()!=nombre ){
@@ -52,11 +52,11 @@ public class Servicios extends TreeSet {
 		return s.Id();
 	}
 	
-	public String toString(Object o){
+	public String toString(Object o){		
 		String cadena = new String();
-		Iterator it= this.iterator();
+		Iterator it= this.iterator();		
 		while (it.hasNext()){
-			cadena = cadena  + ((Servicio)it.next()).toString() + "  -  ";
+			cadena = cadena  + ((Servicio)it.next()).toString() + "  -  ";			
 		}
 		return cadena;
 	}

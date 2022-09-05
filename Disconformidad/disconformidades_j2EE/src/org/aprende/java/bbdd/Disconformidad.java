@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Disconformidad implements Comparable, Serializable{
 
-	private int numero;
+	private int numero ;
 	private Date fecha;
 	private String motivo;
 	private String docs;
