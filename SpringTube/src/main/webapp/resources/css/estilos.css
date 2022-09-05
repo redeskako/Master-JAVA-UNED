@@ -1,0 +1,78 @@
+	body
+	{
+	    font-family: "Century Gothic", verdana, helvetica, arial, sans-serif;
+	}
+
+	/* Contenedor de la página */
+	#contenedor
+	{
+    	width: 700px;
+    	margin: 10px auto;
+	}
+	
+	h1
+	{
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
+	.leyenda
+	{
+		color:red;
+	}
+
+	.indice
+	{
+		color:navy;
+		text-align: center;
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+	
+	.datos
+	{
+		width: 100%;
+	}
+
+	.video
+	{
+		text-align: center;
+	}
+	
+	.error 
+	{
+		color: #ff0000;
+	}
+	
+	tr:first-child
+	{
+		font-weight: bold;
+		background-color: #C6C9C4;
+	}
+	
+	.indice1
+	{
+		width: 33%;
+		padding: 0 0 0 0;
+		margin-left:0;
+		float:left;
+		text-align:left;
+	}
+	
+	.indice2
+	{
+		width: 33%;
+		padding: 0 0 0 0;
+		margin-left:0;
+		float:left;
+		text-align:center;
+	}
+	
+	.indice3
+	{
+		width: 33%;
+		padding: 0 0 0 0;
+		margin-left:0;
+		float:left;
+		text-align:right;
+	}
