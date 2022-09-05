@@ -1,9 +1,0 @@
-package tikajes;
-/**
- *
- * @author A L E F_08
- *
- */
-public enum Categoria {
-	DIRECTOR,GERENTE,JEFE_DE_SERVICIO,JEFE_DE_DEPARTAMENTO,JEFE_DE_NEGOCIADO,ADMINISTRATIVO,PEON,OFICIAL1,SEGURATA
-}

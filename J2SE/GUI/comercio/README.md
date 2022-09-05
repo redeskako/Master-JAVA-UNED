@@ -1,1 +1,0 @@
-# Práctica sobre Swing y JDBC: Comercio
