@@ -1,6 +1,0 @@
-model\Country.class
-dbconector\Conector.class
-dao\Dao.class
-dao\DaoI.class
-model\User.class
-soap\Main.class
