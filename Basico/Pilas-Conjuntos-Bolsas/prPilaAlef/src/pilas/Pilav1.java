@@ -27,16 +27,15 @@ public class Pilav1 {
 
 	public void push(Par p){
 		// incrementamos y asignamos
+
 		if (cabeza <= pila.length-1){
-			pila[++cabeza] = new Par (p.getX(),p.getY());
-		}
-		else{
+
+		}else{
 			Par [] pila1 = this.duplica();
 			this.cabeza++;
 			pila1[this.cabeza] = p;
 			this.pila = pila1;
 		}
-
 	}
 
 	/**
@@ -46,7 +45,7 @@ public class Pilav1 {
 
 	private  Par[] duplica(){
 		Par [] pila2 = new Par [this.pila.length*2];
-		for (int i=0 ; i<TOPE ; i++){
+		for (int i=0 ; i<(this.pila.length-1) ; i++){
 			pila2[i] = pila[1];
 		}
 		return pila2;

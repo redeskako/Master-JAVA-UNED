@@ -2,7 +2,7 @@ package principal;
 
 import pilas.Par;
 import pilas.Pilav1;
-import pilas.Pilav2;
+import pilas.PilaV2;
 import pilas.Point;
 
 public class PPila {
@@ -12,9 +12,9 @@ public class PPila {
 
     Point punto = new Point(2,2,2);
 
-    System.out.println(punto);
+    System.out.println(punto.toString());
 
-	Point punto2 = new Point(3,3,3);
+		Point punto2 = new Point(3,3,3);
 
 	System.out.println(punto2.toString());
 
@@ -46,7 +46,7 @@ public class PPila {
 		System.out.println(pila);
 		pila.pop();
 		System.out.println(pila);
-		Pilav2 pila2 = new Pilav2();
+		PilaV2 pila2 = new PilaV2();
 		System.out.println(pila2);
 		pila2.push(p1);
 		System.out.println(pila2);

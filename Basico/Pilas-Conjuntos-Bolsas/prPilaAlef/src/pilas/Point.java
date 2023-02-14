@@ -19,7 +19,7 @@ public class Point {
 	// junta las variables en una cadena de tipo string
 
 	public String toString(){
-		return "("+x+","+y+","+z+")";
+		return "("+this.x+","+this.y+","+this.z+")";
 	}
 
 }

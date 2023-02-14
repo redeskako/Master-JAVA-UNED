@@ -1,14 +1,12 @@
 package pilas;
 
-import pilas.Par;
 import pilas.PilaV2;
-import pilas.Pilav2;
 
 public class PilaV2 {
-	private Pilav2 pila;
+	private PilaV2 pila;
 
 	public PilaV2(){
-		 pila = new Pilav2();
+		 pila = new PilaV2();
 	}
 
 	public boolean esVacia(){
