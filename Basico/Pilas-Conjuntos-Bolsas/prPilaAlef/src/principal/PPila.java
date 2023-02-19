@@ -18,9 +18,9 @@ public class PPila {
 
 	System.out.println(punto2.toString());
 
-		Par p1= new Par(3,3);
+		Par p1= new Par (3,3);
 		Par p2= new Par (4,3);
-		Par p3= new Par(3,1);
+		Par p3= new Par (3,1);
 
 		if (p1.equals(p2)){
 			System.out.println("iguales");
@@ -46,12 +46,15 @@ public class PPila {
 		System.out.println(pila);
 		pila.pop();
 		System.out.println(pila);
+		pila.pop();
+		pila.pop();
+		System.out.println(pila);
+
+		
+		
 		PilaV2 pila2 = new PilaV2();
-		System.out.println(pila2);
 		pila2.push(p1);
-		System.out.println(pila2);
 		pila2.push(p2);
-		System.out.println(pila2);
 		pila2.push(p3);
 		System.out.println(pila2);
 

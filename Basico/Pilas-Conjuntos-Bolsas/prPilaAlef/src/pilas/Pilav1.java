@@ -4,13 +4,12 @@ import java.util.EmptyStackException;
 
 
 
-public class Pilav1 {
+public class Pilav1{
 	//constante
 	public static final int TOPE = 10;
 
 	//para incrementar el array utilizo mult, que me indicará cual será su
 	//nuevo tamaño:
-	private int mult = 1;
 	private Par [] pila ;
 	private int cabeza ;
 
@@ -29,7 +28,8 @@ public class Pilav1 {
 		// incrementamos y asignamos
 
 		if (cabeza <= pila.length-1){
-
+			cabeza ++;
+			this.pila[cabeza] = p;
 		}else{
 			Par [] pila1 = this.duplica();
 			this.cabeza++;
@@ -50,26 +50,23 @@ public class Pilav1 {
 		}
 		return pila2;
 	}
+	
 	public void pop(){
-		if(this.cabeza > -1){
+		if (!this.esVacia()){
 			cabeza--;
-
-		}
-		else{
+		}else{
 			throw new MiPilaException("La pila está vacía");
 		}
 	}
-	public Par cabeza(){
 
-		if (esVacia()){
+	public Par cabeza(){
+		if (!this.esVacia()){
 			throw new MiPilaException("La pila no tiene elementos");
-		}
-		else{
+		}else{
 			return pila[cabeza];
 		}
-
-
 	}
+	
 	public boolean equals(Pilav1 pila){
 		boolean iguales = false;
 		for(int i=0 ; i<=cabeza;++i){
@@ -82,13 +79,12 @@ public class Pilav1 {
 	}
 
 	public String toString(){
-		String res = "["; // lo encierro entre corchetes
-		for(int i=0 ; i<=this.cabeza ; i++){//recorro el array de pila
+		String res = "[";						// lo encierro entre corchetes
+		for(int i=0 ; i<=this.cabeza ; i++){	//recorro el array de pila
 			res += pila[i];
 			if(i<this.cabeza){
 				res += ", ";
 			}
-
 		}
 		res += "]";
 		return res;
