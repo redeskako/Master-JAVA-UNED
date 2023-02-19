@@ -1,7 +1,7 @@
 package principal;
 
 import pilas.Par;
-import pilas.Pilav1;
+import pilas.PilaV1;
 import pilas.PilaV2;
 import pilas.Point;
 
@@ -37,28 +37,24 @@ public class PPila {
 			System.out.println("Error en la comparación");
 		}
 
-		Pilav1 pila = new Pilav1();
+		PilaV1 pila = new PilaV1();
 		System.out.println(pila);
 		pila.push(p1);
 		pila.push(p2);
 		pila.push(p3);
 		System.out.println("Añadimos tres nodos");
 		System.out.println(pila);
-		pila.pop();
-		System.out.println(pila);
-		pila.pop();
-		pila.pop();
-		System.out.println(pila);
 
-		
 		
 		PilaV2 pila2 = new PilaV2();
 		pila2.push(p1);
 		pila2.push(p2);
 		pila2.push(p3);
 		System.out.println(pila2);
-
-
+		
+		PilaV1 pila3 = pila.
+		
+		System.out.println("Las pilas son: " + pila.equals(pila));
 	}
 
 }

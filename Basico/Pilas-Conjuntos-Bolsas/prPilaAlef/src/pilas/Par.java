@@ -58,7 +58,7 @@ public class Par {
 	//componente a componente.
 	//Me devolverá true si son iguales, y false en caso contrario
 	public boolean equals(Par p){
-		return ((x==p.getX()) && (y==p.getY()));
+		return ((this.x == p.getX()) && (this.y == p.getY()));
 	}
 
     //método que me imprime las componentes x e y del par

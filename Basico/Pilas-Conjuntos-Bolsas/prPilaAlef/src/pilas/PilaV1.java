@@ -4,35 +4,33 @@ import java.util.EmptyStackException;
 
 
 
-public class Pilav1{
+public class PilaV1{
 	//constante
 	public static final int TOPE = 10;
 
 	//para incrementar el array utilizo mult, que me indicará cual será su
 	//nuevo tamaño:
-	private Par [] pila ;
-	private int cabeza ;
+	private Par [] pila;
+	private int cabeza;
 
 	//método constructor
 
-	public Pilav1(){
+	public PilaV1(){
 		pila = new Par[TOPE] ;
-		cabeza = -1 ;
+		cabeza = -1;
 	}
 
 	public boolean esVacia(){
-		return (cabeza == -1) ;
+		return (cabeza == -1);
 	}
 
 	public void push(Par p){
 		// incrementamos y asignamos
-
-		if (cabeza <= pila.length-1){
-			cabeza ++;
-			this.pila[cabeza] = p;
+		this.cabeza++;
+		if (this.cabeza < pila.length){
+			this.pila[this.cabeza] = p;
 		}else{
 			Par [] pila1 = this.duplica();
-			this.cabeza++;
 			pila1[this.cabeza] = p;
 			this.pila = pila1;
 		}
@@ -53,31 +51,39 @@ public class Pilav1{
 	
 	public void pop(){
 		if (!this.esVacia()){
-			cabeza--;
+			this.cabeza --;
 		}else{
 			throw new MiPilaException("La pila está vacía");
 		}
 	}
 
 	public Par cabeza(){
-		if (!this.esVacia()){
+		if (this.esVacia()){
 			throw new MiPilaException("La pila no tiene elementos");
 		}else{
-			return pila[cabeza];
+			return pila[this.cabeza];
 		}
 	}
 	
-	public boolean equals(Pilav1 pila){
-		boolean iguales = false;
-		for(int i=0 ; i<=cabeza;++i){
-			if ((this.pila[i].getX() == pila.cabeza().getX()) &&
-			   (this.pila[i].getY() == pila.cabeza().getY())){
-				iguales = true;
-			}
+	public boolean equals(PilaV1 pila){
+		boolean iguales = true;
+		if ((this.cabeza==-1) && (pila.esVacia())){
+			return iguales;
 		}
-		return iguales;
-	}
 
+		int i = this.cabeza;
+		while (iguales && (!pila.esVacia()) && (i > -1)){
+				iguales = this.pila[i].equals(pila.cabeza());
+				pila.pop();
+				i --;
+		}
+		if ((pila.esVacia()) && (i == -1)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
 	public String toString(){
 		String res = "[";						// lo encierro entre corchetes
 		for(int i=0 ; i<=this.cabeza ; i++){	//recorro el array de pila

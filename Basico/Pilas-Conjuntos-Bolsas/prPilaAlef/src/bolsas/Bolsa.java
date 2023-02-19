@@ -7,7 +7,7 @@ package bolsas;
 
 import conjuntos.Conjunto;
 import pilas.Par;
-import pilas.Pilav1;
+import pilas.PilaV1;
 
 public class Bolsa extends Conjunto {
 

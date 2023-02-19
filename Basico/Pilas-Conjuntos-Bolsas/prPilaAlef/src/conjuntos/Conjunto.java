@@ -2,15 +2,15 @@ package conjuntos;
 
 import pilas.MiPilaException;
 import pilas.Par;
-import pilas.Pilav1;
+import pilas.PilaV1;
 
 public class Conjunto {
     //defino una propiedad conjunto que será de tipo Pilav1 que es la versión
     //estática
-    private Pilav1 conjunto;
+    private PilaV1 conjunto;
 
     public Conjunto(){
-        conjunto = new Pilav1();
+        conjunto = new PilaV1();
     }
 
     public boolean esVacio(){
@@ -23,10 +23,8 @@ public class Conjunto {
      *
      * Añado el par sólo si no se encuentra en la pila
      */
-    public void incluir(Par p){//redefinir en Bolsa
-
+    public void incluir(Par p){	//redefinir en Bolsa
         try{
-
             if (!pertenece(p)){
                 this.conjunto.push(p);
             }
@@ -54,13 +52,11 @@ public class Conjunto {
      *
      */
     public boolean pertenece(Par p){
-        if(this.conjunto.esVacia()){
+        if (this.conjunto.esVacia()){
             throw new MiPilaException("No hay elementos en la pila");
-        }
-        else{
+        }else{
             return comprobarPertenece(p);
         }
-
     }
 
     /**
@@ -78,9 +74,9 @@ public class Conjunto {
      */
     private boolean comprobarPertenece(Par p){
         boolean ok = false;
-        Pilav1 aux = new Pilav1();
-        while(!conjunto.esVacia()){
-            if(p == conjunto.cabeza()){
+        PilaV1 aux = new PilaV1();
+        while (!conjunto.esVacia()){
+            if (p == conjunto.cabeza()){
                 ok = true;
             }
             this.conjunto.pop(); //saco el elemento del conjunto
@@ -111,7 +107,6 @@ public class Conjunto {
      */
     public boolean equals(Object o){//redefinir en Bolsa
         return true;
-
     }
 
     public String toString(){
