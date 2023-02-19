@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Basico/Disconformidades/Disconformidades_grego/src"/>
+	<classpathentry kind="src" path="Basico/Disconformidades/Disconformidades_j2se/src"/>
+	<classpathentry kind="src" path="Basico/Disconformidades/disconformidades_j2se2/src"/>
+	<classpathentry kind="src" path="Basico/Disconformidades/Disconformidades_Maria/src"/>
+	<classpathentry kind="src" path="Basico/EjemploIO/src"/>
+	<classpathentry kind="src" path="Basico/garaje/src"/>
+	<classpathentry kind="src" path="Basico/KWIC-Consola/kwic/src"/>
+	<classpathentry kind="src" path="Basico/KWIC-Consola/prKWIC/src"/>
+	<classpathentry kind="src" path="Basico/OCA/Oca_v2/src"/>
+	<classpathentry kind="src" path="Basico/OCA/OCA-v1/src"/>
+	<classpathentry kind="src" path="Basico/Pilas-Conjuntos-Bolsas/Bolsa"/>
+	<classpathentry kind="src" path="Basico/Pilas-Conjuntos-Bolsas/Conjunto"/>
+	<classpathentry kind="src" path="Basico/Pilas-Conjuntos-Bolsas/PilaInterfazComposicion/src"/>
+	<classpathentry kind="src" path="Basico/Pilas-Conjuntos-Bolsas/PilaInterfazHerencia/src"/>
+	<classpathentry kind="src" path="Basico/Pilas-Conjuntos-Bolsas/prPilaAlef/src"/>
+	<classpathentry kind="src" path="Basico/Tikaje/src"/>
+	<classpathentry kind="src" path="GUI/Biblioteca/biblioteca_ADR/src"/>
+	<classpathentry kind="src" path="GUI/Biblioteca/bibliotecaG1/src/main/java"/>
+	<classpathentry kind="src" path="GUI/CalculadoraFlowLayout/src"/>
+	<classpathentry kind="src" path="GUI/CalculadoraGridLayout/src"/>
+	<classpathentry kind="src" path="GUI/comercio/src"/>
+	<classpathentry kind="src" path="GUI/garaje/GarajeGUI/src"/>
+	<classpathentry kind="src" path="GUI/garaje/GarajeMVC/src"/>
+	<classpathentry kind="src" path="GUI/Gestion_Biblioteca/src"/>
+	<classpathentry kind="src" path="GUI/JTable/src"/>
+	<classpathentry kind="src" path="GUI/JTableEjemplo/src"/>
+	<classpathentry kind="src" path="GUI/KWIC/Kwic Interfaz/src"/>
+	<classpathentry kind="src" path="GUI/KWIC/KwicCompeto/src"/>
+	<classpathentry kind="src" path="GUI/Parchis/Parchis 1.0/src"/>
+	<classpathentry kind="src" path="GUI/Parchis/Parchis 1.1/src"/>
+	<classpathentry kind="src" path="GUI/Parchis/Parchis 2.0/src"/>
+	<classpathentry kind="src" path="GUI/PracticaVideoClub/src"/>
+	<classpathentry kind="src" path="GUI/PruebaJUNG/src"/>
+	<classpathentry kind="src" path="GUI/WorldHealthBank/healthworldbank/src/main/java"/>
+	<classpathentry excluding="src/" kind="src" path="GUI/WorldHealthBank/WorldHealthBank1"/>
+	<classpathentry kind="src" path="GUI/WorldHealthBank/WorldHealthBank1/src"/>
+	<classpathentry kind="src" path="GUI/WorldHealthBank/WorldHealthBank2/src"/>
+	<classpathentry kind="src" path="JUnit/PruebaSuma/src"/>
+	<classpathentry kind="src" path="JUnit/PruebaUnit/src"/>
+	<classpathentry kind="src" path="JUnit/PruebaUnit2/src"/>
+	<classpathentry kind="src" path="Maven-Docker/empleados/src/main/java"/>
+	<classpathentry kind="src" path="Maven-Docker/empleados/src/test/java"/>
+	<classpathentry kind="src" path="Maven-Docker/garajeGUI/src"/>
+	<classpathentry kind="src" path="Maven-Docker/kwic/src"/>
+	<classpathentry kind="src" path="Maven-Docker/lambda-expression/src/main/java"/>
+	<classpathentry kind="src" path="Maven-Docker/Oca_v3/src"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockito/dist/20160401_practica1/codigo/trunk/src"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockito/dist/20160401_practica1/codigo/trunk/test"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockito/src"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockito/test"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockito2/src/main/java"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockito2/src/test/java"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockitoFrances_2016_02_23/src/main/java"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockitoFrances_2016_02_23/src/test/java"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockitoGrII/src/main/java"/>
+	<classpathentry kind="src" path="Mockito/BibliotecaMockitoGrII/src/test/java"/>
+	<classpathentry kind="src" path="Socket-Threads/KwicNet/src"/>
+	<classpathentry kind="src" path="Socket-Threads/Oca-Thread/Oca_v3/src"/>
+	<classpathentry kind="src" path="Socket-Threads/Oca-Thread/OcaEnRed/src"/>
+	<classpathentry kind="src" path="Socket-Threads/PruebaSocket/src"/>
+	<classpathentry kind="src" path="Socket-Threads/Thread/src"/>
+	<classpathentry kind="lib" path="GUI/Biblioteca/bibliotecaG1/target/bibliotecaG1-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="GUI/Gestion_Biblioteca/mysql-connector-java-5.1.30-bin.jar"/>
+	<classpathentry kind="lib" path="GUI/JTableEjemplo/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar"/>
+	<classpathentry kind="lib" path="GUI/JTableEjemplo/lib/junit_4/junit-4.5-src.jar"/>
+	<classpathentry kind="lib" path="GUI/JTableEjemplo/lib/junit_4/junit-4.5.jar"/>
+	<classpathentry kind="lib" path="GUI/JTableEjemplo/lib/junit/junit-3.8.2.jar"/>
+	<classpathentry kind="lib" path="GUI/KWIC/KwicCompeto/forms-1.3.0.jar"/>
+	<classpathentry kind="lib" path="GUI/KWIC/KwicCompeto/miglayout15-swing.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 1.0/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 1.0/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 1.1/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 1.1/lib/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 1.1/lib/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 1.1/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 1.1/lib/sqlite-jdbc-3.7.2.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 2.0/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 2.0/lib/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 2.0/lib/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 2.0/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="GUI/Parchis/Parchis 2.0/lib/sqlite-jdbc-3.7.2.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/healthworldbank/src/main/resources/libraries/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/healthworldbank/src/main/resources/libraries/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/healthworldbank/src/main/resources/libraries/sqlitejdbc-v056.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/healthworldbank/target/classes/libraries/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/healthworldbank/target/classes/libraries/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/healthworldbank/target/classes/libraries/sqlitejdbc-v056.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/WorldHealthBank2/lib/commons-dbcp-1.3.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/WorldHealthBank2/lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/WorldHealthBank2/lib/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/WorldHealthBank2/lib/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/WorldHealthBank2/lib/sqlitejdbc-v056.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/WorldHealthBank2/pruebaApplet/applet/jcommon-1.0.17.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/WorldHealthBank2/pruebaApplet/applet/jfreechart-1.0.14.jar"/>
+	<classpathentry kind="lib" path="GUI/WorldHealthBank/WorldHealthBank2/pruebaApplet/applet/practicaBBDD.jar"/>
+	<classpathentry kind="lib" path="Maven-Docker/empleados/target/empleados-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Maven-Docker/garajeGUI/target/garajeGUI-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Maven-Docker/kwic/target/kwic-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Maven-Docker/Oca_v3/Oca_v3.jar"/>
+	<classpathentry kind="lib" path="Maven-Docker/Oca_v3/target/Oca_v3-0.0.1.jar"/>
+	<classpathentry kind="output" path="Basico/Disconformidades/Disconformidades_Maria/bin"/>
+</classpath>
