@@ -14,7 +14,7 @@ public class PPila {
 
     System.out.println(punto.toString());
 
-		Point punto2 = new Point(3,3,3);
+	Point punto2 = new Point(3,3,3);
 
 	System.out.println(punto2.toString());
 
