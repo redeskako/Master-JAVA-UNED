@@ -2,8 +2,9 @@ package principal;
 
 import pilas.Par;
 import pilas.PilaV1;
-import pilas.PilaV2;
+import pilas.ColaV2;
 import pilas.Point;
+import pilas.MiPilaException;
 
 public class PPila {
 	public static void main (String [] arg){
@@ -46,13 +47,17 @@ public class PPila {
 		System.out.println(pila);
 
 		
-		PilaV2 pila2 = new PilaV2();
-		pila2.push(p1);
-		pila2.push(p2);
-		pila2.push(p3);
-		System.out.println(pila2);
+		ColaV2 cola2 = new ColaV2();
+		cola2.push(p1);
+		cola2.push(p2);
+		cola2.push(p3);
+		System.out.println(cola2);
+		try {
+			cola2.pop(); // Generar MiErrorException
+		}catch(MiPilaException e) {
+			System.out.println("Error en la pila....");
+		}
 		
-		PilaV1 pila3 = pila.
 		
 		System.out.println("Las pilas son: " + pila.equals(pila));
 	}
