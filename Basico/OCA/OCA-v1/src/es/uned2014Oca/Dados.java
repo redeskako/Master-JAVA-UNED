@@ -22,7 +22,7 @@ public class Dados {
 	
 	{
 		
-		sumadados=dosdados.nextInt(12)+1; //<docente> No es mejor considerar el valor de un dado como Constante? y si quiero usar más datdos? usas dos dados?
+		sumadados = dosdados.nextInt(12)+1; //<docente> No es mejor considerar el valor de un dado como Constante? y si quiero usar más datdos? usas dos dados?
 		return sumadados;
 		
 	}

@@ -8,8 +8,7 @@ package es.uned2014Oca;
 
 public class ClaseError extends RuntimeException {
 	
-	public ClaseError()
-	{
+	public ClaseError()	{
 		super("CLASE ERROR EXCEPTION");
 		
 	}
