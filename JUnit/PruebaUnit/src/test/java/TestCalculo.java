@@ -1,3 +1,5 @@
+package test.java;
+
 import es.uned.master.java.Calculo;
 import junit.framework.*;
 
@@ -11,6 +13,10 @@ public class TestCalculo extends TestCase{
 		
 		div = Calculo.div(num1, num2);
 		assertEquals(div, total);
+		
 
+	}
+	public void testPrueba() {
+		assertTrue(true);
 	}
 }

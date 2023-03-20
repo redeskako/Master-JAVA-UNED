@@ -28,16 +28,19 @@ public class TituloKWIC implements Comparable<TituloKWIC> {
 
     //método compareTo para no distinguir entre mayúsculas y minúsculas
     public int compareTo(TituloKWIC tk) {
-        return this.titulo.compareToIgnoreCase(tk.titulo);
+        return this.titulo.compareToIgnoreCase(tk.getTitulo());
     }
 
 
     //método equals, que dos títulos sean iguales sin distinguir entre mayúsculas y
     //minúsculas
     public boolean equals(TituloKWIC tk) {
-        return titulo.equalsIgnoreCase(tk.titulo);
+        return titulo.equalsIgnoreCase(tk.getTitulo());
     }
 
+    public String getTitulo() {
+    	return this.titulo;
+    }
    //método hasCode, para que a la hora de insertar no halla colisiones.También
     //debemos poner toUpperCase() para que no distinga entre maýusculas y minúsculas
 

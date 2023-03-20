@@ -14,7 +14,7 @@ public class KWIC {
      * estructura del KWIC.
      * Necesito un conjunto para guardar las palabras no claves, estas serán:
      * el, la , los , las ..... las que aparecen en el driver, son las que
-     * carecen de significado.El conjunto será de TituloKWIC, para que no distinga
+     * carecen de significado. El conjunto será de TituloKWIC, para que no distinga
      * entre eL y El
      *
      * Luego tendremos para generar las frases una estructura Map, donde por cada
@@ -45,7 +45,6 @@ public class KWIC {
         while (st.hasMoreTokens()){
                 noClaves.add(new TituloKWIC(st.nextToken()));
         }
-
     }
 
     public void generarFrases(String frase){

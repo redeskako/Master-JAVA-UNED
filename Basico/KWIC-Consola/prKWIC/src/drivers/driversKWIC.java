@@ -11,8 +11,8 @@ public class driversKWIC {
      */
     public static void main(String[] args) {
 
-        String palNoSig = "el,la,los,las,al,un,una,unos,unas,y,o,a,ante,bajo,cabe,de,desde,en,entre,hacia,hasta,para,por,sin,si,no";
-        String []frases = {
+        String palNoSig = "del,el,la,los,las,al,un,una,unos,unas,y,o,a,ante,bajo,cabe,de,desde,en,entre,hacia,hasta,para,por,sin,si,no";
+        String [] frases = {
             "El color del dinero",
             "Color púrpura",
             "Misión imposible",
@@ -21,8 +21,9 @@ public class driversKWIC {
             "El dinero llama al dinero",
             "La rosa del azafrán",
             "El nombre de la rosa",
-            "Toma el dinero y corre"
-
+            "Toma el dinero y corre",
+            "El bueno, el feo y el malo",
+            "El Bueno, EL FEO Y EL MALO"
         };
 
         KWIC glosario = new KWIC();

@@ -7,6 +7,6 @@ public class KWICException extends RuntimeException {
 	}
 
 	public KWICException(String msg){
-		super("error"+msg);
+		super("error" + msg);
 	}
 }
