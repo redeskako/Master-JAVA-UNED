@@ -5,7 +5,7 @@ public class Ahorcado {
     private Palabra palabra;
     private Juego juego;
 
-    public Ahorcado(String palabra) throws AhorcadoException {
+    public Ahorcado(String palabra) {
         if (palabra == null || palabra.trim().isEmpty()) {
             throw new AhorcadoException("La palabra no puede ser nula o vacía");
         }
@@ -13,7 +13,7 @@ public class Ahorcado {
         this.juego = new Juego();
     }
 
-    public boolean intentar(char letra) throws AhorcadoException {
+    public boolean intentar(char letra) {
         if (juego.getIntentosRestantes() == 0) {
             throw new AhorcadoException("Ya no tienes más intentos");
         }

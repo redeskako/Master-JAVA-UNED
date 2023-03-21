@@ -2,10 +2,10 @@ package es.uned.master.java.juegoAhorcado.base;
 
 
 // import lombok.ToString;
-// import lombok.Getter;
+import lombok.Getter;
 
-//@Getter
-//@ToString(includeFieldNames = false)
+@Getter
+// @ToString(includeFieldNames = false)
 public enum EstadoAhorcado {
 	
     INICIAL(0,
@@ -77,22 +77,22 @@ public enum EstadoAhorcado {
     
 	private String figura;
     
-    EstadoAhorcado(final int estado, final String figura) {
+    EstadoAhorcado(int estado, String figura) {
     	this.estado = estado;
     	this.figura = figura;
     }
 
-
+/*
     public int getEstado() {
     	return this.estado;
     }
+    
     public String getFigura() {
     	return this.figura;
     }
-
+*/
     @Override
     public String toString() {
     	return "Estado: "+ this.estado + "\n" + this.figura;
     }
-
 }

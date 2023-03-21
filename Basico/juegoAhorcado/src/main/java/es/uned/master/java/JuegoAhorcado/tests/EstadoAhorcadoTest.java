@@ -18,20 +18,11 @@ public class EstadoAhorcadoTest {
 
 	@Test
 	public void test() {
-		EstadoAhorcado estado = EstadoAhorcado.PIERNA_IZQUIERDA;
-		assertEquals(EstadoAhorcado.PIERNA_IZQUIERDA, estado);
+		EstadoAhorcado estado = EstadoAhorcado.BRAZO_DERECHO;
+		assertEquals(EstadoAhorcado.BRAZO_DERECHO, estado);
 		
 		System.out.println(estado.getFigura());
 		System.out.println(estado);
-/*		assertEquals(estado.toString(),
-				"+---+\n" +
-		        "  | |\n" +
-		        "    |\n" +
-		        "    |\n" +
-		        "    |\n" +
-		        "    |\n" +
-		        "=======\n");
-*/
 	}
 
 }
