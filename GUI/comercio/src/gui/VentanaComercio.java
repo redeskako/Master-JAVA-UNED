@@ -52,7 +52,7 @@ public class VentanaComercio implements ActionListener, TableModelListener{
 			this.mibotonera[i].setActionCommand(VentanaComercio.accion[i]);
 			this.mibotonera[i].addActionListener(this);
 		}
-        this.comercioTableModel = new ComercioTableModel("localhost", "comercio", "usuario", "clave");
+        this.comercioTableModel = new ComercioTableModel("172.18.0.2", "registro", "user", "password");
 
 		this.mitabla= new JTable(this.comercioTableModel);
 		this.mitabla.getModel().addTableModelListener(this);

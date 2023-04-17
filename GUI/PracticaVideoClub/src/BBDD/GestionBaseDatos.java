@@ -19,7 +19,7 @@ public class GestionBaseDatos {
 	public void CargaDriver(){
 		//Se carga el driver
 		try{
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		}catch (ClassNotFoundException e){
 //			throw new VideoClubException("Error al cargar el driver");
 		}

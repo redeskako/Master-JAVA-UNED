@@ -19,7 +19,8 @@ public class ComercioBBDD {
     private String usuario;
     private String pass;
 
-    public ComercioBBDD(String servidor, String bbdd, String usuario, String pass){
+    @SuppressWarnings("deprecation")
+	public ComercioBBDD(String servidor, String bbdd, String usuario, String pass){
         // TreeMap está ordenado, pero la variable es de tipo Map, solo podré ejecutar métodos de la clase Map
         // TreeMap implementa el interfaz Map, por eso me permite hacer new de la clase TreeMap
         this.servidor = servidor;
@@ -28,7 +29,7 @@ public class ComercioBBDD {
         this.pass = pass;
 
         try {
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
         } catch (Exception e) {
             //throw new ComercioException("Driver de BD no localizado"+e);
         }
@@ -95,11 +96,11 @@ public class ComercioBBDD {
                 Comercio comercio = it.next().getValue();
                 if (comercio.get_co_id() < 0) {
                     // Nuevo comercio
-                    sql = "INSERT INTO Comercios (co_nombre, co_pais) VALUES (";
+                    sql = "INSERT INTO comercios (co_nombre, co_pais) VALUES (";
 					sql+= "'"+comercio.get_co_name()+"','"+comercio.get_co_pais()+"')";
                 } else {
                     // Actualizar comercio
-                    sql = "UPDATE Comercios SET co_nombre = '"+comercio.get_co_name()+"', ";
+                    sql = "UPDATE comercios SET co_nombre = '"+comercio.get_co_name()+"', ";
 					sql+="co_pais = '"+comercio.get_co_pais();
 					sql+="' where (co_id = "+comercio.get_co_id()+")";
                 }

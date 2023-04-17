@@ -54,6 +54,7 @@ public class Comercio implements Comparable<Comercio>{
     public int hashCode(){
         return (new Integer(this.co_id)).hashCode();
     }
+    
     public int compareTo(Comercio com){
         if (this.co_pais.compareToIgnoreCase(com.get_co_pais())==0){
             return this.co_name.compareToIgnoreCase(com.get_co_name());

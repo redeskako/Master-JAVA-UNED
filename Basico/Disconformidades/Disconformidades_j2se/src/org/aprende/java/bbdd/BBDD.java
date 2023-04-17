@@ -14,7 +14,7 @@ public class  BBDD {
 	public boolean abrirConexion(){	
 		this.conectado=false;
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection("jdbc:mysql://pi-/disconformidad?user=alef&password=alef");
             stm=conn.createStatement();
             this.conectado=true;
