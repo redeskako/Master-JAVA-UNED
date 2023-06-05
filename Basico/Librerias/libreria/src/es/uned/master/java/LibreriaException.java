@@ -1,4 +1,4 @@
-package Paq_libreria;
+package es.uned.master.java;
 
 public class LibreriaException extends RuntimeException{
 	public LibreriaException(){
