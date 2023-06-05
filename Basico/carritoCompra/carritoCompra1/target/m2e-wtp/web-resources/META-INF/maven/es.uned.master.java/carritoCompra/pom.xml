@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>es.uned.master.java</groupId>
   <artifactId>carritoCompra</artifactId>
-  <version>0.0.1</version>
+  <version>0.1</version>
   <packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -24,13 +24,4 @@
       </plugin>
     </plugins>
   </build>
-  <dependencies>
-<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
-	<dependency>
-	    <groupId>javax.servlet</groupId>
-	    <artifactId>servlet-api</artifactId>
-	    <version>2.5</version>
-	    <scope>provided</scope>
-	</dependency>
-  </dependencies>
 </project>

@@ -9,8 +9,8 @@
 </head>
 <body>
 <center>
-	<form type=post action="index.jsp">
-		<h1>Carrito de la compra </h1> 
+	<form type="post" action="index.jsp">
+		<h1>Carrito de la compra </h1>
 	<br/>
 		Por favor seleccione un producto a a&ntilde;adir al carrito
 	<br/>
@@ -24,38 +24,35 @@
 	</select>
 	<input type="submit" name="submit" value="sumar"/>
 	</form>
-
 <!--  Ahora incluiremos la presentación del carrito de la compra  -->
-
 <%
 	String submit = request.getParameter("submit");
-//	out.print("Valor submit:"+submit);
+// out.print("Valor submit:"+submit);
 	if (submit != null){
 %>
-	<hr/>
+		<hr/>
 		<h2 align="center">Tu pedido</h2>
-	<p>
-	<jsp:useBean id="carrito" scope="session" 
-		class="es.uned.master.java.CarritoCompra"/>
-	<jsp:setProperty name="carrito" property="*"/>
+		<jsp:useBean id="carrito" scope="session"
+			class="es.uned.master.java.CarritoCompra"/>
+		<jsp:setProperty name="carrito" property="*"/>
 <%
-	carrito.processRequest(request);
+		carrito.processRequest(request);
 %>
-	<table width="75%" align="center" border="1">
+		<table width="75%" align="center" border="1">
 <%
-		Vector<String> productos= carrito.getProducto();
-//out.print("Productos:"+productos.toString());
+		Vector<String> productos = carrito.getProducto();
+// out.print("Productos:" + productos.toString());
 		for (int i = 0; i < productos.size() ; i++){
 %>
-	<tr>
-		<td><%= productos.get(i) %></td>
-		<td><a href="index.jsp?producto=<%= productos.get(i) %>&submit=eliminar">Eliminar</td>
-	</tr>
+			<tr>
+				<td><%= productos.get(i) %></td>
+				<td><a href="index.jsp?producto=<%= productos.get(i) %>&submit=eliminar">Eliminar</a></td>
+			</tr>
 <%
 		}
 		if (productos.size() == 0){
 %>
-	<tr><td>No hay elementos en tu pedido.</td></tr>
+			<tr><td>No hay elementos en tu pedido.</td></tr>
 <%
 		}
 %>
