@@ -5,8 +5,8 @@
 package org.aprende.java.bbdd;
 import java.util.*;
 
-public class Servicios extends TreeSet {
-	
+public class Servicios extends TreeSet{
+
 	private BBDD miBd;
 	
 	public Servicios(){
@@ -16,20 +16,19 @@ public class Servicios extends TreeSet {
 
 	//Metodo que devuelve una lista de servicios
 	//Si nos llegan errores de los m�todos abrirConexion y cerrarConexion se lanzan a la clase DisconformidadException
-		
+
 	public Servicios AllServicios() throws DisconformidadException{
-		miBd.abrirConexion(); //No hacemos tratamiento de errores porque ya se ha hecho en el m�todo abrirConexi�n.		
+		miBd.abrirConexion(); //No hacemos tratamiento de errores porque ya se ha hecho en el m�todo abrirConexi�n.
 		this.addAll( miBd.listadoServicios("Select * from Servicios"));
 		miBd.cerrarConexion();//No hacemos tratamiento de errores porque ya se ha hecho en el m�todo abrirConexi�n.
-		return this;		
+		return this;
 	}
-	
 	public Servicio getServicio (int id) throws DisconformidadException{
-		Servicio s =new Servicio();
-		Iterator it=this.iterator();
-		
-		while(it.hasNext() && s.Id()!=id )  {
-				s=(Servicio) it.next();
+		Servicio s = new Servicio();
+		Iterator it = this.iterator();
+
+		while(it.hasNext() && s.Id()!=id ){
+				s = (Servicio) it.next();
 		}
 		if (s.Id()!=id ){
 			s.Id(0);
@@ -37,13 +36,13 @@ public class Servicios extends TreeSet {
 		}
 		return s;
 	}
-	
+
 	public int getIdServicio (String nombre) throws DisconformidadException{
-		Servicio s =new Servicio();
-		Iterator it=this.iterator();
-		
-		while(it.hasNext() && s.nombre()!=nombre )  {
-				s=(Servicio) it.next();
+		Servicio s = new Servicio();
+		Iterator it = this.iterator();
+
+		while(it.hasNext() && s.nombre()!=nombre ){
+				s = (Servicio) it.next();
 		}
 		if (s.nombre()!=nombre ){
 			s.Id(0);
@@ -51,12 +50,12 @@ public class Servicios extends TreeSet {
 		}
 		return s.Id();
 	}
-	
-	public String toString(Object o){		
+
+	public String toString(Object o){
 		String cadena = new String();
-		Iterator it= this.iterator();		
+		Iterator it = this.iterator();
 		while (it.hasNext()){
-			cadena = cadena  + ((Servicio)it.next()).toString() + "  -  ";			
+			cadena = cadena  + ((Servicio)it.next()).toString() + "  -  ";
 		}
 		return cadena;
 	}

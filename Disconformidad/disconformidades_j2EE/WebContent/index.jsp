@@ -12,7 +12,7 @@
 			<tr>
 				<td>Usuario</td>
 				<td><input type="TEXT" name="txtUsuario" size="10"> </td>
-			</tr>			
+			</tr>
 			<tr>
 				<td>Password</td>
 				<td><input type="PASSWORD" name="txtPwd" size="10"> </td>
@@ -21,7 +21,7 @@
 				<td><input type="submit" name="cmdAceptar" value="Aceptar"> </td>
 				<td><input type="reset" name="cmdLimpiar" value="Limpiar"> </td>
 			</tr>
-		</table>		
+		</table>
 	</form>
 </body>
 </html>

@@ -18,7 +18,7 @@ public class Login_action extends HttpServlet{
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Login_action() {
+    public Login_action(){
         super();
         // TODO Auto-generated constructor stub
     }
@@ -67,3 +67,4 @@ public class Login_action extends HttpServlet{
 			}
 		}
 	}
+}

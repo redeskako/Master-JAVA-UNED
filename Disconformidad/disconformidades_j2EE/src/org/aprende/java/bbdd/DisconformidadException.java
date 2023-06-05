@@ -5,6 +5,6 @@ public class DisconformidadException extends RuntimeException {
 		super();
 	}
 	public DisconformidadException(String err){
-		super("\nError en disconformidad:\n\t"+err); 
+		super("\nError en disconformidad:\n\t" + err);
 	}
 }

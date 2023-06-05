@@ -19,7 +19,7 @@ public class Driver {
 		//}
 		
 		
-		Iterator it= treeSetDisconformidades.iterator();		
+		Iterator it = treeSetDisconformidades.iterator();		
 		while (it.hasNext()){
 			unaDisconformidad = (Disconformidad)it.next();
 			System.out.println("ID: " + unaDisconformidad.numero());
