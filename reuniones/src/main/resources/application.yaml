@@ -1,0 +1,52 @@
+server:
+   port: 8080
+logging:
+   level:
+      org:
+         springframework:
+            jdbc:
+               datasource:
+                  init:
+                     ScriptUtils: "debug"
+spring:
+   h2:
+      console:
+         enabled: true
+   datasource:
+      url: "jdbc:h2:mem:testdb"
+   jpa:
+      hibernate:
+         ddl-auto: "none"
+---
+spring:
+   config:
+      activate:
+         on-profile: "desarrollo"
+   datasource:
+      platform: MariaDB
+      driverClassName: org.mariadb.jdbc.Driver
+      url: jdbc:mariadb:failover://172.21.0.3:3306/reuniones?autoReconnect=true
+      username: uned
+      password: uned
+      timeBetweenEvictionRunsMillis: 1000
+      testWhileIdle: true
+      validationQuery: SELECT 1
+   jpa:
+        ddl-auto: ''
+server:
+   port: 8081
+logging:
+   level:
+      org:
+         springframework:
+            jdbc:
+               datasource:
+                  init:
+                     ScriptUtils: "debug"
+---
+spring:
+   config:
+      activate:
+         on-profile: "pruebas"
+server:
+   port: 8082
