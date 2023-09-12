@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 21
+Implementation-Title: ferreteria
+Implementation-Version: 0.1
+Created-By: Maven Integration for Eclipse
+
